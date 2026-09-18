@@ -15,16 +15,16 @@ function projectCard(project) {
     : '';
   return `
 <article class="project-card">
-  <figure class="project-card-media">
-    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
-    <figcaption>${project.caption}</figcaption>
-  </figure>
   <div class="project-card-body">
     <p class="project-card-context">${project.contextLine}</p>
     <h3>${project.title}</h3>
     <p>${project.summary}</p>
     ${links}
   </div>
+  <figure class="project-card-media">
+    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
+    <figcaption>${project.caption}</figcaption>
+  </figure>
 </article>`;
 }
 

@@ -400,6 +400,9 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background: var(--paper);
 }
+.project-card-media {
+  margin-top: auto;
+}
 .project-card-media img {
   width: 100%;
   height: auto;
@@ -410,7 +413,7 @@ img { max-width: 100%; display: block; }
 .project-card-media figcaption {
   margin: 0;
   padding: 8px 22px;
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
   background: var(--paper-alt);
 }
 .project-card-body { padding: 20px 22px 24px; }
