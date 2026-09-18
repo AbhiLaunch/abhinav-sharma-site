@@ -9,12 +9,19 @@ function hero() {
 <section class="hero">
   <div class="hero-motif" aria-hidden="true">${heroMotifSvg}</div>
   <div class="hero-inner">
-    <p class="hero-name">Abhinav Sharma</p>
-    <h1>I&rsquo;ve spent my career on complex aerospace systems, much of it for the Navy and Army.</h1>
-    <p class="hero-sub">Now at Berkeley Haas, I&rsquo;m focused on what it takes to move advanced defense and dual-use technology from R&amp;D into real-world use.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-secondary" href="#contact">Get in touch</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-name">Abhinav Sharma</p>
+        <h1>I&rsquo;ve spent my career on complex aerospace systems, much of it for the Navy and Army.</h1>
+        <p class="hero-sub">Now at Berkeley Haas, I&rsquo;m focused on what it takes to move advanced defense and dual-use technology from R&amp;D into real-world use.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="hero-portrait">
+        <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 400w, /img/portrait.webp 624w" sizes="(min-width: 861px) 340px, 176px" alt="Abhinav Sharma" width="624" height="780" fetchpriority="high">
+      </figure>
     </div>
     <ul class="hero-credibility">
       ${site.credibilityItems.map((item) => `<li>${item}</li>`).join('\n      ')}
@@ -74,15 +81,10 @@ function currentDirection() {
 function background() {
   return `
 <section class="section">
-  <div class="section-inner background-grid">
-    <figure class="background-portrait">
-      <img src="/img/portrait.webp" alt="Abhinav Sharma" width="480" height="600" loading="lazy">
-    </figure>
-    <div class="background-copy">
-      ${sectionHead({ kicker: 'Background', title: 'From aerospace R&amp;D to Haas' })}
-      <p>I have a PhD in aerospace engineering from the University of Michigan, then spent six years at Continuum Dynamics leading government-funded R&amp;D, including an Army STTR I took from Phase I to Phase II. Now at Berkeley Haas, I&rsquo;m building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
-      <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
-    </div>
+  <div class="section-inner background-copy">
+    ${sectionHead({ kicker: 'Background', title: 'From aerospace R&amp;D to Haas' })}
+    <p>I have a PhD in aerospace engineering from the University of Michigan, then spent six years at Continuum Dynamics leading government-funded R&amp;D, including an Army STTR I took from Phase I to Phase II. Now at Berkeley Haas, I&rsquo;m building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
+    <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>
 </section>`;
 }

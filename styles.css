@@ -341,6 +341,25 @@ img { max-width: 100%; display: block; }
   max-width: var(--max-w-wide);
   margin: 0 auto;
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 64px;
+  align-items: center;
+}
+.hero-portrait { margin: 0; }
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .hero-portrait { order: -1; width: 176px; }
+}
 .hero-name {
   font-size: 1.1rem;
   font-weight: 600;
@@ -513,23 +532,6 @@ figcaption {
 /* ==========================================================================
    Background
    ========================================================================== */
-.background-grid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 40px;
-  align-items: start;
-}
-@media (max-width: 720px) {
-  .background-grid { grid-template-columns: 1fr; gap: 24px; }
-  .background-portrait { max-width: 160px; }
-}
-.background-portrait img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
 .background-copy .section-head { margin-bottom: var(--space-3); }
 .background-copy p {
   color: var(--ink-soft);
