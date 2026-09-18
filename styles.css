@@ -1,12 +1,13 @@
 :root {
   --bg: #ffffff;
-  --bg-alt: #f6f5f2;
-  --ink: #17181a;
-  --ink-soft: #4a4d52;
-  --ink-faint: #7c7f85;
-  --line: #e4e2dd;
-  --accent: #8a3b12;
+  --bg-alt: #f4f6f9;
+  --ink: #101c2b;
+  --ink-soft: #43526b;
+  --ink-faint: #7c879b;
+  --line: #e2e6ec;
+  --accent: #1d4e89;
   --accent-ink: #ffffff;
+  --gold: #b8860a;
   --serif: 'Source Serif 4', Georgia, serif;
   --sans: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
   --max-w: 780px;
@@ -14,14 +15,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14130f;
-    --bg-alt: #1b1a15;
-    --ink: #f1efe9;
-    --ink-soft: #c7c3ba;
-    --ink-faint: #8f8b81;
-    --line: #33312a;
-    --accent: #e08a4f;
-    --accent-ink: #14130f;
+    --bg: #0a1626;
+    --bg-alt: #0f2038;
+    --ink: #eef2f7;
+    --ink-soft: #c3cedd;
+    --ink-faint: #8fa0b8;
+    --line: #22344c;
+    --accent: #7fb0e8;
+    --accent-ink: #0a1626;
+    --gold: #ffcb05;
   }
 }
 
@@ -81,11 +83,17 @@ a:hover { text-decoration: underline; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-weight: 700;
+  color: var(--gold);
   margin: 0 0 14px;
 }
-.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); letter-spacing: -0.01em; }
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  letter-spacing: -0.01em;
+  border-bottom: 4px solid var(--gold);
+  display: inline-block;
+  padding-bottom: 8px;
+}
 .hero-sub {
   margin-top: 20px;
   font-size: 1.15rem;
@@ -121,6 +129,17 @@ a:hover { text-decoration: underline; }
 .section-title {
   font-size: 1.5rem;
   margin-bottom: 36px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 3px;
+  background: var(--gold);
 }
 
 .about-grid p { color: var(--ink-soft); margin: 0 0 18px; }
@@ -152,7 +171,7 @@ a:hover { text-decoration: underline; }
 }
 .entry ul { margin: 14px 0 0; padding-left: 20px; color: var(--ink-soft); }
 .entry li { margin-bottom: 10px; }
-.entry li::marker { color: var(--accent); }
+.entry li::marker { color: var(--gold); }
 
 .more-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
 .more-list li {
@@ -168,7 +187,7 @@ a:hover { text-decoration: underline; }
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--gold);
 }
 
 .contact-section { text-align: center; }
