@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Abhinav Sharma">
   <style>
-    .path { fill: none; stroke: #1B1C1E; stroke-width: 2.4; stroke-linecap: round; }
-    .node { fill: #E14D1F; }
+    .path { fill: none; stroke: #00274C; stroke-width: 2.4; stroke-linecap: round; }
+    .node { fill: #FDB515; }
     @media (prefers-color-scheme: dark) {
-      .path { stroke: #F1EDE4; }
+      .path { stroke: #EEF2F7; }
+      .node { fill: #FFCB05; }
     }
   </style>
   <path class="path" d="M4.5 23 C 10 23, 12.5 10.5, 20.5 8.5 C 24 7.6, 26.5 8.2, 27.5 10" />

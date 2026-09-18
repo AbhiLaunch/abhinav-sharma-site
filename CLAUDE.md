@@ -6,6 +6,10 @@ This site is being revised against a single source of truth: **[docs/site-brief.
 
 The owner trimmed the site to a **single scannable page** (`/` only), modeled on arevalostrategies.com: hero, four short project cards, current direction, a short background with portrait, two publications, and the contact footer. The project pages, Research page, and About page were deleted; they live in git history (commit `fd1a03f` and earlier). Don't rebuild them without being asked. Each project card is a 1–2 sentence blurb with outbound links (sbir.gov award pages, publisher DOIs) instead of an internal page. Everything else in the brief (voice, facts, disclosure boundary, visual system) still applies.
 
+## Palette decision (supersedes brief Part 5 palette)
+
+The owner wants the **Cal / University of Michigan colors**: navy (`#00274C` Michigan blue / `#0A1626` dark background) with gold (`#FDB515` Cal gold light mode, `#FFCB05` Michigan maize dark mode). Gold is for buttons, accents, and graphic marks; text and links stay high-contrast (navy `#1D4E89` on light, maize on dark). Typography, layout, and the rest of the visual system are unchanged. Don't revert to the paper-and-international-orange palette.
+
 ## Non-negotiables
 
 - **Disclosure boundary.** Never name the I-Corps team/venture or describe its problem space, product, customers, or thesis, even anonymously. It's fine to say I completed NSF I-Corps customer discovery as part of a team — nothing more. Never call him a "founder" or imply he's building a specific defense product.

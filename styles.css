@@ -2,16 +2,16 @@
    Tokens
    ========================================================================== */
 :root {
-  --paper: #faf7f1;
-  --paper-alt: #f1ece1;
-  --ink: #1b1c1e;
-  --ink-soft: #52585f;
-  --ink-faint: #5f656b;
-  --line: #ddd6c7;
-  --accent: #e14d1f;
-  --accent-text: #b23d16;
-  --accent-ink: #fffaf5;
-  --btn-primary-bg: var(--accent-text);
+  --paper: #ffffff;
+  --paper-alt: #f3f5f9;
+  --ink: #0d1b2e;
+  --ink-soft: #43526b;
+  --ink-faint: #5a6a82;
+  --line: #dde3ec;
+  --accent: #e6a800;
+  --accent-text: #1d4e89;
+  --accent-ink: #00274c;
+  --btn-primary-bg: #fdb515;
 
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
@@ -29,30 +29,30 @@
 }
 
 :root[data-theme='dark'] {
-  --paper: #14171a;
-  --paper-alt: #1b1f23;
-  --ink: #f1ede4;
-  --ink-soft: #c7ccd1;
-  --ink-faint: #8b9298;
-  --line: #2c333a;
-  --accent: #ff7a45;
-  --accent-text: #ff8f5c;
-  --accent-ink: #1b1c1e;
-  --btn-primary-bg: var(--accent);
+  --paper: #0a1626;
+  --paper-alt: #0f2038;
+  --ink: #eef2f7;
+  --ink-soft: #c3cedd;
+  --ink-faint: #8fa0b8;
+  --line: #22344c;
+  --accent: #ffcb05;
+  --accent-text: #ffcb05;
+  --accent-ink: #00274c;
+  --btn-primary-bg: #ffcb05;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #14171a;
-    --paper-alt: #1b1f23;
-    --ink: #f1ede4;
-    --ink-soft: #c7ccd1;
-    --ink-faint: #8b9298;
-    --line: #2c333a;
-    --accent: #ff7a45;
-    --accent-text: #ff8f5c;
-    --accent-ink: #1b1c1e;
-    --btn-primary-bg: var(--accent);
+    --paper: #0a1626;
+    --paper-alt: #0f2038;
+    --ink: #eef2f7;
+    --ink-soft: #c3cedd;
+    --ink-faint: #8fa0b8;
+    --line: #22344c;
+    --accent: #ffcb05;
+    --accent-text: #ffcb05;
+    --accent-ink: #00274c;
+    --btn-primary-bg: #ffcb05;
   }
 }
 
