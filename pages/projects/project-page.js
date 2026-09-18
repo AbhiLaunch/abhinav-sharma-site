@@ -109,6 +109,8 @@ function render(project) {
           page.secondFigure
             ? figure({
                 src: `/img/${page.secondFigure.base}.webp`,
+                srcset: `/img/${page.secondFigure.base}-sm.webp 700w, /img/${page.secondFigure.base}.webp 1400w`,
+                sizes: '(min-width: 721px) 680px, 100vw',
                 alt: page.secondFigure.alt,
                 caption: page.secondFigure.caption,
                 width: 1400,
@@ -160,7 +162,7 @@ function render(project) {
   return layout({
     path: `/projects/${project.slug}/`,
     title: project.title,
-    description: page.heroSummary,
+    description: page.metaDescription || page.heroSummary,
     bodyHtml: body,
   });
 }

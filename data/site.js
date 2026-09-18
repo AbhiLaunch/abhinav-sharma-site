@@ -9,7 +9,7 @@ module.exports = {
 
   defaultTitle: 'Abhinav Sharma',
   defaultDescription:
-    'Abhinav Sharma — aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology, after a PhD and six years of Navy- and Army-sponsored aircraft R&D.',
+    'Aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology, with a PhD and six years of Navy- and Army-sponsored R&D.',
 
   credibilityItems: [
     'PhD, Aerospace Engineering',

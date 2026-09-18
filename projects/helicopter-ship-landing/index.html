@@ -4,23 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simulating Helicopter Operations at Sea — Abhinav Sharma</title>
-<meta name="description" content="A comprehensive simulation of a helicopter approaching and landing on a moving ship deck, integrating flight dynamics, ship airwake, deck motion, and landing-gear dynamics, applied to UH-60A shipboard operations.">
+<meta name="description" content="A PhD simulation of helicopter approach and landing on moving ship decks — flight dynamics, ship airwake, and deck motion — applied to UH-60A shipboard operations.">
 <link rel="canonical" href="https://abhinav-sharma.com/projects/helicopter-ship-landing/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Simulating Helicopter Operations at Sea — Abhinav Sharma">
-<meta property="og:description" content="A comprehensive simulation of a helicopter approaching and landing on a moving ship deck, integrating flight dynamics, ship airwake, deck motion, and landing-gear dynamics, applied to UH-60A shipboard operations.">
+<meta property="og:description" content="A PhD simulation of helicopter approach and landing on moving ship decks — flight dynamics, ship airwake, and deck motion — applied to UH-60A shipboard operations.">
 <meta property="og:url" content="https://abhinav-sharma.com/projects/helicopter-ship-landing/">
 <meta property="og:image" content="https://abhinav-sharma.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Simulating Helicopter Operations at Sea — Abhinav Sharma">
-<meta name="twitter:description" content="A comprehensive simulation of a helicopter approaching and landing on a moving ship deck, integrating flight dynamics, ship airwake, deck motion, and landing-gear dynamics, applied to UH-60A shipboard operations.">
+<meta name="twitter:description" content="A PhD simulation of helicopter approach and landing on moving ship decks — flight dynamics, ship airwake, and deck motion — applied to UH-60A shipboard operations.">
 <meta name="twitter:image" content="https://abhinav-sharma.com/og-image.jpg">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abhinav Sharma","description":"Abhinav Sharma — aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology, after a PhD and six years of Navy- and Army-sponsored aircraft R&D.","url":"https://abhinav-sharma.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Michigan"},{"@type":"CollegeOrUniversity","name":"University of Iowa"}],"affiliation":{"@type":"CollegeOrUniversity","name":"UC Berkeley Haas School of Business"},"memberOf":{"@type":"Organization","name":"Vertical Flight Society"},"sameAs":["https://www.linkedin.com/in/ab-sharma/","https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abhinav Sharma","description":"Aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology, with a PhD and six years of Navy- and Army-sponsored R&D.","url":"https://abhinav-sharma.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Michigan"},{"@type":"CollegeOrUniversity","name":"University of Iowa"}],"affiliation":{"@type":"CollegeOrUniversity","name":"UC Berkeley Haas School of Business"},"memberOf":{"@type":"Organization","name":"Vertical Flight Society"},"sameAs":["https://www.linkedin.com/in/ab-sharma/","https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en"]}</script>
 </head>
 <body class="">
 
@@ -32,7 +34,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
-      <a href="/#projects">Projects</a>
+      <a href="/#projects" aria-current="true">Projects</a>
       <a href="/research/">Research</a>
       <a href="/about/">About</a>
       <a class="nav-resume" href="/resume.pdf">Resume</a>
@@ -47,7 +49,7 @@
     <h1>Simulating Helicopter Operations at Sea</h1>
     <p class="project-hero-summary">A comprehensive simulation of a helicopter approaching and landing on a moving ship deck, integrating flight dynamics, ship airwake, deck motion, and landing-gear dynamics, applied to UH-60A shipboard operations.</p>
     <figure class="project-hero-figure">
-      <img src="/img/uh60-ship-landing-hero.webp" alt="Illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar." width="1920" height="1080" fetchpriority="high">
+      <img src="/img/uh60-ship-landing-hero.webp" srcset="/img/uh60-ship-landing-hero-sm.webp 960w, /img/uh60-ship-landing-hero.webp 1920w" sizes="100vw" alt="Illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar." width="1920" height="1080" fetchpriority="high">
       <figcaption>FIG. — UH-60 over a moving flight deck (illustration). The UH-60A was the aircraft modeled in my research.</figcaption>
     </figure>
   </div>

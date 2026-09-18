@@ -18,6 +18,8 @@ module.exports = [
     page: {
       heroSummary:
         'An MDO framework that rapidly explores aero-structural trade-offs for adaptive, morphing-wing UAVs, developed with the Army Research Laboratory and taken from a Phase I feasibility study to a Phase II delivered tool.',
+      metaDescription:
+        'An Army STTR MDO framework for adaptive, morphing-wing UAVs, taken from a Phase I feasibility study to a Phase II tool delivered to the Army Research Laboratory.',
       heroCaption:
         'FIG. 01 — Illustration: coupled trajectory and aerostructural optimization of a morphing-wing UAV.',
       specItems: [
@@ -75,6 +77,8 @@ module.exports = [
     page: {
       heroSummary:
         'A comprehensive simulation of a helicopter approaching and landing on a moving ship deck, integrating flight dynamics, ship airwake, deck motion, and landing-gear dynamics, applied to UH-60A shipboard operations.',
+      metaDescription:
+        'A PhD simulation of helicopter approach and landing on moving ship decks — flight dynamics, ship airwake, and deck motion — applied to UH-60A shipboard operations.',
       heroCaption:
         'FIG. — UH-60 over a moving flight deck (illustration). The UH-60A was the aircraft modeled in my research.',
       specItems: [
@@ -118,6 +122,8 @@ module.exports = [
     page: {
       heroSummary:
         'A NASA-funded look at incorporating flight-control requirements directly into multidisciplinary aircraft design optimization for a distributed electric propulsion (DEP) aircraft, instead of designing the controller after the airframe is already fixed.',
+      metaDescription:
+        'A NASA SBIR study on incorporating flight-control requirements directly into multidisciplinary aircraft design optimization for a DEP aircraft.',
       heroCaption:
         'FIG. — Illustrative DEP concept: a blown-lift STOL aircraft with leading-edge propellers. Not a real or flown aircraft, and not related to NASA’s X-57.',
       specItems: [
@@ -165,6 +171,8 @@ module.exports = [
     page: {
       heroSummary:
         'AAM aircraft work across flight mechanics, interactional aerodynamics, controls, performance, and simulation at Continuum Dynamics, including two new commercial clients I won through cold outreach.',
+      metaDescription:
+        'AAM aircraft work at Continuum Dynamics across flight mechanics, aerodynamics, controls, and simulation, including two new commercial clients won through cold outreach.',
       heroCaption:
         'FIG. — Illustrative tiltwing concept in transition flight. Not a specific aircraft I designed.',
       // This project has the thinnest source material of the four (see

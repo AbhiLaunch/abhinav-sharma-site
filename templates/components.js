@@ -12,7 +12,7 @@ function projectCard(project) {
   return `
 <a class="project-card" href="${href}">
   <div class="project-card-media">
-    <img src="/img/${project.image.base}-card.webp" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
+    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
   </div>
   <div class="project-card-body">
     <p class="project-card-context">${project.contextLine}</p>
@@ -34,10 +34,10 @@ function specBlock(items) {
 </dl>`;
 }
 
-function figure({ src, alt, caption, width, height }) {
+function figure({ src, srcset, sizes, alt, caption, width, height }) {
   return `
 <figure>
-  <img src="${src}" alt="${alt}" width="${width}" height="${height}" loading="lazy">
+  <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''}${sizes ? ` sizes="${sizes}"` : ''} alt="${alt}" width="${width}" height="${height}" loading="lazy">
   <figcaption>${caption}</figcaption>
 </figure>`;
 }
@@ -50,7 +50,7 @@ function projectHero({ kicker, title, summary, image, caption }) {
     <h1>${title}</h1>
     <p class="project-hero-summary">${summary}</p>
     <figure class="project-hero-figure">
-      <img src="/img/${image.base}-hero.webp" alt="${image.alt}" width="1920" height="1080" fetchpriority="high">
+      <img src="/img/${image.base}-hero.webp" srcset="/img/${image.base}-hero-sm.webp 960w, /img/${image.base}-hero.webp 1920w" sizes="100vw" alt="${image.alt}" width="1920" height="1080" fetchpriority="high">
       <figcaption>${caption}</figcaption>
     </figure>
   </div>

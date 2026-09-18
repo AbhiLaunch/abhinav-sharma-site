@@ -18,7 +18,10 @@ const heroMotifSvg = `
 </svg>`;
 
 function navLink(item, path) {
-  return `<a href="${item.href}"${path === item.href ? ' aria-current="page"' : ''}>${item.label}</a>`;
+  let current = '';
+  if (path === item.href) current = ' aria-current="page"';
+  else if (item.href === '/#projects' && path.startsWith('/projects/')) current = ' aria-current="true"';
+  return `<a href="${item.href}"${current}>${item.label}</a>`;
 }
 
 function header(path) {
@@ -110,6 +113,8 @@ function layout({
 <link rel="canonical" href="${canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 
 <meta property="og:type" content="website">

@@ -14,7 +14,7 @@ function render() {
 <section class="section about-section">
   <div class="section-inner about-grid">
     <figure class="about-portrait">
-      <img src="/img/portrait.webp" alt="Abhinav Sharma" width="960" height="1200">
+      <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 480w, /img/portrait.webp 960w" sizes="(min-width: 721px) 280px, 100vw" alt="Abhinav Sharma" width="960" height="1200">
     </figure>
     <div class="prose about-copy">
       <p>My path started at the University of Iowa, where &mdash; alongside a mechanical engineering degree &mdash; I contributed to the Virtual Soldier Research program's warfighter simulation work; from there I moved to aerospace engineering at the University of Michigan.</p>

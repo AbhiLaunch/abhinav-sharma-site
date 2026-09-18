@@ -50,7 +50,7 @@ function render() {
     path: '/research/',
     title: 'Research',
     description:
-      'Selected publications by Abhinav Sharma spanning helicopter shipboard operations, distributed electric propulsion aircraft design, and adaptive/morphing aircraft research.',
+      'Selected publications by Abhinav Sharma spanning helicopter shipboard operations, distributed electric propulsion design, and adaptive/morphing aircraft research.',
     bodyHtml: body,
   });
 }
