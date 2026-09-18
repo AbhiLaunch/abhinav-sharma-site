@@ -42,4 +42,80 @@ function figure({ src, alt, caption, width, height }) {
 </figure>`;
 }
 
-module.exports = { sectionHead, projectCard, specBlock, figure };
+function projectHero({ kicker, title, summary, image, caption }) {
+  return `
+<section class="project-hero">
+  <div class="project-hero-inner">
+    ${kicker ? `<p class="kicker">${kicker}</p>` : ''}
+    <h1>${title}</h1>
+    <p class="project-hero-summary">${summary}</p>
+    <figure class="project-hero-figure">
+      <img src="/img/${image.base}-hero.webp" alt="${image.alt}" width="1920" height="1080" fetchpriority="high">
+      <figcaption>${caption}</figcaption>
+    </figure>
+  </div>
+</section>`;
+}
+
+function relatedResearchList(entries) {
+  if (!entries.length) return '';
+  return `
+<ul class="research-list">
+  ${entries
+    .map((r) => {
+      if (r.collaboratorProgram) {
+        return `<li class="research-item">
+      <p class="kicker">From my program</p>
+      <h3>${r.title}</h3>
+      <p class="research-meta">${r.authors} &middot; ${r.venue}${r.year ? ` &middot; ${r.year}` : ''}</p>
+      <p class="research-note">${r.note}</p>
+    </li>`;
+      }
+      if (!r.title) {
+        return `<li class="research-item">
+      <p class="research-meta"><span class="placeholder-note">Publication details pending confirmation</span></p>
+      <p class="research-note">${r.note}</p>
+    </li>`;
+      }
+      return `<li class="research-item">
+      <h3>${r.title}</h3>
+      <p class="research-meta">${r.venue}${r.year ? ` &middot; ${r.year}` : ' &middot; <span class="placeholder-note">year &amp; DOI pending confirmation</span>'}</p>
+      <p class="research-note">${r.note}</p>
+    </li>`;
+    })
+    .join('\n  ')}
+</ul>`;
+}
+
+function programDetailsTable(items) {
+  return `
+<dl class="spec-block program-details">
+  ${items
+    .map(
+      ([term, def]) => `<div class="spec-item"><dt>${term}</dt><dd>${def}</dd></div>`
+    )
+    .join('\n  ')}
+</dl>`;
+}
+
+function nextProjectLink(project) {
+  return `
+<a class="next-project" href="/projects/${project.slug}/">
+  <span>
+    <span class="kicker">Next project</span>
+    <h3>${project.title}</h3>
+  </span>
+  <span class="next-project-arrow">&rarr;</span>
+</a>`;
+}
+
+module.exports = {
+  sectionHead,
+  projectCard,
+  specBlock,
+  figure,
+  projectHero,
+  relatedResearchList,
+  programDetailsTable,
+  nextProjectLink,
+};

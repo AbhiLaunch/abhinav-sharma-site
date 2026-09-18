@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Aircraft Design &amp; Optimization — Abhinav Sharma</title>
+<meta name="description" content="An MDO framework that rapidly explores aero-structural trade-offs for adaptive, morphing-wing UAVs, developed with the Army Research Laboratory and taken from a Phase I feasibility study to a Phase II delivered tool.">
+<link rel="canonical" href="https://abhinav-sharma.com/projects/adaptive-aircraft-design/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adaptive Aircraft Design &amp; Optimization — Abhinav Sharma">
+<meta property="og:description" content="An MDO framework that rapidly explores aero-structural trade-offs for adaptive, morphing-wing UAVs, developed with the Army Research Laboratory and taken from a Phase I feasibility study to a Phase II delivered tool.">
+<meta property="og:url" content="https://abhinav-sharma.com/projects/adaptive-aircraft-design/">
+<meta property="og:image" content="https://abhinav-sharma.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adaptive Aircraft Design &amp; Optimization — Abhinav Sharma">
+<meta name="twitter:description" content="An MDO framework that rapidly explores aero-structural trade-offs for adaptive, morphing-wing UAVs, developed with the Army Research Laboratory and taken from a Phase I feasibility study to a Phase II delivered tool.">
+<meta name="twitter:image" content="https://abhinav-sharma.com/og-image.jpg">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abhinav Sharma","description":"Abhinav Sharma — aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology, after a PhD and six years of Navy- and Army-sponsored aircraft R&D.","url":"https://abhinav-sharma.com","alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Michigan"},{"@type":"CollegeOrUniversity","name":"University of Iowa"}],"affiliation":{"@type":"CollegeOrUniversity","name":"UC Berkeley Haas School of Business"},"memberOf":{"@type":"Organization","name":"Vertical Flight Society"},"sameAs":["https://www.linkedin.com/in/ab-sharma/","https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en"]}</script>
+</head>
+<body class="">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">Abhinav Sharma</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="/#projects">Projects</a>
+      <a href="/research/">Research</a>
+      <a href="/about/">About</a>
+      <a class="nav-resume" href="/resume.pdf">Resume</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="project-hero">
+  <div class="project-hero-inner">
+    <p class="kicker">U.S. Army / DoD STTR · Phase I → Phase II · 2022–2025</p>
+    <h1>Adaptive Aircraft Design &amp; Optimization</h1>
+    <p class="project-hero-summary">An MDO framework that rapidly explores aero-structural trade-offs for adaptive, morphing-wing UAVs, developed with the Army Research Laboratory and taken from a Phase I feasibility study to a Phase II delivered tool.</p>
+    <figure class="project-hero-figure">
+      <img src="/img/morphing-aircraft-hero.webp" alt="Illustration of a twin-boom morphing UAV in flight, with an orange dashed optimized trajectory, ghost aircraft showing different wing configurations along the path, and airflow streamlines over the wing." width="1920" height="1080" fetchpriority="high">
+      <figcaption>FIG. 01 — Illustration: coupled trajectory and aerostructural optimization of a morphing-wing UAV.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section">
+      <div class="section-inner">
+        
+<div class="section-head">
+  <p class="kicker">At a glance</p>
+  <h2 class="section-title">Program summary</h2>
+  
+</div>
+        
+<dl class="spec-block">
+  <div class="spec-item"><dt>Sponsor</dt><dd>U.S. Army / DoD (STTR)</dd></div>
+  <div class="spec-item"><dt>Phase</dt><dd>Phase I → Phase II</dd></div>
+  <div class="spec-item"><dt>Dates</dt><dd>Sep 2022 – Oct 2025</dd></div>
+  <div class="spec-item"><dt>My role</dt><dd>Technical proposal lead; program lead</dd></div>
+  <div class="spec-item"><dt>Partner</dt><dd>University of Michigan (Prof. Joaquim R. R. A. Martins)</dd></div>
+  <div class="spec-item"><dt>Outcome</dt><dd>Framework delivered to the Army Research Laboratory</dd></div>
+</dl>
+      </div>
+    </section>
+
+<section class="section">
+  <div class="section-inner prose">
+    <h2>The problem</h2>
+    <p>Adaptive and morphing aircraft — wings that change shape in flight — can be more efficient across a wider range of conditions than a fixed wing, but figuring out which shape changes are actually worth making means searching a much larger design space than a conventional aircraft, one where aerodynamics and structures are tightly coupled: change the shape and you change both the airflow and the loads the structure has to carry.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner prose">
+    <h2>Why it was difficult</h2>
+    <p>Aerodynamics and structures interact strongly for a morphing wing, so evaluating one discipline in isolation gives misleading answers — the analysis has to iterate the two together, which is expensive to do for every candidate design. The program itself added a second layer of difficulty: I led a six-person team split across Continuum Dynamics and the University of Michigan, which meant navigating IP and workshare boundaries while keeping the research aligned with what the Army customer needed.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner prose">
+    <h2>My role</h2>
+    <p>I led technical proposal development for both the Phase I and Phase II awards, and led the six-person industry-academic team through execution. I developed the Python-based optimization framework itself through direct, iterative engagement with Army Research Laboratory researchers, and delivered it to ARL for its own morphing-aircraft research.</p>
+  </div>
+</section>
+<section class="section section-alt">
+      <div class="section-inner prose">
+        <h2>Technical approach</h2>
+        <p>The framework couples an optimizer with aerodynamic and structural analyses in a single automated loop, so a candidate wing shape is evaluated for both its aerodynamic performance and its structural feasibility before the optimizer proposes the next design. The diagram below shows that coupling in simplified XDSM-style notation: the optimizer proposes a design, each discipline analyzes it, and aerodynamic loads and structural deformation are exchanged between disciplines as the design converges.</p>
+        <figure class="diagram-figure">
+          
+<svg viewBox="0 0 610 610" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FIG. 02 — Simplified XDSM-style view of the aero-structural optimization loop." style="width:100%;height:auto;max-width:560px;">
+  
+      <path d="M 145 167 L 145 295 L 241 295" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 233 290 L 241 295 L 233 300" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+
+      <path d="M 288 273 L 288 152 L 199 152" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 207 147 L 199 152 L 207 157" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+
+      <path d="M 159 167 L 159 451 L 411 451" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 403 446 L 411 451 L 403 456" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+
+      <path d="M 444 443 L 444 166 L 199 166" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 207 161 L 199 166 L 207 171" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+
+      <path d="M 315 337 L 315 465 L 411 465" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 403 460 L 411 465 L 403 470" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+
+      <path d="M 458 443 L 458 322 L 369 322" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M 377 317 L 369 322 L 377 327" fill="none" stroke="var(--accent-text)" stroke-width="1.4" opacity="0.9"/>
+  <polygon points="87,103 199,103 183,167 71,167" fill="var(--paper)" stroke="var(--ink-soft)" stroke-width="1.5"/>
+        <text x="135" y="140" text-anchor="middle" font-family="var(--mono)" font-size="14" fill="var(--ink)">OPTIMIZER</text>
+<rect x="241" y="273" width="128" height="64" fill="var(--paper)" stroke="var(--ink-soft)" stroke-width="1.5"/>
+      <text x="305" y="310" text-anchor="middle" font-family="var(--mono)" font-size="14" fill="var(--ink)">AERODYNAMICS</text>
+<rect x="411" y="443" width="128" height="64" fill="var(--paper)" stroke="var(--ink-soft)" stroke-width="1.5"/>
+      <text x="475" y="480" text-anchor="middle" font-family="var(--mono)" font-size="14" fill="var(--ink)">STRUCTURES</text>
+</svg>
+          <figcaption>FIG. 02 — Simplified XDSM-style view of the aero-structural optimization loop.</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+
+<section class="section">
+  <div class="section-inner prose">
+    <h2>What came out of it</h2>
+    <p>The program advanced from a ~$173K Phase I feasibility study to a ~$1.15M Phase II. The result is a working Python MDO framework, delivered to the Army Research Laboratory for its morphing-aircraft research — this shows a technology transitioning through increasingly substantial government R&amp;D, not a fielded or operationally deployed system.</p><p>This work continues a thread that runs back to my master’s research on a morphing-UAV trailing-edge concept (2015–2016) — more on that on the <a href="/about/">About page</a>.</p>
+  </div>
+</section>
+<section class="section section-alt">
+      <div class="section-inner">
+        
+<div class="section-head">
+  <p class="kicker">Related research</p>
+  <h2 class="section-title">Further reading</h2>
+  
+</div>
+        
+<ul class="research-list">
+  <li class="research-item">
+      <p class="kicker">From my program</p>
+      <h3>Coupled Trajectory and Aerostructural Optimization of a UAV with Modular Morphing Wings</h3>
+      <p class="research-meta">Safa Bakhshi, Shugo Kaneko, Joaquim R. R. A. Martins &middot; AIAA Aviation 2025 &middot; 2025</p>
+      <p class="research-note">From the Army STTR program (Project 1) by my university collaborators — shortlisted as one of five finalists for the AIAA MDO Technical Committee’s best student paper award.</p>
+    </li>
+</ul>
+      </div>
+    </section>
+<section class="section">
+      <div class="section-inner">
+        
+<div class="section-head">
+  <p class="kicker">Program details</p>
+  <h2 class="section-title">Contracts &amp; awards</h2>
+  
+</div>
+        
+<dl class="spec-block program-details">
+  <div class="spec-item"><dt>Program</dt><dd>DoD (Army) FY2022 STTR Phase I</dd></div>
+  <div class="spec-item"><dt>Contract</dt><dd>W911NF-22-P-0083</dd></div>
+  <div class="spec-item"><dt>Award</dt><dd>$172,730</dd></div>
+  <div class="spec-item"><dt>Dates</dt><dd>Sep 2022 – Mar 2023</dd></div>
+  <div class="spec-item"><dt>Listing</dt><dd><a href="https://www.sbir.gov/node/2319853" target="_blank" rel="noopener">sbir.gov &rarr;</a></dd></div>
+</dl><div class="program-details-gap"></div>
+<dl class="spec-block program-details">
+  <div class="spec-item"><dt>Program</dt><dd>DoD (Army) FY2022 STTR Phase II</dd></div>
+  <div class="spec-item"><dt>Contract</dt><dd>W911NF24C0003</dd></div>
+  <div class="spec-item"><dt>Award</dt><dd>~$1.15M ($1,149,485.80)</dd></div>
+  <div class="spec-item"><dt>Dates</dt><dd>Oct 2023 – Oct 2025</dd></div>
+  <div class="spec-item"><dt>Listing</dt><dd><a href="https://www.sbir.gov/awards/209552" target="_blank" rel="noopener">sbir.gov &rarr;</a></dd></div>
+</dl>
+      </div>
+    </section>
+<div class="wrap">
+<a class="next-project" href="/projects/helicopter-ship-landing/">
+  <span>
+    <span class="kicker">Next project</span>
+    <h3>Simulating Helicopter Operations at Sea</h3>
+  </span>
+  <span class="next-project-arrow">&rarr;</span>
+</a></div>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p>I'm glad to hear from defense and dual-use builders, investors, and anyone working on technology transition and adoption.</p>
+      <div class="footer-links">
+        <a href="mailto:absharma@berkeley.edu">absharma@berkeley.edu</a>
+        <a href="https://www.linkedin.com/in/ab-sharma/" target="_blank" rel="noopener">linkedin.com/in/ab-sharma</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; <span id="year"></span> Abhinav Sharma</span>
+      <a href="/resume.pdf">Résumé (PDF)</a>
+    </div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+</body>
+</html>

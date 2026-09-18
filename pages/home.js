@@ -99,7 +99,7 @@ function selectedResearch() {
         <p class="research-note">My PhD dissertation: a simulation of helicopter approach and landing on moving ship decks, applied to UH-60A shipboard operations.</p>
       </li>
     </ul>
-    <p style="margin-top: 24px;">
+    <p class="research-links">
       <a class="trajectory-link" href="/research/">Full publication list &rarr;</a>
       &nbsp;&middot;&nbsp;
       <a class="trajectory-link" href="${site.scholarUrl}" target="_blank" rel="noopener">Google Scholar &rarr;</a>

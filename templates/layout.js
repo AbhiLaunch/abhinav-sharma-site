@@ -81,6 +81,13 @@ function personJsonLd() {
   };
 }
 
+// Plain-text fields (site.defaultDescription is also embedded raw in the
+// JSON-LD block below, which must NOT be HTML-escaped) get escaped only at
+// the point they're placed into an HTML attribute or text node.
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function layout({
   path = '/',
   title,
@@ -91,6 +98,7 @@ function layout({
 }) {
   const fullTitle = title ? `${title} — ${site.name}` : site.defaultTitle;
   const canonical = `${site.siteUrl}${path}`;
+  const safeDescription = escapeHtml(description);
 
   return `<!doctype html>
 <html lang="en">
@@ -98,7 +106,7 @@ function layout({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${fullTitle}</title>
-<meta name="description" content="${description}">
+<meta name="description" content="${safeDescription}">
 <link rel="canonical" href="${canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -106,12 +114,12 @@ function layout({
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="${fullTitle}">
-<meta property="og:description" content="${description}">
+<meta property="og:description" content="${safeDescription}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${site.siteUrl}${ogImage}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${fullTitle}">
-<meta name="twitter:description" content="${description}">
+<meta name="twitter:description" content="${safeDescription}">
 <meta name="twitter:image" content="${site.siteUrl}${ogImage}">
 
 <script type="application/ld+json">${JSON.stringify(personJsonLd())}</script>

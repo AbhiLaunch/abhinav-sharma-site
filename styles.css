@@ -521,6 +521,7 @@ figcaption {
   color: var(--ink-soft);
   font-size: 0.94rem;
 }
+.research-links { margin-top: 24px; }
 .placeholder-note {
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -540,6 +541,72 @@ figcaption {
   font-family: var(--mono);
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+/* ==========================================================================
+   Project page
+   ========================================================================== */
+.project-hero {
+  padding: 56px 24px 0;
+}
+.project-hero-inner {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+}
+.project-hero-summary {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin-top: 16px;
+}
+.project-hero-figure {
+  margin-top: 40px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.project-hero-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.project-hero-figure figcaption {
+  padding: 12px 4px 0;
+}
+
+.prose {
+  max-width: var(--max-w-text);
+}
+.prose p { color: var(--ink-soft); font-size: 1.02rem; margin-bottom: 1.1em; }
+.prose h2 { font-size: 1.35rem; margin-bottom: 18px; }
+
+.diagram-figure {
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 28px 20px;
+  margin-top: 12px;
+}
+
+.program-details dt { text-transform: none; }
+.program-details a { font-family: var(--mono); font-size: 0.85rem; }
+.program-details-gap { height: 18px; }
+
+.next-project {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+}
+.next-project .kicker { margin-bottom: 6px; }
+.next-project h3 { font-size: 1.15rem; color: var(--ink); }
+.next-project-arrow {
+  font-family: var(--mono);
+  color: var(--accent-text);
+  font-size: 1.1rem;
 }
 
 /* ==========================================================================
