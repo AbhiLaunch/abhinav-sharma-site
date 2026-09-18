@@ -18,7 +18,7 @@ module.exports = [
     },
     caption: 'Illustration — coupled trajectory and aerostructural optimization of a morphing-wing UAV.',
     links: [
-      { label: 'Phase I award', href: 'https://www.sbir.gov/node/2319853' },
+      { label: 'Phase I award', href: 'https://www.sbir.gov/awards/198170' },
       { label: 'Phase II award', href: 'https://www.sbir.gov/awards/209552' },
       // Neutral label: Crossref lists me as the 4th author, but that hasn't been
       // confirmed for the site (brief Part 7, item 2).
