@@ -408,6 +408,7 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 .project-card-media {
+  margin-top: auto;
   aspect-ratio: 16 / 9;
   background: var(--paper-alt);
   overflow: hidden;

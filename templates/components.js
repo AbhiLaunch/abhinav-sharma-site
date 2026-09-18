@@ -11,14 +11,14 @@ function projectCard(project) {
   const href = `/projects/${project.slug}/`;
   return `
 <a class="project-card" href="${href}">
-  <div class="project-card-media">
-    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
-  </div>
   <div class="project-card-body">
     <p class="project-card-context">${project.contextLine}</p>
     <h3>${project.title}</h3>
     <p>${project.summary}</p>
     <span class="project-card-link">View project &rarr;</span>
+  </div>
+  <div class="project-card-media">
+    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
   </div>
 </a>`;
 }
