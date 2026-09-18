@@ -1,0 +1,30 @@
+{
+  "name": "abhinav-sharma-site",
+  "version": "1.0.0",
+  "description": "Personal website for Abhinav Sharma — built as a static site and deployed with GitHub Pages.",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python -m http.server 8123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiLaunch/abhinav-sharma-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AbhiLaunch/abhinav-sharma-site/issues"
+  },
+  "homepage": "https://github.com/AbhiLaunch/abhinav-sharma-site#readme",
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "sharp": "^0.35.4"
+  }
+}
