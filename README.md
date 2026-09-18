@@ -6,9 +6,9 @@ Personal website for Abhinav Sharma — a static site generated from plain conte
 
 There's no framework — `build.js` is a small, dependency-free Node script that assembles static HTML from the files below and writes plain `.html`/`.css`/image files to the repo root, exactly what GitHub Pages already serves. `sharp` and the `@fontsource` packages are **devDependencies only**, used at build time to optimize images and self-host fonts; nothing from `node_modules` ships to visitors.
 
-- `data/` — site-wide facts and content (nav, contact info, project card copy). Edit these to change what the site says.
-- `templates/` — the shared page shell (header/nav/footer) and reusable components (project card, spec block, figure).
-- `pages/` — one file per page, composing `templates/` + `data/` into a full page.
+- `data/` — site-wide facts and content (nav, contact info, project cards and their links, publications). Edit these to change what the site says.
+- `templates/` — the page shell (header/nav/footer) and reusable components (section heading, project card, research item).
+- `pages/` — `home.js` composes `templates/` + `data/` into the single-page site.
 - `images/` — original supplied photos/illustrations (untouched source; not served directly).
 - `img/`, `fonts/`, `resume.pdf`, `og-image.jpg`, `apple-touch-icon.png`, `index.html`, `sitemap.xml` — **generated output**. Don't hand-edit these; run the build instead.
 

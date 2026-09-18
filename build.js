@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 const site = require('./data/site');
-const projectsData = require('./data/projects');
 const { buildImages } = require('./lib/build-images');
 const { buildFonts } = require('./lib/build-fonts');
 const { buildOgImage } = require('./lib/build-og-image');
@@ -13,13 +12,6 @@ const ROOT = __dirname;
 // path (used for sitemap + canonical URLs) -> output file, relative to repo root
 const pages = [
   { outFile: 'index.html', urlPath: '/', render: () => require('./pages/home').render() },
-  ...projectsData.map((project) => ({
-    outFile: path.join('projects', project.slug, 'index.html'),
-    urlPath: `/projects/${project.slug}/`,
-    render: () => require('./pages/projects/project-page').render(project),
-  })),
-  { outFile: path.join('research', 'index.html'), urlPath: '/research/', render: () => require('./pages/research').render() },
-  { outFile: path.join('about', 'index.html'), urlPath: '/about/', render: () => require('./pages/about').render() },
 ];
 
 function writePage(page) {

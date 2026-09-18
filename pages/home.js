@@ -1,7 +1,8 @@
 const site = require('../data/site');
 const projects = require('../data/projects');
+const research = require('../data/research');
 const { layout, heroMotifSvg } = require('../templates/layout');
-const { sectionHead, projectCard } = require('../templates/components');
+const { sectionHead, projectCard, researchItem } = require('../templates/components');
 
 function hero() {
   return `
@@ -29,8 +30,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected Projects',
-      title: 'Aerospace R&amp;D, from concept to government and commercial customers',
-      dek: 'Four programs spanning Army- and NASA-sponsored R&amp;D, Navy-supported PhD research, and commercial advanced air mobility work.',
+      title: 'Aerospace R&amp;D, from concept to customer',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -43,15 +43,15 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense &amp; dual-use technology',
-      body: 'My background is Navy- and Army-sponsored aircraft R&amp;D. I&rsquo;m now looking at where complex physical systems, autonomy, and software meet real-world deployment.',
+      body: 'Navy- and Army-sponsored R&amp;D is my starting point. I&rsquo;m learning how defense capabilities are developed, bought, integrated, and fielded.',
     },
     {
       title: 'Autonomous &amp; complex physical systems',
-      body: 'I&rsquo;m increasingly interested in autonomous platforms &mdash; extending the modeling, simulation, and optimization work I&rsquo;ve done on rotorcraft and morphing aircraft in that direction.',
+      body: 'Where complex physical systems, autonomy, and software meet real-world deployment.',
     },
     {
       title: 'Technology transition &amp; adoption',
-      body: 'At Berkeley, I&rsquo;ve done structured customer discovery through NSF I-Corps &mdash; testing assumptions against real customers before deciding what to build, the same habit I carried from years of proposal work.',
+      body: 'I completed NSF I-Corps customer discovery with a team at Berkeley, testing assumptions against real customers before deciding what to build.',
     },
   ];
   return `
@@ -60,56 +60,50 @@ function currentDirection() {
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'After years developing technology, I got curious about the questions around it &mdash; who owns the problem, who pays for it, and why good technology stalls after R&amp;D.',
+      dek: 'After years developing technology, I got curious about who owns the problem, who pays for it, and why good technology stalls after R&amp;D.',
     })}
     <div class="theme-grid">
       ${themes
-        .map(
-          (t) => `<div class="theme-card"><h3>${t.title}</h3><p>${t.body}</p></div>`
-        )
+        .map((t) => `<div class="theme-card"><h3>${t.title}</h3><p>${t.body}</p></div>`)
         .join('\n      ')}
     </div>
   </div>
 </section>`;
 }
 
-function trajectory() {
+function background() {
   return `
 <section class="section">
-  <div class="section-inner trajectory-copy">
-    ${sectionHead({ kicker: 'Background', title: 'Professional trajectory' })}
-    <p>My path started in aerospace engineering: a PhD and master&rsquo;s at the University of Michigan, including Office of Naval Research&ndash;supported research on helicopter shipboard landings, and a short stint at an eVTOL startup building its flight-simulation strategy from the ground up. For the last six years, I&rsquo;ve led government-funded R&amp;D and business development at Continuum Dynamics &mdash; winning ~$1.45M in NASA and Army funding, taking an Army STTR from Phase I to Phase II, and opening new commercial clients in advanced air mobility. I&rsquo;m now at Berkeley Haas, building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
-    <p><a class="trajectory-link" href="/about/">More about my background &rarr;</a></p>
+  <div class="section-inner background-grid">
+    <figure class="background-portrait">
+      <img src="/img/portrait.webp" alt="Abhinav Sharma" width="480" height="600" loading="lazy">
+    </figure>
+    <div class="background-copy">
+      ${sectionHead({ kicker: 'Background', title: 'From aerospace R&amp;D to Haas' })}
+      <p>I have a PhD in aerospace engineering from the University of Michigan, then spent six years at Continuum Dynamics leading government-funded R&amp;D, including an Army STTR I took from Phase I to Phase II. Now at Berkeley Haas, I&rsquo;m building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
+      <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
+    </div>
   </div>
 </section>`;
 }
 
 function selectedResearch() {
   return `
-<section class="section section-alt">
+<section class="section section-alt" id="research">
   <div class="section-inner">
-    ${sectionHead({
-      kicker: 'Selected Research',
-      title: 'Published and ongoing work',
-    })}
+    ${sectionHead({ kicker: 'Selected Research', title: 'Publications' })}
     <ul class="research-list">
-      <li class="research-item">
-        <h3>Development and Application of a Comprehensive Simulation for Modeling Helicopter Ship Landing</h3>
-        <p class="research-meta">Journal of Aircraft &middot; <span class="placeholder-note"><!-- VERIFY: confirm exact publication year and DOI against the paper -->year &amp; DOI pending confirmation</span></p>
-        <p class="research-note">My PhD dissertation: a simulation of helicopter approach and landing on moving ship decks, applied to UH-60A shipboard operations.</p>
-      </li>
+      ${research.map(researchItem).join('\n      ')}
     </ul>
     <p class="research-links">
-      <a class="trajectory-link" href="/research/">Full publication list &rarr;</a>
-      &nbsp;&middot;&nbsp;
-      <a class="trajectory-link" href="${site.scholarUrl}" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+      <a class="trajectory-link" href="${site.scholarUrl}" target="_blank" rel="noopener">All publications on Google Scholar &nearr;</a>
     </p>
   </div>
 </section>`;
 }
 
 function render() {
-  const body = [hero(), selectedProjects(), currentDirection(), trajectory(), selectedResearch()].join('\n');
+  const body = [hero(), selectedProjects(), currentDirection(), background(), selectedResearch()].join('\n');
   return layout({
     path: '/',
     bodyHtml: body,

@@ -17,14 +17,7 @@ const heroMotifSvg = `
   <path d="M-20 420 C 260 420, 340 120, 640 90 C 860 68, 980 140, 1220 60" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round" opacity="0.55"/>
 </svg>`;
 
-function navLink(item, path) {
-  let current = '';
-  if (path === item.href) current = ' aria-current="page"';
-  else if (item.href === '/#projects' && path.startsWith('/projects/')) current = ' aria-current="true"';
-  return `<a href="${item.href}"${current}>${item.label}</a>`;
-}
-
-function header(path) {
+function header() {
   return `
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -34,7 +27,7 @@ function header(path) {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
-      ${site.nav.map((item) => navLink(item, path)).join('\n      ')}
+      ${site.nav.map((item) => `<a href="${item.href}">${item.label}</a>`).join('\n      ')}
       <a class="nav-resume" href="${site.resumeHref}">Resume</a>
     </nav>
   </div>
@@ -130,7 +123,7 @@ function layout({
 <script type="application/ld+json">${JSON.stringify(personJsonLd())}</script>
 </head>
 <body class="${bodyClass}">
-${header(path)}
+${header()}
 <main id="main">
 ${bodyHtml}
 </main>

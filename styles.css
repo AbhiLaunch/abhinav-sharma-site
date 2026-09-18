@@ -399,24 +399,19 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--paper);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-.project-card:hover {
-  border-color: var(--ink-faint);
-  transform: translateY(-2px);
-}
-.project-card-media {
-  margin-top: auto;
-  aspect-ratio: 16 / 9;
-  background: var(--paper-alt);
-  overflow: hidden;
 }
 .project-card-media img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  background: var(--paper-alt);
+}
+.project-card-media figcaption {
+  margin: 0;
+  padding: 8px 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-alt);
 }
 .project-card-body { padding: 20px 22px 24px; }
 .project-card-context {
@@ -436,13 +431,17 @@ img { max-width: 100%; display: block; }
   font-size: 0.96rem;
   margin-bottom: 14px;
 }
-.project-card-link {
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--ink);
+.project-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 16px 0 0 !important;
 }
-.project-card:hover .project-card-link { color: var(--accent-text); }
+.project-card-links a {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
 
 /* ==========================================================================
    Figure & caption
@@ -454,31 +453,6 @@ figcaption {
   color: var(--ink-faint);
   margin-top: 10px;
   line-height: 1.5;
-}
-
-/* ==========================================================================
-   Spec block (project "at a glance")
-   ========================================================================== */
-.spec-block {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 18px 24px;
-}
-.spec-item dt {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--ink-faint);
-  margin-bottom: 4px;
-}
-.spec-item dd {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--ink);
 }
 
 /* ==========================================================================
@@ -529,124 +503,47 @@ figcaption {
   color: var(--ink-soft);
   font-size: 0.94rem;
 }
+.research-item h3 a { color: var(--ink); text-decoration-color: var(--line); }
+.research-item h3 a:hover { color: var(--accent-text); }
 .research-links { margin-top: 24px; }
-.research-footnote { margin-top: 28px; }
-.placeholder-note {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--ink-faint);
-  font-style: normal;
-}
 
 /* ==========================================================================
-   Trajectory
+   Background
    ========================================================================== */
-.trajectory-copy p {
+.background-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .background-grid { grid-template-columns: 1fr; gap: 24px; }
+  .background-portrait { max-width: 160px; }
+}
+.background-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.background-copy .section-head { margin-bottom: var(--space-3); }
+.background-copy p {
   color: var(--ink-soft);
   font-size: 1.05rem;
   max-width: 68ch;
+}
+.background-copy .background-affiliation {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin-top: 16px;
 }
 .trajectory-link {
   font-family: var(--mono);
   font-size: 0.9rem;
   font-weight: 500;
 }
-
-/* ==========================================================================
-   Project page
-   ========================================================================== */
-.project-hero {
-  padding: 56px 24px 0;
-}
-.project-hero-inner {
-  max-width: var(--max-w-wide);
-  margin: 0 auto;
-}
-.project-hero-summary {
-  font-size: 1.2rem;
-  color: var(--ink-soft);
-  max-width: 62ch;
-  margin-top: 16px;
-}
-.project-hero-figure {
-  margin-top: 40px;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-.project-hero-figure img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-.project-hero-figure figcaption {
-  padding: 12px 4px 0;
-}
-
-.prose {
-  max-width: var(--max-w-text);
-}
-.prose p { color: var(--ink-soft); font-size: 1.02rem; margin-bottom: 1.1em; }
-.prose h2 { font-size: 1.35rem; margin-bottom: 18px; }
-
-.diagram-figure {
-  background: var(--paper-alt);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 32px 28px 20px;
-  margin-top: 12px;
-}
-
-.program-details dt { text-transform: none; }
-.program-details a { font-family: var(--mono); font-size: 0.85rem; }
-.program-details-gap { height: 18px; }
-
-.next-project {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
-  text-decoration: none;
-}
-.next-project .kicker { margin-bottom: 6px; }
-.next-project h3 { font-size: 1.15rem; color: var(--ink); }
-.next-project-arrow {
-  font-family: var(--mono);
-  color: var(--accent-text);
-  font-size: 1.1rem;
-}
-
-/* ==========================================================================
-   About page
-   ========================================================================== */
-.about-section { padding-top: var(--space-4); padding-bottom: var(--space-4); }
-.about-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-  align-items: start;
-}
-@media (max-width: 720px) {
-  .about-grid { grid-template-columns: 1fr; }
-}
-.about-portrait img {
-  width: 100%;
-  border-radius: var(--radius);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-@media (min-width: 721px) {
-  .about-portrait { position: sticky; top: 100px; }
-}
-.bio-block {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 24px 28px;
-  max-width: var(--max-w-text);
-}
-.bio-block p { color: var(--ink-soft); font-size: 1rem; }
 
 /* ==========================================================================
    Footer / contact

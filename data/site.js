@@ -19,9 +19,9 @@ module.exports = {
   ],
 
   nav: [
-    { label: 'Projects', href: '/#projects' },
-    { label: 'Research', href: '/research/' },
-    { label: 'About', href: '/about/' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Research', href: '#research' },
+    { label: 'Contact', href: '#contact' },
   ],
 
   contactIntro:

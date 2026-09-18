@@ -34,9 +34,9 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
-      <a href="/#projects">Projects</a>
-      <a href="/research/">Research</a>
-      <a href="/about/">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
       <a class="nav-resume" href="/resume.pdf">Resume</a>
     </nav>
   </div>
@@ -80,58 +80,62 @@
     
 <div class="section-head">
   <p class="kicker">Selected Projects</p>
-  <h2 class="section-title">Aerospace R&amp;D, from concept to government and commercial customers</h2>
-  <p class="section-dek">Four programs spanning Army- and NASA-sponsored R&amp;D, Navy-supported PhD research, and commercial advanced air mobility work.</p>
+  <h2 class="section-title">Aerospace R&amp;D, from concept to customer</h2>
+  
 </div>
     <div class="project-grid">
       
-<a class="project-card" href="/projects/adaptive-aircraft-design/">
+<article class="project-card">
+  <figure class="project-card-media">
+    <img src="/img/morphing-aircraft-card.webp" srcset="/img/morphing-aircraft-card-sm.webp 640w, /img/morphing-aircraft-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a twin-boom morphing UAV in flight, with an orange dashed optimized trajectory, ghost aircraft showing different wing configurations along the path, and airflow streamlines over the wing." width="1200" height="675" loading="lazy">
+    <figcaption>Illustration — coupled trajectory and aerostructural optimization of a morphing-wing UAV.</figcaption>
+  </figure>
   <div class="project-card-body">
     <p class="project-card-context">U.S. Army / DoD STTR · Phase I → Phase II · 2022–2025</p>
     <h3>Adaptive Aircraft Design &amp; Optimization</h3>
-    <p>MDO capabilities for adaptive and morphing UAVs. I led technical proposal development and a six-person industry-academic team with the University of Michigan, taking the program from a ~$173K Phase I to a ~$1.15M Phase II. I developed a Python design framework with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research.</p>
-    <span class="project-card-link">View project &rarr;</span>
+    <p>Took an optimization program for adaptive, morphing UAVs from a ~$173K Phase I to a ~$1.15M Phase II, leading the proposals and a six-person team with the University of Michigan. Built the Python design framework with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research.</p>
+    <p class="project-card-links"><a href="https://www.sbir.gov/node/2319853" target="_blank" rel="noopener">Phase I award &nearr;</a><a href="https://www.sbir.gov/awards/209552" target="_blank" rel="noopener">Phase II award &nearr;</a><a href="https://doi.org/10.2514/6.2025-3626" target="_blank" rel="noopener">AIAA Aviation 2025 paper &nearr;</a></p>
   </div>
-  <div class="project-card-media">
-    <img src="/img/morphing-aircraft-card.webp" srcset="/img/morphing-aircraft-card-sm.webp 640w, /img/morphing-aircraft-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a twin-boom morphing UAV in flight, with an orange dashed optimized trajectory, ghost aircraft showing different wing configurations along the path, and airflow streamlines over the wing." width="1200" height="675" loading="lazy">
-  </div>
-</a>
+</article>
       
-<a class="project-card" href="/projects/helicopter-ship-landing/">
+<article class="project-card">
+  <figure class="project-card-media">
+    <img src="/img/uh60-ship-landing-card.webp" srcset="/img/uh60-ship-landing-card-sm.webp 640w, /img/uh60-ship-landing-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar." width="1200" height="675" loading="lazy">
+    <figcaption>Illustration — UH-60 over a moving flight deck. The UH-60A was the aircraft modeled in my research.</figcaption>
+  </figure>
   <div class="project-card-body">
     <p class="project-card-context">University of Michigan · PhD · Office of Naval Research–supported</p>
     <h3>Simulating Helicopter Operations at Sea</h3>
-    <p>A comprehensive simulation of helicopter approach and landing on moving ships, integrating flight dynamics, controls, ship motion, airwake, ground effect, and landing-gear/deck interaction. Applied to UH-60A shipboard operations and published in the Journal of Aircraft.</p>
-    <span class="project-card-link">View project &rarr;</span>
+    <p>A simulation of helicopter approach and landing on moving ships, integrating flight dynamics, controls, ship airwake, deck motion, and ground effect. Applied to UH-60A shipboard operations and published in the Journal of Aircraft.</p>
+    <p class="project-card-links"><a href="https://doi.org/10.2514/1.C035973" target="_blank" rel="noopener">Journal of Aircraft paper &nearr;</a></p>
   </div>
-  <div class="project-card-media">
-    <img src="/img/uh60-ship-landing-card.webp" srcset="/img/uh60-ship-landing-card-sm.webp 640w, /img/uh60-ship-landing-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar." width="1200" height="675" loading="lazy">
-  </div>
-</a>
+</article>
       
-<a class="project-card" href="/projects/designing-aircraft-and-controller/">
+<article class="project-card">
+  <figure class="project-card-media">
+    <img src="/img/dep-aircraft-card.webp" srcset="/img/dep-aircraft-card-sm.webp 640w, /img/dep-aircraft-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a distributed electric propulsion aircraft on approach, with eight leading-edge propellers, orange-outlined flaps, and white slipstream lines over the wing." width="1200" height="675" loading="lazy">
+    <figcaption>Illustrative DEP concept — not a real or flown aircraft, and not related to NASA’s X-57.</figcaption>
+  </figure>
   <div class="project-card-body">
     <p class="project-card-context">NASA SBIR Phase I · 2021</p>
     <h3>Designing the Aircraft and the Controller Together</h3>
-    <p>Incorporating flight-control requirements directly into multidisciplinary aircraft design optimization, rather than addressing them after the vehicle design is largely fixed.</p>
-    <span class="project-card-link">View project &rarr;</span>
+    <p>Built flight-control requirements directly into multidisciplinary design optimization for a distributed electric propulsion aircraft, instead of adding them after the airframe is largely fixed. I led the technical proposal.</p>
+    <p class="project-card-links"><a href="https://www.sbir.gov/node/2116627" target="_blank" rel="noopener">NASA award &nearr;</a><a href="https://arc.aiaa.org/doi/10.2514/6.2023-1364" target="_blank" rel="noopener">AIAA SciTech 2023 paper &nearr;</a></p>
   </div>
-  <div class="project-card-media">
-    <img src="/img/dep-aircraft-card.webp" srcset="/img/dep-aircraft-card-sm.webp 640w, /img/dep-aircraft-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a distributed electric propulsion aircraft on approach, with eight leading-edge propellers, orange-outlined flaps, and white slipstream lines over the wing." width="1200" height="675" loading="lazy">
-  </div>
-</a>
+</article>
       
-<a class="project-card" href="/projects/aam-modeling-and-simulation/">
+<article class="project-card">
+  <figure class="project-card-media">
+    <img src="/img/aam-tiltwing-card.webp" srcset="/img/aam-tiltwing-card-sm.webp 640w, /img/aam-tiltwing-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing." width="1200" height="675" loading="lazy">
+    <figcaption>Illustrative tiltwing concept — not a specific aircraft I designed.</figcaption>
+  </figure>
   <div class="project-card-body">
     <p class="project-card-context">Continuum Dynamics · Research + Commercial</p>
     <h3>Advanced Air Mobility Modeling &amp; Simulation</h3>
-    <p>AAM aircraft work across flight mechanics, interactional aerodynamics, controls, performance, ride quality, and simulation, including two new commercial clients won through cold outreach (~$100K, unnamed).</p>
-    <span class="project-card-link">View project &rarr;</span>
+    <p>Flight mechanics, interactional aerodynamics, controls, and performance analysis for AAM aircraft, including two new commercial clients won through cold outreach (~$100K, unnamed).</p>
+    
   </div>
-  <div class="project-card-media">
-    <img src="/img/aam-tiltwing-card.webp" srcset="/img/aam-tiltwing-card-sm.webp 640w, /img/aam-tiltwing-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="Illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing." width="1200" height="675" loading="lazy">
-  </div>
-</a>
+</article>
     </div>
   </div>
 </section>
@@ -142,48 +146,58 @@
 <div class="section-head">
   <p class="kicker">Current direction</p>
   <h2 class="section-title">What happens after the technology works</h2>
-  <p class="section-dek">After years developing technology, I got curious about the questions around it &mdash; who owns the problem, who pays for it, and why good technology stalls after R&amp;D.</p>
+  <p class="section-dek">After years developing technology, I got curious about who owns the problem, who pays for it, and why good technology stalls after R&amp;D.</p>
 </div>
     <div class="theme-grid">
-      <div class="theme-card"><h3>Defense &amp; dual-use technology</h3><p>My background is Navy- and Army-sponsored aircraft R&amp;D. I&rsquo;m now looking at where complex physical systems, autonomy, and software meet real-world deployment.</p></div>
-      <div class="theme-card"><h3>Autonomous &amp; complex physical systems</h3><p>I&rsquo;m increasingly interested in autonomous platforms &mdash; extending the modeling, simulation, and optimization work I&rsquo;ve done on rotorcraft and morphing aircraft in that direction.</p></div>
-      <div class="theme-card"><h3>Technology transition &amp; adoption</h3><p>At Berkeley, I&rsquo;ve done structured customer discovery through NSF I-Corps &mdash; testing assumptions against real customers before deciding what to build, the same habit I carried from years of proposal work.</p></div>
+      <div class="theme-card"><h3>Defense &amp; dual-use technology</h3><p>Navy- and Army-sponsored R&amp;D is my starting point. I&rsquo;m learning how defense capabilities are developed, bought, integrated, and fielded.</p></div>
+      <div class="theme-card"><h3>Autonomous &amp; complex physical systems</h3><p>Where complex physical systems, autonomy, and software meet real-world deployment.</p></div>
+      <div class="theme-card"><h3>Technology transition &amp; adoption</h3><p>I completed NSF I-Corps customer discovery with a team at Berkeley, testing assumptions against real customers before deciding what to build.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-inner trajectory-copy">
-    
+  <div class="section-inner background-grid">
+    <figure class="background-portrait">
+      <img src="/img/portrait.webp" alt="Abhinav Sharma" width="480" height="600" loading="lazy">
+    </figure>
+    <div class="background-copy">
+      
 <div class="section-head">
   <p class="kicker">Background</p>
-  <h2 class="section-title">Professional trajectory</h2>
+  <h2 class="section-title">From aerospace R&amp;D to Haas</h2>
   
 </div>
-    <p>My path started in aerospace engineering: a PhD and master&rsquo;s at the University of Michigan, including Office of Naval Research&ndash;supported research on helicopter shipboard landings, and a short stint at an eVTOL startup building its flight-simulation strategy from the ground up. For the last six years, I&rsquo;ve led government-funded R&amp;D and business development at Continuum Dynamics &mdash; winning ~$1.45M in NASA and Army funding, taking an Army STTR from Phase I to Phase II, and opening new commercial clients in advanced air mobility. I&rsquo;m now at Berkeley Haas, building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
-    <p><a class="trajectory-link" href="/about/">More about my background &rarr;</a></p>
+      <p>I have a PhD in aerospace engineering from the University of Michigan, then spent six years at Continuum Dynamics leading government-funded R&amp;D, including an Army STTR I took from Phase I to Phase II. Now at Berkeley Haas, I&rsquo;m building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
+      <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
+    </div>
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section section-alt" id="research">
   <div class="section-inner">
     
 <div class="section-head">
   <p class="kicker">Selected Research</p>
-  <h2 class="section-title">Published and ongoing work</h2>
+  <h2 class="section-title">Publications</h2>
   
 </div>
     <ul class="research-list">
-      <li class="research-item">
-        <h3>Development and Application of a Comprehensive Simulation for Modeling Helicopter Ship Landing</h3>
-        <p class="research-meta">Journal of Aircraft &middot; <span class="placeholder-note"><!-- VERIFY: confirm exact publication year and DOI against the paper -->year &amp; DOI pending confirmation</span></p>
-        <p class="research-note">My PhD dissertation: a simulation of helicopter approach and landing on moving ship decks, applied to UH-60A shipboard operations.</p>
-      </li>
+      
+<li class="research-item">
+  <h3><a href="https://doi.org/10.2514/1.C035973" target="_blank" rel="noopener">Helicopter Shipboard Landing Simulation Including Wind, Deck Motion and Dynamic Ground Effect</a></h3>
+  <p class="research-meta"><strong>Abhinav Sharma</strong>, Ashwani Padthe, Peretz P. Friedmann &middot; Journal of Aircraft &middot; 2021</p>
+  <p class="research-note">From my PhD research on helicopter shipboard operations.</p>
+</li>
+      
+<li class="research-item">
+  <h3><a href="https://arc.aiaa.org/doi/10.2514/6.2023-1364" target="_blank" rel="noopener">MDO Framework for DEP Aircraft Design Including Flight Controls</a></h3>
+  <p class="research-meta"><strong>Abhinav Sharma</strong>, Jeffrey D. Keller, Joaquim R. R. A. Martins &middot; AIAA SciTech 2023 Forum &middot; 2023</p>
+  <p class="research-note">From the NASA SBIR Phase I on designing the aircraft and controller together.</p>
+</li>
     </ul>
     <p class="research-links">
-      <a class="trajectory-link" href="/research/">Full publication list &rarr;</a>
-      &nbsp;&middot;&nbsp;
-      <a class="trajectory-link" href="https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+      <a class="trajectory-link" href="https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en" target="_blank" rel="noopener">All publications on Google Scholar &nearr;</a>
     </p>
   </div>
 </section>
