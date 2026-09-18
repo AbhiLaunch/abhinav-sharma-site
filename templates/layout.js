@@ -9,7 +9,7 @@ const heroMotifSvg = `
       <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <g stroke="var(--line)" stroke-width="1">
+  <g stroke="var(--band-line)" stroke-width="1">
     ${Array.from({ length: 9 })
       .map((_, i) => `<line x1="0" y1="${i * 60}" x2="1200" y2="${i * 60}"/>`)
       .join('')}
