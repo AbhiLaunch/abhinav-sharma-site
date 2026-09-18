@@ -18,6 +18,8 @@ const pages = [
     urlPath: `/projects/${project.slug}/`,
     render: () => require('./pages/projects/project-page').render(project),
   })),
+  { outFile: path.join('research', 'index.html'), urlPath: '/research/', render: () => require('./pages/research').render() },
+  { outFile: path.join('about', 'index.html'), urlPath: '/about/', render: () => require('./pages/about').render() },
 ];
 
 function writePage(page) {

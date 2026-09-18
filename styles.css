@@ -522,6 +522,7 @@ figcaption {
   font-size: 0.94rem;
 }
 .research-links { margin-top: 24px; }
+.research-footnote { margin-top: 28px; }
 .placeholder-note {
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -608,6 +609,36 @@ figcaption {
   color: var(--accent-text);
   font-size: 1.1rem;
 }
+
+/* ==========================================================================
+   About page
+   ========================================================================== */
+.about-section { padding-top: var(--space-4); padding-bottom: var(--space-4); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+.about-portrait img {
+  width: 100%;
+  border-radius: var(--radius);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+@media (min-width: 721px) {
+  .about-portrait { position: sticky; top: 100px; }
+}
+.bio-block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  max-width: var(--max-w-text);
+}
+.bio-block p { color: var(--ink-soft); font-size: 1rem; }
 
 /* ==========================================================================
    Footer / contact
