@@ -11,8 +11,8 @@ function hero() {
     <div class="hero-grid">
       <div class="hero-copy">
         <h1>
-          <span class="hero-line">I identified government R&amp;D opportunities, led the technical proposals that won $1.45M in DoD and NASA contracts, and developed engineering software and analyses for government and commercial customers.</span>
-          <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, focused on what it takes for promising defense and dual-use technology to move from R&amp;D into adoption and scale.</span>
+          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</span>
+          <span class="hero-line">Before Haas, I was an aerospace engineer who identified government R&amp;D opportunities, led the technical proposals that won $1.45M in DoD and NASA contracts, and developed engineering software and analyses for government and commercial customers.</span>
         </h1>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
@@ -36,7 +36,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected projects',
-      title: 'Government and commercial work, from proposal to delivery',
+      title: 'Government, commercial, and doctoral work',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -53,11 +53,11 @@ function currentDirection() {
     },
     {
       title: 'Autonomous and complex physical systems',
-      body: 'I&rsquo;ve worked on flight dynamics, controls, and design optimization for adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
+      body: 'I&rsquo;ve worked on flight dynamics, controls, and design optimization for adaptive aircraft. I want to work where those meet autonomy, software, and real-world deployment.',
     },
     {
       title: 'Technology transition and adoption',
-      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors, interviewing customers to test our assumptions. I&rsquo;m still learning what stands between a working technology and adoption.',
+      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors, interviewing customers to test our assumptions. That work showed me how much stands between a working technology and adoption.',
     },
   ];
   return `
