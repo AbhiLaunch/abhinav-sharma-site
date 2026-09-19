@@ -11,7 +11,7 @@ module.exports = [
     title: 'Adaptive Aircraft Design and Optimization',
     contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
     summary:
-      'I found the opportunity, assembled a six-person team across Continuum Dynamics and the University of Michigan, and led the proposals from start to finish. I also did the technical work: I developed a Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight, with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research. The program grew from a ~$173K Phase I to a ~$1.15M Phase II.',
+      'I found the opportunity, assembled and led a six-person team across Continuum Dynamics and the University of Michigan, and led the technical proposals end to end. I also developed the Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight, with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research. The program grew from a ~$173K Phase I to a ~$1.15M Phase II.',
     image: {
       base: 'morphing-aircraft',
       alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
@@ -24,7 +24,7 @@ module.exports = [
     ],
   },
   {
-    order: 2,
+    order: 4,
     title: 'Simulating Helicopter Operations at Sea',
     contextLine: 'University of Michigan · PhD · Office of Naval Research–supported · 2017–2019',
     summary:
@@ -37,11 +37,11 @@ module.exports = [
     links: [{ label: 'Journal of Aircraft paper', href: 'https://doi.org/10.2514/1.C035973' }],
   },
   {
-    order: 3,
+    order: 2,
     title: 'Designing the Aircraft and the Controller Together',
     contextLine: 'NASA SBIR Phase I · 2021',
     summary:
-      'Designers often address flight-control requirements after the airframe is largely fixed. I led the proposal that won this NASA SBIR Phase I, then did the technical work: treating flight controls as part of the design from the start, using multidisciplinary design optimization (MDO) for an aircraft with distributed electric propulsion (DEP).',
+      'Designers often address flight-control requirements after the airframe is largely fixed. I led the technical proposal that won this competitive NASA SBIR Phase I (~$125K), then did the technical work: treating flight controls as part of the design from the start, using multidisciplinary design optimization (MDO) for an aircraft with distributed electric propulsion (DEP).',
     image: {
       base: 'dep-aircraft',
       alt: 'AI-generated illustration of a distributed electric propulsion aircraft on approach, with eight leading-edge propellers and white slipstream lines over the wing.',
@@ -55,11 +55,11 @@ module.exports = [
     ],
   },
   {
-    order: 4,
+    order: 3,
     title: 'Advanced Air Mobility Modeling and Simulation',
     contextLine: 'Continuum Dynamics · Research and commercial',
     summary:
-      'I found the business: through networking and cold outreach, I won two advanced air mobility startups as clients, ~$100K in new revenue for Continuum Dynamics (clients unnamed). I then did the aircraft design and performance analyses, spanning flight mechanics, interactional aerodynamics, controls, and performance.',
+      'I found the business: through networking and cold outreach, I won two advanced air mobility startups as clients, ~$100K in new revenue for Continuum Dynamics (clients unnamed). I then did the aircraft design and performance analyses for them.',
     image: {
       base: 'aam-tiltwing',
       alt: 'AI-generated illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing.',
