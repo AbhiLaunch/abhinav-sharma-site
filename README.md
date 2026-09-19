@@ -10,13 +10,13 @@ There's no framework — `build.js` is a small, dependency-free Node script that
 - `templates/` — the page shell (header/nav/footer) and reusable components (section heading, project card, research item).
 - `pages/` — `home.js` composes `templates/` + `data/` into the single-page site.
 - `images/` — original supplied photos/illustrations (untouched source; not served directly).
-- `img/`, `fonts/`, `og-image-v3.jpg`, `404.html`, `apple-touch-icon.png`, `index.html`, `sitemap.xml` — **generated output**. Don't hand-edit these; run the build instead.
+- `img/`, `fonts/`, `og-image-v4.jpg`, `404.html`, `apple-touch-icon.png`, `index.html`, `sitemap.xml` — **generated output**. Don't hand-edit these; run the build instead.
 
 ## Local development
 
 ```bash
 npm install
-npm run build   # regenerates index.html, img/, fonts/, sitemap.xml, og-image-v3.jpg, 404.html
+npm run build   # regenerates index.html, img/, fonts/, sitemap.xml, og-image-v4.jpg, 404.html
 npm run serve   # serves the built site at http://localhost:8123
 ```
 

@@ -10,10 +10,8 @@ function hero() {
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1>
-          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</span>
-          <span class="hero-line">Before Haas, I was an aerospace engineer who identified government research and development opportunities and led technical proposals that won $1.45M in Defense Department and NASA contracts. Beyond the proposals, I developed engineering software and analyses for government and commercial customers.</span>
-        </h1>
+        <h1 class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</h1>
+        <p class="hero-line">Before Haas, I was an aerospace engineer who developed engineering software and analyses for government and commercial customers. Beyond that work, I identified government research and development opportunities and led technical proposals that won $1.45M in Defense Department and NASA contracts.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>

@@ -6,10 +6,10 @@ module.exports = {
   scholarUrl: 'https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en',
   siteUrl: 'https://abhinav-sharma.com',
 
-  defaultTitle: 'Abhinav Sharma | Aerospace PhD, Berkeley Haas MBA ’28',
+  defaultTitle: 'Abhinav Sharma | Berkeley Haas MBA ’28, Aerospace PhD',
   defaultDescription:
     'Berkeley Haas MBA candidate and aerospace PhD moving defense and dual-use technology into adoption. Led proposals that won $1.45M in DoD and NASA contracts.',
-  ogImageAlt: 'Abhinav Sharma. Aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
+  ogImageAlt: 'Abhinav Sharma. Berkeley Haas MBA ’28, Aerospace PhD. Defense and dual-use technology.',
 
   credibilityItems: [
     'Aerospace PhD, University of Michigan',

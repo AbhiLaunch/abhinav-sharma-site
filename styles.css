@@ -368,17 +368,16 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 176px; }
 }
-.hero h1 {
+/* Line 1 is the h1 and line 2 a paragraph; they share one look on purpose. */
+.hero .hero-line {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.45;
   max-width: 40rem;
-}
-.hero-line {
-  display: block;
+  margin: 0;
   text-wrap: balance;
 }
-.hero-line + .hero-line { margin-top: 0.7em; }
+.hero .hero-line + .hero-line { margin-top: 0.7em; }
 .hero-actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .hero .btn-secondary { border-color: var(--band-line); color: var(--on-band); }
 .hero .btn-secondary:hover { border-color: var(--band-accent); }
@@ -394,8 +393,8 @@ img { max-width: 100%; display: block; }
   font-size: 0.82rem;
 }
 .hero-credibility li:not(:last-child)::after {
-  content: '·';
-  margin-left: 8px;
+  content: '|';
+  margin-left: 10px;
   color: var(--band-accent);
 }
 
