@@ -8,13 +8,13 @@ module.exports = {
 
   defaultTitle: 'Abhinav Sharma | Aerospace PhD, Berkeley Haas MBA ’28',
   defaultDescription:
-    'Berkeley Haas MBA candidate and aerospace PhD, moving defense and dual-use technology into real use. Led proposals behind $1.45M in defense and NASA contracts.',
+    'Berkeley Haas MBA candidate and aerospace PhD moving defense and dual-use technology into adoption. Led proposals that won $1.45M in DoD and NASA contracts.',
   ogImageAlt: 'Abhinav Sharma. Aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
 
   credibilityItems: [
     'Aerospace PhD, University of Michigan',
-    'Helicopters, airplanes, drones, and advanced air mobility',
-    'Computer simulation, aircraft flight control, and design optimization',
+    'Helicopters, fixed-wing aircraft, UAVs, and advanced air mobility',
+    'Simulation, flight control, and multidisciplinary design optimization',
   ],
 
   // Absolute anchors so the links also work from the 404 page.

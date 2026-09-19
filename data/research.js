@@ -11,7 +11,7 @@ module.exports = [
     venue: 'AIAA Aviation Forum',
     year: 2025,
     href: 'https://doi.org/10.2514/6.2025-3626',
-    note: 'From the Army STTR on morphing UAVs, written with our university collaborators. One of five finalists for the best student paper award from the multidisciplinary design optimization committee of AIAA, the American Institute of Aeronautics and Astronautics.',
+    note: 'Drawn from the Army STTR on morphing UAVs and written with our university collaborators. One of five finalists for the best student paper award from the multidisciplinary design optimization committee of AIAA, the American Institute of Aeronautics and Astronautics.',
   },
   {
     title: 'MDO Framework for DEP Aircraft Design Including Flight Controls',
@@ -19,7 +19,7 @@ module.exports = [
     venue: 'AIAA SciTech Forum',
     year: 2023,
     href: 'https://doi.org/10.2514/6.2023-1364',
-    note: 'From the NASA SBIR Phase I on designing the aircraft and its flight controls together. MDO stands for multidisciplinary design optimization; DEP for distributed electric propulsion.',
+    note: 'Drawn from the NASA SBIR Phase I on designing the aircraft and its flight controls together. MDO and DEP abbreviate multidisciplinary design optimization and distributed electric propulsion, respectively.',
   },
   {
     title: 'Helicopter Shipboard Landing Simulation Including Wind, Deck Motion and Dynamic Ground Effect',
@@ -27,6 +27,6 @@ module.exports = [
     venue: '<em>Journal of Aircraft</em>',
     year: 2021,
     href: 'https://doi.org/10.2514/1.C035973',
-    note: 'From my PhD research on helicopter shipboard operations.',
+    note: 'Drawn from my PhD research on helicopter shipboard operations.',
   },
 ];

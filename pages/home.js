@@ -12,7 +12,7 @@ function hero() {
       <div class="hero-copy">
         <h1>
           <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</span>
-          <span class="hero-line">Before Haas, I was an aerospace engineer. I identified government research and development (R&amp;D) opportunities and led the technical proposals that won $1.45M in Defense Department and NASA contracts. I also developed engineering software and analyses for government and commercial customers.</span>
+          <span class="hero-line">Before Haas, I was an aerospace engineer who identified government research and development opportunities and led technical proposals that won $1.45M in Defense Department and NASA contracts. Beyond the proposals, I developed engineering software and analyses for government and commercial customers.</span>
         </h1>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
@@ -49,15 +49,15 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'I&rsquo;ve worked on the early stages of government R&amp;D: finding opportunities, shaping the technical idea, and leading proposals. At Haas I&rsquo;m learning the other half: how new technology is bought, built into existing systems, and put into service.',
+      body: 'My work has centered on the early stages of government R&amp;D: finding opportunities, shaping the technical concept, and leading proposals. At Haas I&rsquo;m studying the stages that follow: how new technology is acquired, integrated into existing systems, and fielded.',
     },
     {
       title: 'Autonomous and complex physical systems',
-      body: 'I&rsquo;ve worked on how aircraft move and are controlled, and on optimizing the designs of aircraft that change shape. I want to work where that meets autonomy, software, and real-world use.',
+      body: 'My technical background is in aircraft flight dynamics and control, and in optimizing morphing designs. I want to carry that into autonomy, software, and systems used outside the lab.',
     },
     {
       title: 'Technology transition and adoption',
-      body: 'With my team at Berkeley, I completed National Science Foundation I-Corps customer discovery: interviewing customers, guided by program mentors, to test our assumptions. That work showed me how much stands between a working technology and adoption.',
+      body: 'With my team at Berkeley, I completed customer discovery through the National Science Foundation&rsquo;s I-Corps program, interviewing customers to test our assumptions under the guidance of program mentors. It taught me how much separates a working technology from its adoption.',
     },
   ];
   return `
@@ -66,7 +66,7 @@ function currentDirection() {
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'The questions I keep returning to: who is responsible for the problem, who pays to solve it, and what practical barriers remain.',
+      dek: 'The questions I keep returning to: who owns the problem, who pays to solve it, and what stands between a prototype and a purchase order.',
     })}
     <div class="theme-grid">
       ${themes
