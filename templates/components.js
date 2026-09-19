@@ -1,3 +1,7 @@
+// The arrow is decorative; screen readers get the words instead.
+const EXTERNAL_ARROW = '<span aria-hidden="true"> &nearr;</span>';
+const NEW_TAB_NOTE = '<span class="visually-hidden"> (opens in a new tab)</span>';
+
 function sectionHead({ kicker, title, dek }) {
   return `
 <div class="section-head">
@@ -10,7 +14,7 @@ function sectionHead({ kicker, title, dek }) {
 function projectCard(project) {
   const links = project.links.length
     ? `<p class="project-card-links">${project.links
-        .map((l) => `<a href="${l.href}" target="_blank" rel="noopener">${l.label} &nearr;</a>`)
+        .map((l) => `<a href="${l.href}" target="_blank" rel="noopener">${l.label}${EXTERNAL_ARROW}${NEW_TAB_NOTE}</a>`)
         .join('')}</p>`
     : '';
   return `
@@ -31,10 +35,10 @@ function projectCard(project) {
 function researchItem(item) {
   return `
 <li class="research-item">
-  <h3><a href="${item.href}" target="_blank" rel="noopener">${item.title}</a></h3>
+  <h3><a href="${item.href}" target="_blank" rel="noopener">${item.title}${NEW_TAB_NOTE}</a></h3>
   <p class="research-meta">${item.authors} &middot; ${item.venue} &middot; ${item.year}</p>
   <p class="research-note">${item.note}</p>
 </li>`;
 }
 
-module.exports = { sectionHead, projectCard, researchItem };
+module.exports = { sectionHead, projectCard, researchItem, EXTERNAL_ARROW, NEW_TAB_NOTE };

@@ -1,4 +1,5 @@
 const site = require('../data/site');
+const { NEW_TAB_NOTE } = require('./components');
 
 const heroMotifSvg = `
 <svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -23,7 +24,7 @@ function header() {
 <header class="site-header">
   <div class="nav-inner">
     <a class="nav-brand" href="/">${site.name}</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
@@ -42,11 +43,11 @@ function footer() {
       <p>${site.contactIntro}</p>
       <div class="footer-links">
         <a href="mailto:${site.email}">${site.email}</a>
-        <a href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}</a>
+        <a href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
       </div>
     </div>
     <div class="footer-meta">
-      <span>&copy; <span id="year"></span> ${site.name}</span>
+      <span>&copy; <span id="year">${new Date().getFullYear()}</span> ${site.name}</span>
     </div>
   </div>
 </footer>`;
@@ -113,10 +114,12 @@ function layout({
 <meta property="og:description" content="${safeDescription}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${site.siteUrl}${ogImage}">
+<meta property="og:image:alt" content="${escapeHtml(site.ogImageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${fullTitle}">
 <meta name="twitter:description" content="${safeDescription}">
 <meta name="twitter:image" content="${site.siteUrl}${ogImage}">
+<meta name="twitter:image:alt" content="${escapeHtml(site.ogImageAlt)}">
 
 <script type="application/ld+json">${JSON.stringify(personJsonLd())}</script>
 </head>

@@ -2,7 +2,7 @@ const site = require('../data/site');
 const projects = require('../data/projects');
 const research = require('../data/research');
 const { layout, heroMotifSvg } = require('../templates/layout');
-const { sectionHead, projectCard, researchItem } = require('../templates/components');
+const { sectionHead, projectCard, researchItem, EXTERNAL_ARROW, NEW_TAB_NOTE } = require('../templates/components');
 
 function hero() {
   return `
@@ -15,7 +15,7 @@ function hero() {
         <h1>I&rsquo;ve spent my career on complex aerospace systems, much of it for the Navy and Army.</h1>
         <p class="hero-sub">Now at Berkeley Haas, I&rsquo;m focused on what it takes to move advanced defense and dual-use technology from R&amp;D into real-world use.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-primary" href="#projects">View projects</a>
           <a class="btn btn-secondary" href="#contact">Get in touch</a>
         </div>
       </div>
@@ -36,7 +36,7 @@ function selectedProjects() {
 <section class="section" id="projects">
   <div class="section-inner">
     ${sectionHead({
-      kicker: 'Selected Projects',
+      kicker: 'Selected projects',
       title: 'Aerospace R&amp;D funded by the Army, Navy, NASA, and industry',
     })}
     <div class="project-grid">
@@ -49,15 +49,15 @@ function selectedProjects() {
 function currentDirection() {
   const themes = [
     {
-      title: 'Defense &amp; dual-use technology',
+      title: 'Defense and dual-use technology',
       body: 'Navy- and Army-sponsored R&amp;D is my starting point. I&rsquo;m learning how defense capabilities are developed, bought, integrated, and fielded.',
     },
     {
-      title: 'Autonomous &amp; complex physical systems',
-      body: 'My work has been on complex physical systems: flight dynamics, controls, and adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
+      title: 'Autonomous and complex physical systems',
+      body: 'I&rsquo;ve worked on flight dynamics, controls, and adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
     },
     {
-      title: 'Technology transition &amp; adoption',
+      title: 'Technology transition and adoption',
       body: 'I completed NSF I-Corps customer discovery with a team at Berkeley, testing assumptions against real customers before deciding what to build.',
     },
   ];
@@ -82,8 +82,8 @@ function background() {
   return `
 <section class="section">
   <div class="section-inner background-copy">
-    ${sectionHead({ kicker: 'Background', title: 'From aerospace R&amp;D to Haas' })}
-    <p>I did my PhD at the University of Michigan on helicopter&ndash;ship operations, with support from the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm, leading technical proposal development for NASA and DoD programs, leading the team that took an Army STTR from Phase I to Phase II, and winning two commercial clients through cold outreach.</p>
+    ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
+    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm. There I led technical proposal development for NASA and DoD programs, advanced an Army STTR from Phase I to Phase II with a team of six, and won two commercial clients through cold outreach.</p>
     <p>Engineering gave me depth on the technical side. Haas is helping with the rest: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>
@@ -99,7 +99,7 @@ function selectedResearch() {
       ${research.map(researchItem).join('\n      ')}
     </ul>
     <p class="research-links">
-      <a class="trajectory-link" href="${site.scholarUrl}" target="_blank" rel="noopener">All publications on Google Scholar &nearr;</a>
+      <a class="trajectory-link" href="${site.scholarUrl}" target="_blank" rel="noopener">All publications on Google Scholar${EXTERNAL_ARROW}${NEW_TAB_NOTE}</a>
     </p>
   </div>
 </section>`;
