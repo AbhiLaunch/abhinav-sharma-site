@@ -12,6 +12,7 @@ const ROOT = __dirname;
 // path (used for sitemap + canonical URLs) -> output file, relative to repo root
 const pages = [
   { outFile: 'index.html', urlPath: '/', render: () => require('./pages/home').render() },
+  { outFile: '404.html', urlPath: '/404.html', sitemap: false, render: () => require('./pages/not-found').render() },
 ];
 
 function writePage(page) {
@@ -22,8 +23,10 @@ function writePage(page) {
 }
 
 function writeSitemap() {
+  const lastmod = new Date().toISOString().slice(0, 10);
   const urls = pages
-    .map((p) => `  <url><loc>${site.siteUrl}${p.urlPath}</loc></url>`)
+    .filter((p) => p.sitemap !== false)
+    .map((p) => `  <url><loc>${site.siteUrl}${p.urlPath}</loc><lastmod>${lastmod}</lastmod></url>`)
     .join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);

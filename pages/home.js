@@ -13,7 +13,7 @@ function hero() {
       <div class="hero-copy">
         <p class="hero-name">Abhinav Sharma</p>
         <h1>I&rsquo;ve built simulation and optimization tools for helicopters, advanced air mobility (AAM) aircraft, and morphing UAVs.</h1>
-        <p class="hero-sub">Now at Berkeley Haas, I&rsquo;m focused on what it takes to move advanced defense and dual-use technology from R&amp;D into real-world use.</p>
+        <p class="hero-sub">Now at Berkeley Haas, I&rsquo;m focused on what it takes to move defense and dual-use technology from R&amp;D into real-world use.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View projects</a>
           <a class="btn btn-secondary" href="#contact">Get in touch</a>
@@ -37,7 +37,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected projects',
-      title: 'Aerospace R&amp;D funded by the Army, Navy, NASA, and industry',
+      title: 'What I&rsquo;ve built and led',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -58,7 +58,7 @@ function currentDirection() {
     },
     {
       title: 'Technology transition and adoption',
-      body: 'I completed NSF I-Corps customer discovery with a team at Berkeley, testing assumptions against real customers before deciding what to build.',
+      body: 'I completed NSF I-Corps customer discovery with a team at Berkeley, interviewing customers to test assumptions.',
     },
   ];
   return `
@@ -83,7 +83,7 @@ function background() {
 <section class="section">
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
-    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm. There I led technical proposal development for NASA and DoD programs and advanced an Army STTR from Phase I to Phase II with a team of six. I also won two commercial clients through cold outreach.</p>
+    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm.</p>
     <p>Engineering gave me depth on the technical side. Haas is helping with the rest: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>

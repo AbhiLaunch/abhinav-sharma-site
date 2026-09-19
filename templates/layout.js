@@ -60,18 +60,30 @@ function personJsonLd() {
     name: site.name,
     description: site.defaultDescription,
     url: site.siteUrl,
+    '@id': `${site.siteUrl}/#person`,
+    image: `${site.siteUrl}/img/portrait.webp`,
+    jobTitle: 'MBA Candidate',
     alumniOf: [
-      { '@type': 'CollegeOrUniversity', name: 'University of Michigan' },
-      { '@type': 'CollegeOrUniversity', name: 'University of Iowa' },
+      { '@type': 'CollegeOrUniversity', name: 'University of Michigan', url: 'https://umich.edu' },
+      { '@type': 'CollegeOrUniversity', name: 'University of Iowa', url: 'https://uiowa.edu' },
     ],
     affiliation: {
       '@type': 'CollegeOrUniversity',
       name: 'UC Berkeley Haas School of Business',
+      url: 'https://haas.berkeley.edu',
     },
     memberOf: {
       '@type': 'Organization',
       name: 'Vertical Flight Society',
+      url: 'https://vtol.org',
     },
+    knowsAbout: [
+      'Rotorcraft flight dynamics',
+      'Multidisciplinary design optimization',
+      'Modeling and simulation',
+      'Flight controls',
+      'Advanced air mobility',
+    ],
     sameAs: [site.linkedinUrl, site.scholarUrl],
   };
 }
@@ -87,9 +99,10 @@ function layout({
   path = '/',
   title,
   description = site.defaultDescription,
-  ogImage = '/og-image.jpg',
+  ogImage = '/og-image-v2.jpg',
   bodyHtml,
   bodyClass = '',
+  noindex = false,
 }) {
   const fullTitle = title ? `${title} — ${site.name}` : site.defaultTitle;
   const canonical = `${site.siteUrl}${path}`;
@@ -101,7 +114,7 @@ function layout({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${fullTitle}</title>
-<meta name="description" content="${safeDescription}">
+<meta name="description" content="${safeDescription}">${noindex ? '\n<meta name="robots" content="noindex">' : ''}
 <link rel="canonical" href="${canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -110,10 +123,13 @@ function layout({
 <link rel="stylesheet" href="/styles.css">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="${site.name}">
 <meta property="og:title" content="${fullTitle}">
 <meta property="og:description" content="${safeDescription}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${site.siteUrl}${ogImage}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="${escapeHtml(site.ogImageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${fullTitle}">

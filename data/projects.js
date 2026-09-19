@@ -51,7 +51,7 @@ module.exports = [
       // VERIFY: sbir.gov returns 403 to automated checks, so this link (supplied
       // by me) hasn't been confirmed to resolve to contract 80NSSC21C0396.
       { label: 'NASA SBIR award', href: 'https://www.sbir.gov/node/2116627' },
-      { label: 'AIAA SciTech 2023 paper', href: 'https://arc.aiaa.org/doi/10.2514/6.2023-1364' },
+      { label: 'AIAA SciTech 2023 paper', href: 'https://doi.org/10.2514/6.2023-1364' },
     ],
   },
   {

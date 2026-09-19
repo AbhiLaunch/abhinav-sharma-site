@@ -11,14 +11,14 @@ module.exports = [
     venue: 'AIAA Aviation Forum',
     year: 2025,
     href: 'https://doi.org/10.2514/6.2025-3626',
-    note: 'From the Army STTR on morphing UAVs. Named a finalist for the AIAA MDO Technical Committee’s best student paper award.',
+    note: 'From the Army STTR on morphing UAVs. The paper was a finalist for the AIAA MDO Technical Committee’s best student paper award.',
   },
   {
     title: 'MDO Framework for DEP Aircraft Design Including Flight Controls',
     authors: '<strong>Abhinav Sharma</strong>, Jeffrey D. Keller, Joaquim R.&nbsp;R.&nbsp;A. Martins',
     venue: 'AIAA SciTech Forum',
     year: 2023,
-    href: 'https://arc.aiaa.org/doi/10.2514/6.2023-1364',
+    href: 'https://doi.org/10.2514/6.2023-1364',
     note: 'From the NASA SBIR Phase I on designing the aircraft and the controller together.',
   },
   {

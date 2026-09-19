@@ -6,11 +6,10 @@ module.exports = {
   scholarUrl: 'https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en',
   siteUrl: 'https://abhinav-sharma.com',
 
-  defaultTitle: 'Abhinav Sharma | Aerospace Engineer, Berkeley Haas MBA Candidate',
+  defaultTitle: 'Abhinav Sharma | Aerospace Engineering PhD, Berkeley Haas MBA ’28',
   defaultDescription:
-    'Aerospace PhD who spent six years leading proposals for NASA and DoD programs, now a Berkeley Haas MBA candidate focused on defense and dual-use technology.',
-  ogImageAlt:
-    'Abhinav Sharma, aerospace engineer and Berkeley Haas MBA candidate focused on defense and dual-use technology.',
+    'Aerospace PhD (rotorcraft, simulation, optimization) with six years of NASA- and DoD-funded R&D. Now at Berkeley Haas, focused on defense and dual-use technology.',
+  ogImageAlt: 'Abhinav Sharma. Aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
 
   credibilityItems: [
     'PhD in aerospace engineering',
@@ -26,5 +25,5 @@ module.exports = {
   ],
 
   contactIntro:
-    'I’d like to hear from people building defense and dual-use companies, the investors who back them, and anyone working to move technology into government use. I’m based in the San Francisco Bay Area.',
+    'I’d like to hear from people building defense and dual-use companies, the investors who back them, and anyone working to move technology into government use. A short note on what you’re working on is enough to start. I’m based in the San Francisco Bay Area.',
 };
