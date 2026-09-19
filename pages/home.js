@@ -15,8 +15,7 @@ function hero() {
           <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, focused on what it takes for promising defense and dual-use technology to move from R&amp;D into adoption and scale.</span>
         </h1>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>
       </div>
       <figure class="hero-portrait">
@@ -62,12 +61,12 @@ function currentDirection() {
     },
   ];
   return `
-<section class="section section-alt">
+<section class="section section-alt" id="direction">
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'The question I keep returning to is what it takes for promising technology to move from R&amp;D into adoption and scale: who owns the problem, who pays for it, and where the practical barriers remain.',
+      dek: 'The questions I keep returning to: who owns the problem, who pays for it, and where the practical barriers remain.',
     })}
     <div class="theme-grid">
       ${themes
@@ -78,21 +77,9 @@ function currentDirection() {
 </section>`;
 }
 
-function background() {
-  return `
-<section class="section">
-  <div class="section-inner background-copy">
-    ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
-    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then worked in aerospace R&amp;D and business development on rotorcraft, fixed-wing aircraft, UAVs, and advanced air mobility concepts for government and commercial customers.</p>
-    <p>Engineering and business development taught me the technical and government-contracting sides. At Haas I&rsquo;m aiming to broaden my perspective on the rest: customer need, product, organization, and what it takes for promising technology to move into adoption and scale.</p>
-    <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
-  </div>
-</section>`;
-}
-
 function selectedResearch() {
   return `
-<section class="section section-alt" id="research">
+<section class="section" id="research">
   <div class="section-inner">
     ${sectionHead({ kicker: 'Research', title: 'Selected papers' })}
     <ul class="research-list">
@@ -106,7 +93,7 @@ function selectedResearch() {
 }
 
 function render() {
-  const body = [hero(), selectedProjects(), currentDirection(), background(), selectedResearch()].join('\n');
+  const body = [hero(), selectedProjects(), currentDirection(), selectedResearch()].join('\n');
   return layout({
     path: '/',
     bodyHtml: body,

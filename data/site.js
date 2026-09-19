@@ -8,22 +8,25 @@ module.exports = {
 
   defaultTitle: 'Abhinav Sharma | Co-Founder, Aerospace PhD, Berkeley Haas MBA ’28',
   defaultDescription:
-    'Co-founder and Berkeley Haas MBA candidate with an aerospace PhD. Led proposals and technical work behind $1.45M in DoD and NASA contracts; focused on moving defense and dual-use technology into adoption.',
+    'Co-founder and Berkeley Haas MBA candidate with an aerospace PhD, focused on defense and dual-use technology. Led proposals behind $1.45M in DoD and NASA contracts.',
   ogImageAlt: 'Abhinav Sharma. Co-Founder, aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
 
   credibilityItems: [
-    'Business development and customer engagement in aerospace',
-    'Army STTR taken from Phase I to Phase II',
     'Rotorcraft, fixed-wing, UAVs, and advanced air mobility',
+    'Modeling and simulation, flight dynamics and controls, design optimization',
     'Aerospace PhD, Berkeley Haas MBA ’28',
   ],
 
+  // Absolute anchors so the links also work from the 404 page.
   nav: [
-    { label: 'Projects', href: '#projects' },
-    { label: 'Research', href: '#research' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Projects', href: '/#projects' },
+    { label: 'Direction', href: '/#direction' },
+    { label: 'Research', href: '/#research' },
+    { label: 'Contact', href: '/#contact' },
   ],
 
   contactIntro:
-    'I value conversations with people working through these problems firsthand: founders building defense and dual-use companies, the investors who back them, and anyone working to move technology into government use. I’m keen to learn where unmet needs and practical barriers remain. A short note on what you’re working on is enough to start. I’m based in the San Francisco Bay Area.',
+    'I value conversations with people working through these problems firsthand: founders in defense and dual-use, the investors who back them, and anyone moving technology into government use. A short note on what you’re working on is enough to start.',
+
+  affiliation: 'Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee',
 };

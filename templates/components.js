@@ -26,7 +26,7 @@ function projectCard(project) {
     ${links}
   </div>
   <figure class="project-card-media">
-    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 861px) 50vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
+    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 1200px) 566px, (min-width: 861px) 47vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
     <figcaption>${project.caption}</figcaption>
   </figure>
 </article>`;

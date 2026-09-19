@@ -7,9 +7,6 @@ function header() {
 <header class="site-header">
   <div class="nav-inner">
     <a class="nav-brand" href="/">${site.name}</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
       ${site.nav.map((item) => `<a href="${item.href}">${item.label}</a>`).join('\n      ')}
     </nav>
@@ -28,6 +25,7 @@ function footer() {
         <a href="mailto:${site.email}">${site.email}</a>
         <a href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
       </div>
+      <p class="footer-affiliation">${site.affiliation}</p>
     </div>
     <div class="footer-meta">
       <span>&copy; <span id="year">${new Date().getFullYear()}</span> ${site.name}</span>
@@ -96,12 +94,14 @@ function layout({
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#00274c">
 <title>${fullTitle}</title>
 <meta name="description" content="${safeDescription}">${noindex ? '\n<meta name="robots" content="noindex">' : ''}
-<link rel="canonical" href="${canonical}">
+${noindex ? '' : `<link rel="canonical" href="${canonical}">`}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 
@@ -120,7 +120,7 @@ function layout({
 <meta name="twitter:image" content="${site.siteUrl}${ogImage}">
 <meta name="twitter:image:alt" content="${escapeHtml(site.ogImageAlt)}">
 
-<script type="application/ld+json">${JSON.stringify(personJsonLd())}</script>
+${noindex ? '' : `<script type="application/ld+json">${JSON.stringify(personJsonLd())}</script>`}
 </head>
 <body class="${bodyClass}">
 ${header()}

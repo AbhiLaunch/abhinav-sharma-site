@@ -1,12 +1,11 @@
 const site = require('../data/site');
 const { layout } = require('../templates/layout');
-const { sectionHead } = require('../templates/components');
 
 function render() {
   const body = `
 <section class="section">
   <div class="section-inner background-copy">
-    ${sectionHead({ kicker: '404', title: 'That page doesn&rsquo;t exist' })}
+    <div class="section-head"><p class="kicker">404</p><h1 class="section-title">That page doesn&rsquo;t exist</h1></div>
     <p>It may have moved, or it may never have existed. <a href="/">Go to the home page</a> or write to <a href="mailto:${site.email}">${site.email}</a>.</p>
   </div>
 </section>`;

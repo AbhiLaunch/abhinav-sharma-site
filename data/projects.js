@@ -11,12 +11,12 @@ module.exports = [
     title: 'Adaptive Aircraft Design and Optimization',
     contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
     summary:
-      'I identified the opportunity, led the technical proposals end to end, and assembled and led a six-person industry&ndash;academic team with Prof. Joaquim Martins of the University of Michigan. Through customer engagement and iteration with Army Research Laboratory researchers, I guided the technical work and developed the Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight, while Prof. Martins&rsquo;s group developed their own software. We delivered the framework to ARL for its morphing-aircraft research, and the program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
+      'I identified the opportunity, led the technical proposals end to end, and assembled and led a six-person industry&ndash;academic team with Prof. Joaquim Martins of the University of Michigan. Working with Army Research Laboratory researchers, I guided the technical work and developed our Python optimization framework for morphing UAVs, whose wings change shape in flight; Prof. Martins&rsquo;s group developed their own software. We delivered ours to ARL, and the program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
     image: {
       base: 'morphing-aircraft',
       alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
     },
-    caption: 'AI-generated illustration of a morphing-wing UAV whose trajectory and structure are optimized together. Not a specific aircraft.',
+    caption: 'AI-generated illustration of a morphing-wing UAV, not a specific aircraft.',
     links: [
       { label: 'Phase I award', href: 'https://www.sbir.gov/awards/198170' },
       { label: 'Phase II award', href: 'https://www.sbir.gov/awards/209552' },
@@ -28,12 +28,12 @@ module.exports = [
     title: 'Simulating Helicopter Operations at Sea',
     contextLine: 'University of Michigan · PhD · Office of Naval Research–supported · 2017–2019',
     summary:
-      'Landing a helicopter on a moving ship means contending with deck motion and the ship’s turbulent airwake. I developed a simulation that couples both with flight dynamics, controls, landing-gear dynamics, and ground effect. I applied it to UH-60A shipboard operations and published the work in the <em>Journal of Aircraft</em> with Ashwani Padthe and Peretz Friedmann.',
+      'Landing a helicopter on a moving ship means contending with deck motion and the ship’s turbulent airwake. I developed a simulation coupling both with flight dynamics and controls, applied it to UH-60A shipboard operations, and published it in the <em>Journal of Aircraft</em> with Ashwani Padthe and Peretz Friedmann.',
     image: {
       base: 'uh60-ship-landing',
       alt: 'AI-generated illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar.',
     },
-    caption: 'AI-generated illustration of a UH-60 over a moving flight deck. The UH-60A is the aircraft I modeled in my research.',
+    caption: 'AI-generated illustration of a UH-60 over a moving flight deck. The UH-60A is the aircraft I modeled.',
     links: [{ label: 'Journal of Aircraft paper', href: 'https://doi.org/10.2514/1.C035973' }],
   },
   {
@@ -48,9 +48,7 @@ module.exports = [
     },
     caption: 'AI-generated illustration of a distributed electric propulsion concept, not a specific aircraft.',
     links: [
-      // VERIFY: sbir.gov returns 403 to automated checks, so this link (supplied
-      // by me) hasn't been confirmed to resolve to contract 80NSSC21C0396.
-      { label: 'NASA SBIR award', href: 'https://www.sbir.gov/node/2116627' },
+      { label: 'NASA SBIR award', href: 'https://www.sbir.gov/awards/189431' },
       { label: 'AIAA SciTech 2023 paper', href: 'https://doi.org/10.2514/6.2023-1364' },
     ],
   },
