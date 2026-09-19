@@ -12,7 +12,7 @@ function hero() {
       <div class="hero-copy">
         <p class="hero-name">Abhinav Sharma</p>
         <h1>
-          <span class="hero-line">I found the opportunities, led the team and the technical proposals that won Continuum Dynamics $1.45M in NASA and DoD contracts, and developed the software and analyses myself.</span>
+          <span class="hero-line">At Continuum Dynamics, I identified the opportunities, led the team and the technical proposals that won $1.45M in NASA and DoD contracts, and stayed hands-on developing the software and analyses.</span>
           <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, working to get defense technology from R&amp;D to the warfighter.</span>
         </h1>
         <div class="hero-actions">
@@ -38,7 +38,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected projects',
-      title: 'What I&rsquo;ve won, led, and built',
+      title: 'Awards won, teams led, software built',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -51,7 +51,7 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'I know how defense R&amp;D gets funded and won: finding the opportunity, shaping the concept, and winning the award. I&rsquo;m now working on how capabilities are bought, integrated, and fielded.',
+      body: 'I&rsquo;ve spent six years on the front end of government-funded R&amp;D: finding the opportunity, shaping the concept, and competing for the award. I&rsquo;m now working on the other half: how capabilities are bought, integrated, and fielded.',
     },
     {
       title: 'Autonomous and complex physical systems',
@@ -59,7 +59,7 @@ function currentDirection() {
     },
     {
       title: 'Technology transition and adoption',
-      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, interviewing customers to test assumptions.',
+      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors as we interviewed customers to test assumptions.',
     },
   ];
   return `
@@ -68,7 +68,7 @@ function currentDirection() {
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'I&rsquo;ve worked the contractor side of government R&amp;D. What I want to work on now is what happens after it: who owns the problem, who pays for it, and why good technology stalls.',
+      dek: 'After six years of government-funded R&amp;D, the question I keep returning to is who owns the problem, who pays for it, and why good technology stalls.',
     })}
     <div class="theme-grid">
       ${themes
@@ -85,7 +85,7 @@ function background() {
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
     <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm, in R&amp;D and business development.</p>
-    <p>Engineering and business development gave me depth on the technical and government-contracting sides. I&rsquo;m at Haas to close the gap between developing defense technology and getting it to the people who use it: customer need, product, organization, and adoption.</p>
+    <p>Engineering and business development taught me the technical and government-contracting sides. I&rsquo;m at Haas to close the gap between developing defense technology and getting it to the people who use it: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>
 </section>`;
