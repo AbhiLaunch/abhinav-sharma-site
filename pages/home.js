@@ -12,7 +12,7 @@ function hero() {
       <div class="hero-copy">
         <p class="hero-name">Abhinav Sharma</p>
         <h1>
-          <span class="hero-line">At my previous company, I identified the opportunities, led the team and the technical proposals that won $1.45M in NASA and DoD contracts, and guided the technical work end to end while developing the company&rsquo;s software.</span>
+          <span class="hero-line">I identified government R&amp;D opportunities, led the technical proposals that won $1.45M in DoD and NASA contracts, and developed engineering software and analyses for government and commercial customers.</span>
           <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, working to get defense technology from R&amp;D to the warfighter.</span>
         </h1>
         <div class="hero-actions">
@@ -84,7 +84,7 @@ function background() {
 <section class="section">
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
-    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm, in R&amp;D and business development.</p>
+    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at an applied aerospace R&amp;D firm, in R&amp;D and business development.</p>
     <p>Engineering and business development taught me the technical and government-contracting sides. I&rsquo;m at Haas to close the gap between developing defense technology and getting it to the people who use it: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>

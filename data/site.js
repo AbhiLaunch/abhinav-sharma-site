@@ -14,7 +14,7 @@ module.exports = {
   credibilityItems: [
     'Six years in R&amp;D and business development',
     'Army STTR taken from Phase I to Phase II',
-    'Research funded by the Navy, Army, and NASA',
+    'Rotorcraft, UAVs, and advanced air mobility',
     'Aerospace PhD, Berkeley Haas MBA ’28',
   ],
 
