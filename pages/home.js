@@ -50,12 +50,12 @@ function currentDirection() {
       body: 'My work has centered on the early stages of government R&amp;D: finding opportunities, shaping the technical concept, and leading proposals. At Haas I&rsquo;m studying the stages that follow: how new technology is acquired, integrated into existing systems, and fielded.',
     },
     {
-      title: 'Autonomous and complex physical systems',
-      body: 'My technical background is in aircraft flight dynamics and control, and in optimizing morphing designs. I want to carry that into autonomy, software, and systems used outside the lab.',
+      title: 'Customer discovery and adoption',
+      body: 'With my team at Berkeley, I completed customer discovery through the National Science Foundation&rsquo;s I-Corps program, interviewing customers to test our assumptions under the guidance of program mentors. It taught me how much separates a working technology from its adoption.',
     },
     {
-      title: 'Technology transition and adoption',
-      body: 'With my team at Berkeley, I completed customer discovery through the National Science Foundation&rsquo;s I-Corps program, interviewing customers to test our assumptions under the guidance of program mentors. It taught me how much separates a working technology from its adoption.',
+      title: 'Autonomy and integrated design',
+      body: 'The NASA and Army projects shared one idea: design the parts of an aircraft that interact together, not one at a time. I want to bring that approach to autonomous systems, where software and hardware are inseparable.',
     },
   ];
   return `
