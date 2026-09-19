@@ -14,7 +14,7 @@ module.exports = {
   credibilityItems: [
     'PhD in aerospace engineering',
     'Research funded by the Navy, Army, and NASA',
-    'Led NASA and DoD proposals that won ~$1.45M',
+    'Army STTR taken from Phase I to Phase II',
     'Berkeley Haas MBA ’28',
   ],
 

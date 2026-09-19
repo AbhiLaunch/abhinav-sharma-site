@@ -1,23 +1,6 @@
 const site = require('../data/site');
 const { NEW_TAB_NOTE } = require('./components');
 
-const heroMotifSvg = `
-<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-  <defs>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="currentColor" stop-opacity="0"/>
-      <stop offset="50%" stop-color="currentColor" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <g stroke="var(--band-line)" stroke-width="1">
-    ${Array.from({ length: 9 })
-      .map((_, i) => `<line x1="0" y1="${i * 60}" x2="1200" y2="${i * 60}"/>`)
-      .join('')}
-  </g>
-  <path d="M-20 420 C 260 420, 340 120, 640 90 C 860 68, 980 140, 1220 60" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round" opacity="0.55"/>
-</svg>`;
-
 function header() {
   return `
 <a class="skip-link" href="#main">Skip to content</a>
@@ -151,4 +134,4 @@ ${footer()}
 `;
 }
 
-module.exports = { layout, heroMotifSvg };
+module.exports = { layout };
