@@ -391,11 +391,10 @@ img { max-width: 100%; display: block; }
   .hero-portrait { order: -1; width: 176px; }
 }
 .hero h1 {
-  font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+  font-size: 0.8rem;
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -0.005em;
-  max-width: 46ch;
+  line-height: 1.6;
+  max-width: 34rem;
 }
 .hero-line {
   display: block;
@@ -424,7 +423,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 640px) {
   .hero { padding: 88px 20px 64px; }
-  .hero h1 { font-size: 1.15rem; }
+  .hero h1 { font-size: 0.95rem; }
 }
 
 /* ==========================================================================
