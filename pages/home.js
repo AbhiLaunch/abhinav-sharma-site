@@ -10,7 +10,6 @@ function hero() {
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="hero-name">Abhinav Sharma</p>
         <h1>
           <span class="hero-line">I identified government R&amp;D opportunities, led the technical proposals that won $1.45M in DoD and NASA contracts, and developed engineering software and analyses for government and commercial customers.</span>
           <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, focused on what it takes for promising defense and dual-use technology to move from R&amp;D into adoption and scale.</span>
@@ -21,7 +20,7 @@ function hero() {
         </div>
       </div>
       <figure class="hero-portrait">
-        <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 400w, /img/portrait.webp 624w" sizes="(min-width: 861px) 340px, 176px" alt="Abhinav Sharma" width="624" height="780" fetchpriority="high">
+        <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 400w, /img/portrait.webp 624w" sizes="(min-width: 861px) 320px, 176px" alt="Abhinav Sharma" width="624" height="780" fetchpriority="high">
       </figure>
     </div>
     <ul class="hero-credibility">

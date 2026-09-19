@@ -358,7 +358,7 @@ img { max-width: 100%; display: block; }
    ========================================================================== */
 .hero {
   position: relative;
-  padding: 108px 24px 88px;
+  padding: 80px 24px 60px;
   overflow: hidden;
   background: var(--band);
   color: var(--on-band);
@@ -373,8 +373,8 @@ img { max-width: 100%; display: block; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 56px;
   align-items: center;
 }
 .hero-portrait { margin: 0; }
@@ -390,17 +390,12 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 176px; }
 }
-.hero-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--on-band-soft);
-  margin-bottom: 18px;
-}
 .hero h1 {
-  font-size: clamp(1.6rem, 2.7vw, 2.25rem);
-  line-height: 1.25;
+  font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.35;
   letter-spacing: -0.005em;
-  max-width: 36ch;
+  max-width: 46ch;
 }
 .hero-line {
   display: block;
@@ -429,7 +424,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 640px) {
   .hero { padding: 88px 20px 64px; }
-  .hero h1 { font-size: 1.35rem; }
+  .hero h1 { font-size: 1.15rem; }
 }
 
 /* ==========================================================================
