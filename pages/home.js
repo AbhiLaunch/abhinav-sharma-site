@@ -57,7 +57,7 @@ function currentDirection() {
     },
     {
       title: 'Technology transition and adoption',
-      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors, interviewing customers to test our assumptions. That work showed me how much stands between a working technology and adoption.',
+      body: 'With my team at Berkeley, I completed NSF I-Corps customer discovery, guided by program mentors, interviewing customers to test our assumptions. That work showed me how much stands between a working technology and adoption.',
     },
   ];
   return `

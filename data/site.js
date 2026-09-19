@@ -6,10 +6,10 @@ module.exports = {
   scholarUrl: 'https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en',
   siteUrl: 'https://abhinav-sharma.com',
 
-  defaultTitle: 'Abhinav Sharma | Co-Founder, Aerospace PhD, Berkeley Haas MBA ’28',
+  defaultTitle: 'Abhinav Sharma | Aerospace PhD, Berkeley Haas MBA ’28',
   defaultDescription:
-    'Co-founder and Berkeley Haas MBA candidate with an aerospace PhD, focused on defense and dual-use technology. Led proposals behind $1.45M in DoD and NASA contracts.',
-  ogImageAlt: 'Abhinav Sharma. Co-Founder, aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
+    'Berkeley Haas MBA candidate with an aerospace PhD, moving defense and dual-use technology into adoption. Led proposals behind $1.45M in DoD and NASA contracts.',
+  ogImageAlt: 'Abhinav Sharma. Aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
 
   credibilityItems: [
     'Aerospace PhD, University of Michigan',
