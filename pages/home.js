@@ -38,7 +38,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected projects',
-      title: 'Awards won, teams led, software built',
+      title: 'Government and commercial work, from proposal to delivery',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -51,7 +51,7 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'I&rsquo;ve spent six years on the front end of government-funded R&amp;D: finding the opportunity, shaping the concept, and competing for the award. I&rsquo;m now working on the other half: how capabilities are bought, integrated, and fielded.',
+      body: 'I&rsquo;ve worked on the front end of government R&amp;D: identifying opportunities, shaping the technical concept, and leading proposals. At Haas I&rsquo;m learning the other half: how capabilities are bought, integrated, and fielded.',
     },
     {
       title: 'Autonomous and complex physical systems',
@@ -59,7 +59,7 @@ function currentDirection() {
     },
     {
       title: 'Technology transition and adoption',
-      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors as we interviewed customers to test assumptions.',
+      body: 'As a co-founder, I completed NSF I-Corps customer discovery with my team at Berkeley, guided by program mentors, interviewing customers to test our assumptions. I&rsquo;m still learning what stands between a working technology and adoption.',
     },
   ];
   return `
@@ -68,7 +68,7 @@ function currentDirection() {
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'After six years of government-funded R&amp;D, the question I keep returning to is who owns the problem, who pays for it, and why good technology stalls.',
+      dek: 'The question I keep returning to is what it takes for promising technology to move from R&amp;D into adoption and scale: who owns the problem, who pays for it, and where the practical barriers remain.',
     })}
     <div class="theme-grid">
       ${themes
@@ -84,8 +84,8 @@ function background() {
 <section class="section">
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
-    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at an applied aerospace R&amp;D firm, in R&amp;D and business development.</p>
-    <p>Engineering and business development taught me the technical and government-contracting sides. I&rsquo;m at Haas to close the gap between developing defense technology and getting it to the people who use it: customer need, product, organization, and adoption.</p>
+    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then worked in aerospace R&amp;D and business development on rotorcraft, fixed-wing aircraft, UAVs, and advanced air mobility concepts for government and commercial customers.</p>
+    <p>Engineering and business development taught me the technical and government-contracting sides. At Haas I&rsquo;m aiming to broaden my perspective on the rest: customer need, product, organization, and what it takes for promising technology to move into adoption and scale.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>
 </section>`;

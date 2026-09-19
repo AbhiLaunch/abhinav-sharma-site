@@ -11,7 +11,7 @@ module.exports = [
     venue: 'AIAA Aviation Forum',
     year: 2025,
     href: 'https://doi.org/10.2514/6.2025-3626',
-    note: 'From the Army STTR on morphing UAVs, written with our university collaborators. The paper was a finalist for the AIAA MDO Technical Committee’s best student paper award.',
+    note: 'From the Army STTR on morphing UAVs, written with our university collaborators. One of five finalists for the AIAA MDO Technical Committee’s best student paper award.',
   },
   {
     title: 'MDO Framework for DEP Aircraft Design Including Flight Controls',
