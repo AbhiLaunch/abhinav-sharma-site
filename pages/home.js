@@ -11,7 +11,7 @@ function hero() {
     <div class="hero-grid">
       <div class="hero-copy">
         <h1>
-          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use (military and civilian) technology out of research labs and into wide use.</span>
+          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</span>
           <span class="hero-line">Before Haas, I was an aerospace engineer. I identified government research and development (R&amp;D) opportunities and led the technical proposals that won $1.45M in Defense Department and NASA contracts. I also developed engineering software and analyses for government and commercial customers.</span>
         </h1>
         <div class="hero-actions">
