@@ -26,7 +26,4 @@ module.exports = {
   ],
 
   contactIntro:
-    'I’d like to hear from founders in defense and dual-use, the investors who back them, and anyone moving technology into government use. A short note on what you’re working on is enough to start.',
-
-  affiliation: 'Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee',
-};
+    'I’d like to hear from founders in defense and dual-use, the investors who back them, and anyone moving technology into government use. A short note on what you’re working on is enough to start.',};

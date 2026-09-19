@@ -24,9 +24,7 @@ function footer() {
       <div class="footer-links">
         <a href="mailto:${site.email}">${site.email}</a>
         <a href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
-      </div>
-      <p class="footer-affiliation">${site.affiliation}</p>
-    </div>
+      </div>    </div>
     <div class="footer-meta">
       <span>&copy; <span id="year">${new Date().getFullYear()}</span> ${site.name}</span>
     </div>
@@ -52,11 +50,6 @@ function personJsonLd() {
       '@type': 'CollegeOrUniversity',
       name: 'UC Berkeley Haas School of Business',
       url: 'https://haas.berkeley.edu',
-    },
-    memberOf: {
-      '@type': 'Organization',
-      name: 'Vertical Flight Society',
-      url: 'https://vtol.org',
     },
     knowsAbout: [
       'Rotorcraft flight dynamics',

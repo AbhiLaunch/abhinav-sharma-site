@@ -580,14 +580,7 @@ figcaption {
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 18px;
-}
-.footer-contact .footer-affiliation {
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  color: var(--on-band-faint);
-  max-width: none;
-  margin: 0 0 var(--space-4);
+  margin-bottom: var(--space-4);
 }
 .footer-meta {
   display: flex;

@@ -11,7 +11,7 @@ module.exports = [
     title: 'Adaptive Aircraft Design and Optimization',
     contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
     summary:
-      'A morphing UAV changes wing shape in flight, and with it the airflow, structural loads, and best flight path. All three must be optimized together. I identified the opportunity, led the technical proposals end to end, and assembled and led a six-person industry&ndash;academic team with Prof. Joaquim Martins (University of Michigan). With Army Research Laboratory researchers, I guided the technical work and developed our Python optimization framework; Prof. Martins&rsquo;s group developed their own software. We delivered ours to ARL, and the program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
+      'A morphing UAV is a drone whose wings change shape in flight. Changing shape alters airflow, structural loads, and the best flight path, and each affects the others. I identified the opportunity, led the proposals end to end, and assembled and led a six-person industry&ndash;academic team with Prof. Joaquim Martins (University of Michigan). With Army Research Laboratory (ARL) researchers, I guided the technical work and developed our Python framework that optimizes all three together. Prof. Martins&rsquo;s group built separate software; both were delivered to ARL. The program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
     image: {
       base: 'morphing-aircraft',
       alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
