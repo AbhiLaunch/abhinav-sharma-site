@@ -12,7 +12,7 @@ function hero() {
       <div class="hero-copy">
         <p class="hero-name">Abhinav Sharma</p>
         <h1>
-          <span class="hero-line">At Continuum Dynamics, I identified the opportunities, led the team and the technical proposals that won $1.45M in NASA and DoD contracts, and guided the technical work end to end while developing the company&rsquo;s software.</span>
+          <span class="hero-line">At my previous company, I identified the opportunities, led the team and the technical proposals that won $1.45M in NASA and DoD contracts, and guided the technical work end to end while developing the company&rsquo;s software.</span>
           <span class="hero-line">I&rsquo;m also a co-founder and Berkeley Haas MBA candidate, working to get defense technology from R&amp;D to the warfighter.</span>
         </h1>
         <div class="hero-actions">

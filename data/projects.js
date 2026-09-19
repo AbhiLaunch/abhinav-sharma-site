@@ -11,7 +11,7 @@ module.exports = [
     title: 'Adaptive Aircraft Design and Optimization',
     contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
     summary:
-      'I identified the opportunity, assembled and led a six-person team across Continuum Dynamics and the University of Michigan alongside Prof. Joaquim Martins, and led the technical proposals end to end. I guided the technical work across both teams and developed Continuum Dynamics&rsquo; Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight, through iteration with Army Research Laboratory researchers. We delivered it to ARL for its morphing-aircraft research, and the program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
+      'I identified the opportunity, assembled and led a six-person industry&ndash;academic team alongside Prof. Joaquim Martins of the University of Michigan, and led the technical proposals end to end. I guided the technical work across the team and developed the Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight, through iteration with Army Research Laboratory researchers. We delivered it to ARL for its morphing-aircraft research, and the program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
     image: {
       base: 'morphing-aircraft',
       alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
@@ -57,9 +57,9 @@ module.exports = [
   {
     order: 3,
     title: 'Advanced Air Mobility Modeling and Simulation',
-    contextLine: 'Continuum Dynamics · Research and commercial',
+    contextLine: 'Commercial and research work',
     summary:
-      'I did aircraft design and performance analyses for multiple clients. I also brought two advanced air mobility startups to Continuum Dynamics through networking and cold outreach, ~$100K in new revenue (clients unnamed).',
+      'I did aircraft design and performance analyses for multiple clients. I also brought on two advanced air mobility startups as clients through networking and cold outreach, ~$100K in new revenue (clients unnamed).',
     image: {
       base: 'aam-tiltwing',
       alt: 'AI-generated illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing.',

@@ -8,7 +8,7 @@ module.exports = {
 
   defaultTitle: 'Abhinav Sharma | Co-Founder, Aerospace PhD, Berkeley Haas MBA ’28',
   defaultDescription:
-    'At Continuum Dynamics, led proposals and technical work behind $1.45M in NASA and DoD contracts. Aerospace PhD, Berkeley Haas MBA candidate, and co-founder focused on defense and dual-use technology.',
+    'Co-founder and Berkeley Haas MBA candidate with an aerospace PhD. Led proposals and technical work behind $1.45M in NASA and DoD contracts; focused on defense and dual-use technology.',
   ogImageAlt: 'Abhinav Sharma. Co-Founder, aerospace PhD, Berkeley Haas MBA ’28. Defense and dual-use technology.',
 
   credibilityItems: [
