@@ -8,13 +8,13 @@
 module.exports = [
   {
     order: 1,
-    title: 'Adaptive Aircraft Design and Optimization',
-    contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
+    title: 'Designing Aircraft That Change Shape in Flight',
+    contextLine: 'U.S. Army small-business research award (STTR) · Phase I to Phase II · 2022–2025',
     summary:
       'A morphing UAV is a drone whose wings change shape in flight. Changing shape alters airflow, structural loads, and the best flight path, and each affects the others. I identified the opportunity, led the proposals end to end, and assembled and led a six-person industry&ndash;academic team with Prof. Joaquim Martins (University of Michigan). With Army Research Laboratory (ARL) researchers, I guided the technical work and developed our Python framework that optimizes all three together. Prof. Martins&rsquo;s group built separate software; both were delivered to ARL. The program advanced from a ~$173K Phase I to a ~$1.15M Phase II.',
     image: {
       base: 'morphing-aircraft',
-      alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
+      alt: 'AI-generated illustration of a morphing drone with faint outlines of other wing shapes along a dashed orange flight path.',
     },
     caption: 'AI-generated illustration of a morphing-wing UAV, not a specific aircraft.',
     links: [
@@ -28,23 +28,23 @@ module.exports = [
     title: 'Simulating Helicopter Operations at Sea',
     contextLine: 'University of Michigan · PhD · Office of Naval Research–supported · 2017–2019',
     summary:
-      'Landing a helicopter on a moving ship means contending with deck motion and the ship’s turbulent airwake. I developed a simulation that couples both with flight dynamics and controls, applied it to UH-60A shipboard operations, and published it in the <em>Journal of Aircraft</em> with Ashwani Padthe and Peretz Friedmann.',
+      'Landing a helicopter on a moving ship is hard: the deck moves and the ship stirs up turbulent air. I developed a simulation that combines both with how the helicopter flies and is controlled, and applied it to UH-60A shipboard operations. I published it in the <em>Journal of Aircraft</em> with Ashwani Padthe and Peretz Friedmann.',
     image: {
       base: 'uh60-ship-landing',
-      alt: 'AI-generated illustration of a UH-60 helicopter hovering over a moving ship’s stern flight deck, viewed from the hangar.',
+      alt: 'AI-generated illustration of a UH-60 helicopter hovering over the flight deck at the back of a moving ship, viewed from the hangar.',
     },
     caption: 'AI-generated illustration of a UH-60 over a moving flight deck. The UH-60A is the aircraft I modeled.',
     links: [{ label: 'Journal of Aircraft paper', href: 'https://doi.org/10.2514/1.C035973' }],
   },
   {
     order: 2,
-    title: 'Designing the Aircraft and the Controller Together',
-    contextLine: 'NASA SBIR Phase I · 2021',
+    title: 'Designing the Aircraft and Its Flight Controls Together',
+    contextLine: 'NASA small-business research award (SBIR) · Phase I · 2021',
     summary:
-      'Designers often address flight-control requirements after the airframe is largely fixed. Our approach was to treat flight controls as part of the design from the start, using multidisciplinary design optimization (MDO) on an aircraft with distributed electric propulsion (DEP). As principal investigator, I led the technical proposal that won this competitive NASA SBIR Phase I (~$125K), carried out the technical work, and published it as first author with Prof. Joaquim Martins and Jeffrey Keller.',
+      'Designers often add flight controls, which steer the aircraft, after its body and wings are set. We treated controls as part of the design from the start, using design optimization on an aircraft with distributed electric propulsion (electric propellers spread along the wing). As principal investigator, I led the technical proposal that won this competitive NASA SBIR Phase I (~$125K). I also did the technical work and published it as first author with Prof. Joaquim Martins and Jeffrey Keller.',
     image: {
       base: 'dep-aircraft',
-      alt: 'AI-generated illustration of a distributed electric propulsion aircraft on approach, with eight leading-edge propellers and white slipstream lines over the wing.',
+      alt: 'AI-generated illustration of an aircraft with eight electric propellers along the front edge of the wing, coming in to land, with white lines showing airflow over the wing.',
     },
     caption: 'AI-generated illustration of a distributed electric propulsion concept, not a specific aircraft.',
     links: [
@@ -57,12 +57,12 @@ module.exports = [
     title: 'Advanced Air Mobility Modeling and Simulation',
     contextLine: 'Commercial and research work',
     summary:
-      'I delivered aircraft design and performance analyses for multiple clients. Through networking and cold outreach, I also closed two new (unnamed) advanced air mobility clients, adding ~$100K in new revenue.',
+      'I delivered aircraft design and performance analyses for multiple clients. Through networking and cold outreach, I also won two new (unnamed) clients in advanced air mobility (new kinds of aircraft), adding ~$100K in new revenue.',
     image: {
       base: 'aam-tiltwing',
-      alt: 'AI-generated illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing.',
+      alt: 'AI-generated illustration of an aircraft with six propellers whose wing tilts as it shifts from hovering to forward flight, with lines showing airflow over the wing.',
     },
-    caption: 'AI-generated illustration of a tiltwing concept, not a specific aircraft.',
+    caption: 'AI-generated illustration of a tiltwing concept (a wing that tilts to switch between hovering and flying forward), not a specific aircraft.',
     links: [],
   },
 ];

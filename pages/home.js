@@ -11,8 +11,8 @@ function hero() {
     <div class="hero-grid">
       <div class="hero-copy">
         <h1>
-          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</span>
-          <span class="hero-line">Before Haas, I was an aerospace engineer who identified government R&amp;D opportunities, led the technical proposals that won $1.45M in DoD and NASA contracts, and developed engineering software and analyses for government and commercial customers.</span>
+          <span class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use (military and civilian) technology out of research labs and into wide use.</span>
+          <span class="hero-line">Before Haas, I was an aerospace engineer. I identified government research and development (R&amp;D) opportunities and led the technical proposals that won $1.45M in Defense Department and NASA contracts. I also developed engineering software and analyses for government and commercial customers.</span>
         </h1>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
@@ -49,15 +49,15 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'I&rsquo;ve worked on the front end of government R&amp;D: identifying opportunities, shaping the technical concept, and leading proposals. At Haas I&rsquo;m learning the other half: how capabilities are bought, integrated, and fielded.',
+      body: 'I&rsquo;ve worked on the early stages of government R&amp;D: finding opportunities, shaping the technical idea, and leading proposals. At Haas I&rsquo;m learning the other half: how new technology is bought, built into existing systems, and put into service.',
     },
     {
       title: 'Autonomous and complex physical systems',
-      body: 'I&rsquo;ve worked on flight dynamics, controls, and design optimization for adaptive aircraft. I want to work where those meet autonomy, software, and real-world deployment.',
+      body: 'I&rsquo;ve worked on how aircraft move and are controlled, and on optimizing the designs of aircraft that change shape. I want to work where that meets autonomy, software, and real-world use.',
     },
     {
       title: 'Technology transition and adoption',
-      body: 'With my team at Berkeley, I completed NSF I-Corps customer discovery, guided by program mentors, interviewing customers to test our assumptions. That work showed me how much stands between a working technology and adoption.',
+      body: 'With my team at Berkeley, I completed National Science Foundation I-Corps customer discovery: interviewing customers, guided by program mentors, to test our assumptions. That work showed me how much stands between a working technology and adoption.',
     },
   ];
   return `
@@ -66,7 +66,7 @@ function currentDirection() {
     ${sectionHead({
       kicker: 'Current direction',
       title: 'What happens after the technology works',
-      dek: 'The questions I keep returning to: who owns the problem, who pays for it, and where the practical barriers remain.',
+      dek: 'The questions I keep returning to: who is responsible for the problem, who pays to solve it, and what practical barriers remain.',
     })}
     <div class="theme-grid">
       ${themes
