@@ -55,7 +55,7 @@ function currentDirection() {
     },
     {
       title: 'Autonomy and integrated design',
-      body: 'The NASA and Army projects shared one idea: design the parts of an aircraft that interact together, not one at a time. I want to bring that approach to autonomous systems, where software and hardware are inseparable.',
+      body: 'The NASA and Army projects shared one idea: design the parts of an aircraft that interact together simultaneously, not one at a time. I want to bring that approach to autonomous systems, where software and hardware are inseparable.',
     },
   ];
   return `
