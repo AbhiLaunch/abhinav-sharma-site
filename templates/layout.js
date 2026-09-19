@@ -28,7 +28,6 @@ function header() {
     </button>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
       ${site.nav.map((item) => `<a href="${item.href}">${item.label}</a>`).join('\n      ')}
-      <a class="nav-resume" href="${site.resumeHref}">Resume</a>
     </nav>
   </div>
 </header>`;
@@ -48,7 +47,6 @@ function footer() {
     </div>
     <div class="footer-meta">
       <span>&copy; <span id="year"></span> ${site.name}</span>
-      <a href="${site.resumeHref}">Résumé (PDF)</a>
     </div>
   </div>
 </footer>`;

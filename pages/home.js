@@ -37,7 +37,7 @@ function selectedProjects() {
   <div class="section-inner">
     ${sectionHead({
       kicker: 'Selected Projects',
-      title: 'Aerospace R&amp;D, from concept to customer',
+      title: 'Aerospace R&amp;D funded by the Army, Navy, NASA, and industry',
     })}
     <div class="project-grid">
       ${ordered.map(projectCard).join('\n      ')}
@@ -54,7 +54,7 @@ function currentDirection() {
     },
     {
       title: 'Autonomous &amp; complex physical systems',
-      body: 'Where complex physical systems, autonomy, and software meet real-world deployment.',
+      body: 'My work has been on complex physical systems: flight dynamics, controls, and adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
     },
     {
       title: 'Technology transition &amp; adoption',
@@ -83,7 +83,8 @@ function background() {
 <section class="section">
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace R&amp;D to Haas' })}
-    <p>I have a PhD in aerospace engineering from the University of Michigan, then spent six years at Continuum Dynamics leading government-funded R&amp;D, including an Army STTR I took from Phase I to Phase II. Now at Berkeley Haas, I&rsquo;m building out the rest of the toolkit: strategy, commercialization, and how organizations adopt new technology.</p>
+    <p>I did my PhD at the University of Michigan on helicopter&ndash;ship operations, with support from the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm, leading technical proposal development for NASA and DoD programs, leading the team that took an Army STTR from Phase I to Phase II, and winning two commercial clients through cold outreach.</p>
+    <p>Engineering gave me depth on the technical side. Haas is helping with the rest: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>
 </section>`;
@@ -93,7 +94,7 @@ function selectedResearch() {
   return `
 <section class="section section-alt" id="research">
   <div class="section-inner">
-    ${sectionHead({ kicker: 'Selected Research', title: 'Publications' })}
+    ${sectionHead({ kicker: 'Research', title: 'Selected papers' })}
     <ul class="research-list">
       ${research.map(researchItem).join('\n      ')}
     </ul>

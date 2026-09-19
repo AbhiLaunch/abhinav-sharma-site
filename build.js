@@ -30,17 +30,6 @@ function writeSitemap() {
   console.log('  ✓ sitemap.xml');
 }
 
-function copyResume() {
-  const src = path.join(ROOT, 'assets', 'Abhinav_Sharma_Resume.pdf');
-  const dest = path.join(ROOT, 'resume.pdf');
-  if (fs.existsSync(src)) {
-    fs.copyFileSync(src, dest);
-    console.log('  ✓ resume.pdf');
-  } else {
-    console.warn('  ! assets/Abhinav_Sharma_Resume.pdf not found — resume.pdf not written');
-  }
-}
-
 async function main() {
   console.log('Images:');
   await buildImages();
@@ -50,8 +39,6 @@ async function main() {
   await buildFaviconPng();
   console.log('OG image:');
   await buildOgImage();
-  console.log('Resume:');
-  copyResume();
   console.log('Pages:');
   pages.forEach(writePage);
   writeSitemap();
