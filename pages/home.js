@@ -50,11 +50,11 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'Navy- and Army-sponsored R&amp;D is my starting point. I&rsquo;m learning how defense capabilities are developed, bought, integrated, and fielded.',
+      body: 'My starting point is R&amp;D funded by the Navy and Army. I&rsquo;m learning how defense capabilities are developed, bought, integrated, and fielded.',
     },
     {
       title: 'Autonomous and complex physical systems',
-      body: 'I&rsquo;ve worked on flight dynamics, controls, and adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
+      body: 'I&rsquo;ve worked on flight dynamics, controls, and design optimization for adaptive aircraft. I&rsquo;m interested in where those meet autonomy, software, and real-world deployment.',
     },
     {
       title: 'Technology transition and adoption',
@@ -83,7 +83,7 @@ function background() {
 <section class="section">
   <div class="section-inner background-copy">
     ${sectionHead({ kicker: 'Background', title: 'From aerospace engineering to Haas' })}
-    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm. There I led technical proposal development for NASA and DoD programs, advanced an Army STTR from Phase I to Phase II with a team of six, and won two commercial clients through cold outreach.</p>
+    <p>I did my PhD at the University of Michigan on shipboard helicopter operations, supported by the Office of Naval Research. I then spent six years at Continuum Dynamics, an applied aerospace R&amp;D firm. There I led technical proposal development for NASA and DoD programs and advanced an Army STTR from Phase I to Phase II with a team of six. I also won two commercial clients through cold outreach.</p>
     <p>Engineering gave me depth on the technical side. Haas is helping with the rest: customer need, product, organization, and adoption.</p>
     <p class="background-affiliation">Elected member, Vertical Flight Society Modeling &amp; Simulation Technical Committee</p>
   </div>

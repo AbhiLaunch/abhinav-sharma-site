@@ -11,7 +11,7 @@ module.exports = [
     title: 'Adaptive Aircraft Design and Optimization',
     contextLine: 'U.S. Army STTR · Phase I to Phase II · 2022–2025',
     summary:
-      'I led the technical proposals and a six-person team across Continuum Dynamics and the University of Michigan. We took an Army STTR from a ~$173K Phase I to a ~$1.15M Phase II, producing an optimization framework for morphing UAVs, whose wings change shape in flight. I developed the Python framework with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research.',
+      'I led the technical proposals and a six-person team across Continuum Dynamics and the University of Michigan. The Army STTR grew from a ~$173K Phase I to a ~$1.15M Phase II and produced a Python optimization framework for morphing UAVs, aircraft whose wings change shape in flight. I developed it with Army Research Laboratory researchers and delivered it to ARL for its morphing-aircraft research.',
     image: {
       base: 'morphing-aircraft',
       alt: 'AI-generated illustration of a twin-boom morphing UAV with ghost images of alternate wing shapes along a dashed orange trajectory.',
@@ -41,7 +41,7 @@ module.exports = [
     title: 'Designing the Aircraft and the Controller Together',
     contextLine: 'NASA SBIR Phase I · 2021',
     summary:
-      'Designers often address flight-control requirements after the airframe is largely fixed. This NASA SBIR Phase I project brought them into multidisciplinary design optimization (MDO) from the start, for aircraft with distributed electric propulsion (DEP). I led the technical proposal.',
+      'Designers often address flight-control requirements after the airframe is largely fixed. This NASA SBIR Phase I project treated them as part of the design from the start, using multidisciplinary design optimization (MDO) for an aircraft with distributed electric propulsion (DEP). I led the technical proposal.',
     image: {
       base: 'dep-aircraft',
       alt: 'AI-generated illustration of a distributed electric propulsion aircraft on approach, with eight leading-edge propellers and white slipstream lines over the wing.',
@@ -59,7 +59,7 @@ module.exports = [
     title: 'Advanced Air Mobility Modeling and Simulation',
     contextLine: 'Continuum Dynamics · Research and commercial',
     summary:
-      'I approached advanced air mobility startups through networking and cold outreach and won two clients for aircraft design and performance analyses, ~$100K in new revenue for the firm (clients not named). The technical work spans flight mechanics, interactional aerodynamics, controls, and performance.',
+      'Through networking and cold outreach, I won two advanced air mobility startups as clients for aircraft design and performance analyses, ~$100K in new revenue for Continuum Dynamics (clients unnamed). The technical work spans flight mechanics, interactional aerodynamics, controls, and performance.',
     image: {
       base: 'aam-tiltwing',
       alt: 'AI-generated illustration of a six-propeller tiltwing aircraft in transition flight, with airflow streamlines over the wing.',
