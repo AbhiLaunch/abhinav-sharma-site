@@ -260,6 +260,16 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 .nav-links a:hover { color: var(--on-band); text-decoration: underline; text-decoration-color: var(--band-accent); }
+/* Contact stays reachable from every scroll position. The a.nav-cta selector
+   is deliberately more specific than .nav-links a so the label keeps navy on gold. */
+.nav-links a.nav-cta {
+  background: var(--btn-primary-bg);
+  color: var(--accent-ink);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.nav-links a.nav-cta:hover { color: var(--accent-ink); text-decoration: none; opacity: 0.88; }
 .nav-links a[aria-current] {
   color: var(--on-band);
   text-decoration: underline;
@@ -272,6 +282,7 @@ img { max-width: 100%; display: block; }
   .nav-inner { padding: 12px 20px; row-gap: 6px; }
   .nav-links { gap: 20px; }
   .nav-links a { font-size: 0.9rem; padding: 4px 0; }
+  .nav-links a.nav-cta { padding: 4px 12px; }
 }
 
 /* ==========================================================================
@@ -300,8 +311,22 @@ img { max-width: 100%; display: block; }
   max-width: 640px;
 }
 .section-title {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 2.6vw, 2rem);
+  letter-spacing: -0.015em;
   margin-bottom: 10px;
+}
+/* A hairline runs out from each section label, giving every section the same opening. */
+.section-head .kicker {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.section-head .kicker::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
 }
 .section-dek {
   color: var(--ink-soft);
@@ -366,7 +391,7 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
-  .hero-portrait { order: -1; width: 176px; }
+  .hero-portrait { order: -1; width: 152px; }
 }
 /* Line 1 is the h1 and line 2 a paragraph; they share one look on purpose. */
 .hero .hero-line {
@@ -398,8 +423,62 @@ img { max-width: 100%; display: block; }
   color: var(--band-accent);
 }
 
+/* ==========================================================================
+   Proof strip
+   ========================================================================== */
+.proof {
+  background: var(--paper-alt);
+  padding: var(--space-4) 24px var(--space-3);
+}
+.proof-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.proof-list li {
+  padding: 8px 28px 8px 24px;
+  border-left: 1px solid var(--line);
+}
+.proof-list li:first-child { padding-left: 0; border-left: 0; }
+.proof-value {
+  display: block;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--ink);
+}
+.proof-value::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--accent);
+  margin-bottom: 14px;
+}
+.proof-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.proof-note {
+  margin: var(--space-3) 0 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+@media (max-width: 860px) {
+  .proof-list { grid-template-columns: repeat(2, 1fr); row-gap: 28px; }
+  .proof-list li:nth-child(odd) { padding-left: 0; border-left: 0; }
+}
+
 @media (max-width: 640px) {
-  .hero { padding: 88px 20px 64px; }
+  .hero { padding: 56px 20px 56px; }
+  .proof { padding: var(--space-4) 20px var(--space-3); }
   .hero-credibility { flex-direction: column; gap: 4px; }
   .hero-credibility li:not(:last-child)::after { display: none; }
 }
@@ -455,7 +534,7 @@ img { max-width: 100%; display: block; }
 }
 .project-card p {
   color: var(--ink-soft);
-  font-size: 0.96rem;
+  font-size: 1rem;
   margin-bottom: 14px;
 }
 .project-card-links {
@@ -503,7 +582,7 @@ figcaption {
 }
 .theme-card p {
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* ==========================================================================
@@ -564,7 +643,8 @@ figcaption {
   margin: 0 auto;
 }
 .footer-contact h2 {
-  font-size: 1.4rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.015em;
   margin-bottom: 12px;
   color: var(--on-band);
 }
@@ -575,12 +655,14 @@ figcaption {
 }
 .footer-links {
   display: flex;
-  gap: 26px;
+  gap: 14px;
   flex-wrap: wrap;
-  font-weight: 600;
-  font-size: 1rem;
   margin-bottom: var(--space-4);
 }
+/* .site-footer a would otherwise turn the primary label gold on gold. */
+.site-footer a.btn-primary { color: var(--accent-ink); }
+.site-footer a.btn-secondary { color: var(--on-band); border-color: var(--band-line); }
+.site-footer a.btn-secondary:hover { border-color: var(--band-accent); }
 .footer-meta {
   display: flex;
   justify-content: space-between;

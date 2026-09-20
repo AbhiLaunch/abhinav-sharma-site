@@ -22,8 +22,18 @@ module.exports = {
     { label: 'Projects', href: '/#projects' },
     { label: 'Direction', href: '/#direction' },
     { label: 'Research', href: '/#research' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Contact', href: '/#contact', cta: true },
   ],
+
+  // Every figure here already appears on a project card. The award figures
+  // link to public SBIR.gov records there.
+  proofItems: [
+    { value: '$1.45M', label: 'in DoD and NASA contracts won on proposals I led' },
+    { value: '3', label: 'competitive awards: NASA SBIR Phase I, Army STTR Phases I and II' },
+    { value: '6', label: 'people on the industry&ndash;academic team I assembled and led' },
+    { value: '~$100K', label: 'in new revenue from two advanced air mobility clients I won' },
+  ],
+  proofNote: 'Award figures link to public SBIR.gov records in the project cards below.',
 
   contactIntro:
     'I’d like to hear from founders in defense and dual-use, the investors who back them, and anyone moving technology into government use. A short note on what you’re working on is enough to start.',};

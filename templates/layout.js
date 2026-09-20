@@ -8,7 +8,7 @@ function header() {
   <div class="nav-inner">
     <a class="nav-brand" href="/">${site.name}</a>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
-      ${site.nav.map((item) => `<a href="${item.href}">${item.label}</a>`).join('\n      ')}
+      ${site.nav.map((item) => `<a href="${item.href}"${item.cta ? ' class="nav-cta"' : ''}>${item.label}</a>`).join('\n      ')}
     </nav>
   </div>
 </header>`;
@@ -22,8 +22,8 @@ function footer() {
       <h2 class="section-title">Get in touch</h2>
       <p>${site.contactIntro}</p>
       <div class="footer-links">
-        <a href="mailto:${site.email}">${site.email}</a>
-        <a href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
+        <a class="btn btn-primary" href="mailto:${site.email}">${site.email}</a>
+        <a class="btn btn-secondary" href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
       </div>    </div>
     <div class="footer-meta">
       <span>&copy; <span id="year">${new Date().getFullYear()}</span> ${site.name}</span>

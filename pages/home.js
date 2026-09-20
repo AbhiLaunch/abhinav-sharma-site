@@ -27,6 +27,20 @@ function hero() {
 </section>`;
 }
 
+function proofStrip() {
+  return `
+<section class="proof" aria-label="Track record">
+  <div class="section-inner">
+    <ul class="proof-list">
+      ${site.proofItems
+        .map((p) => `<li><span class="proof-value">${p.value}</span><span class="proof-label">${p.label}</span></li>`)
+        .join('\n      ')}
+    </ul>
+    <p class="proof-note">${site.proofNote}</p>
+  </div>
+</section>`;
+}
+
 function selectedProjects() {
   const ordered = [...projects].sort((a, b) => a.order - b.order);
   return `
@@ -91,7 +105,7 @@ function selectedResearch() {
 }
 
 function render() {
-  const body = [hero(), selectedProjects(), currentDirection(), selectedResearch()].join('\n');
+  const body = [hero(), proofStrip(), selectedProjects(), currentDirection(), selectedResearch()].join('\n');
   return layout({
     path: '/',
     bodyHtml: body,
