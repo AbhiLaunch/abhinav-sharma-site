@@ -33,6 +33,7 @@
   --hero-portrait-shadow: 0 34px 50px -22px rgba(0, 8, 22, 0.75), 0 10px 18px -6px rgba(0, 8, 22, 0.4);
   --proof-card-bg: #ffffff;
   --proof-card-shadow: 0 24px 44px -26px rgba(0, 25, 55, 0.45), 0 2px 8px rgba(0, 25, 55, 0.07);
+  --proof-card-line: rgba(230, 168, 0, 0.28);
   --panel-bg: #ffffff;
   --panel-shadow: 0 1px 2px rgba(0, 25, 55, 0.05), 0 18px 34px -22px rgba(0, 25, 55, 0.34);
   --pc-bg: #ffffff;
@@ -81,6 +82,7 @@
   --hero-portrait-shadow: 0 34px 50px -22px rgba(0, 0, 0, 0.8), 0 10px 18px -6px rgba(0, 0, 0, 0.5);
   --proof-card-bg: #0f2038;
   --proof-card-shadow: 0 24px 44px -26px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --proof-card-line: rgba(255, 203, 5, 0.22);
   --panel-bg: #13294a;
   --panel-shadow: 0 18px 34px -22px rgba(0, 0, 0, 0.7);
   --pc-bg: #0d1c31;
@@ -114,6 +116,7 @@
     --hero-portrait-shadow: 0 34px 50px -22px rgba(0, 0, 0, 0.8), 0 10px 18px -6px rgba(0, 0, 0, 0.5);
     --proof-card-bg: #0f2038;
     --proof-card-shadow: 0 24px 44px -26px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.3);
+    --proof-card-line: rgba(255, 203, 5, 0.22);
     --panel-bg: #13294a;
     --panel-shadow: 0 18px 34px -22px rgba(0, 0, 0, 0.7);
     --pc-bg: #0d1c31;
@@ -510,7 +513,7 @@ img { max-width: 100%; display: block; }
   margin-top: -76px;
   padding: 32px 36px 26px;
   background: var(--proof-card-bg);
-  border: 1px solid var(--line);
+  border: 1px solid var(--proof-card-line);
   border-radius: 12px;
   box-shadow: var(--proof-card-shadow);
 }
