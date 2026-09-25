@@ -1,4 +1,3 @@
-const site = require('../data/site');
 const { layout } = require('../templates/layout');
 
 function render() {
@@ -6,7 +5,7 @@ function render() {
 <section class="section">
   <div class="section-inner background-copy">
     <div class="section-head"><p class="kicker">404</p><h1 class="section-title">That page doesn&rsquo;t exist</h1></div>
-    <p>The link may be outdated, or the address mistyped. <a href="/">Go to the home page</a> or write to <a href="mailto:${site.email}">${site.email}</a>.</p>
+    <p>The link may be outdated, or the address mistyped. <a href="/">Go to the home page</a>.</p>
   </div>
 </section>`;
   return layout({
