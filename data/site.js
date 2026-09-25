@@ -1,6 +1,5 @@
 module.exports = {
   "name": "Abhinav Sharma",
-  "email": "absharma@berkeley.edu",
   "linkedinUrl": "https://www.linkedin.com/in/ab-sharma/",
   "linkedinLabel": "LinkedIn",
   "scholarUrl": "https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en",
