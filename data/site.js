@@ -1,39 +1,40 @@
 module.exports = {
-  name: 'Abhinav Sharma',
-  email: 'absharma@berkeley.edu',
-  linkedinUrl: 'https://www.linkedin.com/in/ab-sharma/',
-  linkedinLabel: 'LinkedIn',
-  scholarUrl: 'https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en',
-  siteUrl: 'https://abhinav-sharma.com',
-
-  defaultTitle: 'Abhinav Sharma | Berkeley Haas MBA ’28, Aerospace PhD',
-  defaultDescription:
-    'Berkeley Haas MBA candidate and aerospace PhD moving defense and dual-use technology into adoption. Led proposals that won $1.45M in DoD and NASA contracts.',
-  ogImageAlt: 'Abhinav Sharma. Berkeley Haas MBA ’28, Aerospace PhD. Defense and dual-use technology.',
-
-  credibilityItems: [
-    'Aerospace PhD, University of Michigan',
-    'Helicopters, fixed-wing aircraft, UAVs, and advanced air mobility',
-    'Simulation, flight control, and multidisciplinary design optimization',
+  "name": "Abhinav Sharma",
+  "email": "absharma@berkeley.edu",
+  "linkedinUrl": "https://www.linkedin.com/in/ab-sharma/",
+  "linkedinLabel": "LinkedIn",
+  "scholarUrl": "https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en",
+  "siteUrl": "https://abhinav-sharma.com",
+  "defaultTitle": "Abhinav Sharma | Defense-Tech Founder & Aerospace Engineer",
+  "defaultDescription": "Defense-tech founder focused on autonomous systems. Aerospace PhD and Berkeley Haas MBA candidate with experience leading government R&D and delivering engineering software.",
+  "ogImageAlt": "Abhinav Sharma. Defense-tech founder. Autonomous systems · Aerospace PhD · Berkeley Haas MBA.",
+  "credibilityItems": [
+    "Aerospace PhD, University of Michigan",
+    "Helicopters, fixed-wing aircraft, UAVs, and advanced air mobility",
+    "Simulation, flight control, and multidisciplinary design optimization"
   ],
-
-  // Absolute anchors so the links also work from the 404 page.
-  nav: [
-    { label: 'Projects', href: '/#projects' },
-    { label: 'Direction', href: '/#direction' },
-    { label: 'Research', href: '/#research' },
-    { label: 'Contact', href: '/#contact', cta: true },
+  "nav": [
+    {
+      "label": "Work",
+      "href": "/#projects"
+    },
+    {
+      "label": "Focus",
+      "href": "/#direction"
+    },
+    {
+      "label": "Research",
+      "href": "/#research"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact",
+      "cta": true
+    }
   ],
-
-  // Every figure here already appears on a project card. The award figures
-  // link to public SBIR.gov records there. $1.45M is federal contract award
-  // value from proposals led (not personal earnings); the ~$100K in the
-  // expansion text is separate, unverified client revenue, so the two are
-  // never combined into one number.
-  proofHeadline: { value: '$1.45M', label: 'in NASA and Army contract awards from proposals I led' },
-  proofExpand:
-    'Three competitive awards, including an Army STTR I led, growing the funded scope from ~$173K to ~$1.15M across two phases, with a six-person team including University of Michigan researchers. I&rsquo;ve also won ~$100K in new client revenue on my own.',
-  proofNote: 'Award figures link to public SBIR.gov records in the project cards below.',
-
-  contactIntro:
-    'I’d like to hear from founders in defense and dual-use, the investors who back them, and anyone moving technology into government use. A short note on what you’re working on is enough to start.',};
+  "proofHeadline": "Led proposals that secured approximately $1.45M in NASA and Army R&D awards.",
+  "proofExpand": "I led an Army STTR program from Phase I to Phase II, assembled and led a six-person industry–academic team, and developed engineering software delivered to Army Research Laboratory. I also originated two new commercial customer engagements that generated approximately $100K in revenue.",
+  "proofNote": "Prior work at Continuum Dynamics, in collaboration with University of Michigan researchers on the Army program.",
+  "contactIntro": "I welcome conversations with military and government stakeholders, potential customers, technical partners, and fellow defense founders. A short note about the problem you’re working on and where our experience might overlap is a good place to start.",
+  "contactTitle": "Let’s discuss an operational need or a potential collaboration."
+};
