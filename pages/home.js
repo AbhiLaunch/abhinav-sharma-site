@@ -10,14 +10,14 @@ function hero() {
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1 class="hero-line">I&rsquo;m a Berkeley Haas MBA candidate working to move defense and dual-use technology from R&amp;D into adoption and scale.</h1>
-        <p class="hero-line">Before Haas, I was an aerospace engineer who developed engineering software and analyses for government and commercial customers. Beyond that work, I identified government research and development opportunities and led technical proposals that won $1.45M in Defense Department and NASA contracts.</p>
+        <h1 class="hero-title">Defense-tech founder focused on autonomous systems.</h1>
+        <p class="hero-intro">I’m Abhinav Sharma, an aerospace engineer with a PhD from the University of Michigan and an MBA underway at Berkeley Haas. My background spans simulation, flight controls, and multidisciplinary design optimization for government and commercial customers. I’m bringing that experience to building in defense technology.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>
       </div>
       <figure class="hero-portrait">
-        <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 400w, /img/portrait.webp 624w" sizes="(min-width: 861px) 320px, 176px" alt="Abhinav Sharma" width="624" height="780" fetchpriority="high">
+        <img src="/img/portrait.webp" srcset="/img/portrait-sm.webp 400w, /img/portrait.webp 624w" sizes="(min-width: 861px) 320px, 152px" alt="Abhinav Sharma" width="624" height="780" fetchpriority="high">
       </figure>
     </div>
     <ul class="hero-credibility">
@@ -32,7 +32,7 @@ function proofStrip() {
 <section class="proof" aria-label="Track record">
   <div class="section-inner">
     <div class="proof-row">
-      <p class="proof-headline"><span class="proof-value">${site.proofHeadline.value}</span><span class="proof-label">${site.proofHeadline.label}</span></p>
+      <p class="proof-headline">${site.proofHeadline}</p>
       <p class="proof-expand">${site.proofExpand}</p>
     </div>
     <p class="proof-note">${site.proofNote}</p>
@@ -46,7 +46,7 @@ function selectedProjects() {
 <section class="section" id="projects">
   <div class="section-inner">
     ${sectionHead({
-      kicker: 'Selected projects',
+      kicker: 'Selected work',
       title: 'Government, commercial, and doctoral work',
     })}
     <div class="project-grid">
@@ -57,33 +57,12 @@ function selectedProjects() {
 }
 
 function currentDirection() {
-  const themes = [
-    {
-      title: 'Defense and dual-use technology',
-      body: 'I&rsquo;ve spent my career on the front end of government R&amp;D. At Haas I&rsquo;m studying what follows: how new technology is acquired, integrated into existing systems, and fielded.',
-    },
-    {
-      title: 'Customer discovery and adoption',
-      body: 'With my team at Berkeley, I completed customer discovery through the National Science Foundation&rsquo;s I-Corps program, interviewing customers to test our assumptions under the guidance of program mentors. It taught me how much separates a working technology from its adoption.',
-    },
-    {
-      title: 'Autonomy and integrated design',
-      body: 'The NASA and Army projects shared one idea: design the parts of an aircraft that interact together simultaneously, not one at a time. I want to bring that approach to autonomous systems, where software and hardware are inseparable.',
-    },
-  ];
   return `
-<section class="section section-alt" id="direction">
+<section class="section section-alt background-copy" id="direction">
   <div class="section-inner">
-    ${sectionHead({
-      kicker: 'Current direction',
-      title: 'What happens after the technology works',
-      dek: 'The questions I keep returning to: who owns the problem, who pays to solve it, and what stands between a prototype and a purchase order.',
-    })}
-    <div class="theme-grid">
-      ${themes
-        .map((t) => `<div class="theme-card"><h3>${t.title}</h3><p>${t.body}</p></div>`)
-        .join('\n      ')}
-    </div>
+    ${sectionHead({ kicker: 'Current focus', title: 'Understanding the need is part of the engineering.' })}
+    <p>I’m focused on autonomous systems for defense and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
+    <p>My engineering experience taught me to work across disciplines. Customer engagement taught me that the boundaries of the problem can change. At Haas, I’m developing the business perspective to connect those decisions with how technology is funded, acquired, and put to use.</p>
   </div>
 </section>`;
 }
