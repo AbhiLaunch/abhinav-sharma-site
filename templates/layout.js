@@ -22,8 +22,7 @@ function footer() {
       <h2 class="section-title">${site.contactTitle}</h2>
       <p>${site.contactIntro}</p>
       <div class="footer-links">
-        <a class="btn btn-primary" href="mailto:${site.email}">${site.email}</a>
-        <a class="btn btn-secondary" href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
+        <a class="btn btn-primary" href="${site.linkedinUrl}" target="_blank" rel="noopener">${site.linkedinLabel}${NEW_TAB_NOTE}</a>
       </div>    </div>
     <div class="footer-meta">
       <span>&copy; <span id="year">${new Date().getFullYear()}</span> ${site.name}</span>
