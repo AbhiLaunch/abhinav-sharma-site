@@ -26,13 +26,13 @@ module.exports = {
   ],
 
   // Every figure here already appears on a project card. The award figures
-  // link to public SBIR.gov records there.
-  proofItems: [
-    { value: '$1.45M', label: 'in DoD and NASA contracts won on proposals I led' },
-    { value: '3', label: 'competitive awards: NASA SBIR Phase I, Army STTR Phases I and II' },
-    { value: '6', label: 'people on the industry&ndash;academic team I assembled and led' },
-    { value: '~$100K', label: 'in new revenue from two advanced air mobility clients I won' },
-  ],
+  // link to public SBIR.gov records there. $1.45M is federal contract award
+  // value from proposals led (not personal earnings); the ~$100K in the
+  // expansion text is separate, unverified client revenue, so the two are
+  // never combined into one number.
+  proofHeadline: { value: '$1.45M', label: 'in DoD and NASA contracts won on proposals I led' },
+  proofExpand:
+    'Three competitive awards, including an Army STTR I led from a ~$173K Phase I to a ~$1.15M Phase II, with a six-person team including University of Michigan researchers. I&rsquo;ve also won ~$100K in new client revenue on my own.',
   proofNote: 'Award figures link to public SBIR.gov records in the project cards below.',
 
   contactIntro:

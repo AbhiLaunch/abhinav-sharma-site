@@ -31,11 +31,10 @@ function proofStrip() {
   return `
 <section class="proof" aria-label="Track record">
   <div class="section-inner">
-    <ul class="proof-list">
-      ${site.proofItems
-        .map((p) => `<li><span class="proof-value">${p.value}</span><span class="proof-label">${p.label}</span></li>`)
-        .join('\n      ')}
-    </ul>
+    <div class="proof-row">
+      <p class="proof-headline"><span class="proof-value">${site.proofHeadline.value}</span><span class="proof-label">${site.proofHeadline.label}</span></p>
+      <p class="proof-expand">${site.proofExpand}</p>
+    </div>
     <p class="proof-note">${site.proofNote}</p>
   </div>
 </section>`;
