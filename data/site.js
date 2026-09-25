@@ -30,9 +30,9 @@ module.exports = {
   // value from proposals led (not personal earnings); the ~$100K in the
   // expansion text is separate, unverified client revenue, so the two are
   // never combined into one number.
-  proofHeadline: { value: '$1.45M', label: 'in DoD and NASA contracts won on proposals I led' },
+  proofHeadline: { value: '$1.45M', label: 'in NASA and Army contract awards from proposals I led' },
   proofExpand:
-    'Three competitive awards, including an Army STTR I led from a ~$173K Phase I to a ~$1.15M Phase II, with a six-person team including University of Michigan researchers. I&rsquo;ve also won ~$100K in new client revenue on my own.',
+    'Three competitive awards, including an Army STTR I led, growing the funded scope from ~$173K to ~$1.15M across two phases, with a six-person team including University of Michigan researchers. I&rsquo;ve also won ~$100K in new client revenue on my own.',
   proofNote: 'Award figures link to public SBIR.gov records in the project cards below.',
 
   contactIntro:

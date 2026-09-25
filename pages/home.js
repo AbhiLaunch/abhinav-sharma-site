@@ -60,7 +60,7 @@ function currentDirection() {
   const themes = [
     {
       title: 'Defense and dual-use technology',
-      body: 'My work has centered on the early stages of government R&amp;D: finding opportunities, shaping the technical concept, and leading proposals. At Haas I&rsquo;m studying the stages that follow: how new technology is acquired, integrated into existing systems, and fielded.',
+      body: 'I&rsquo;ve spent my career on the front end of government R&amp;D. At Haas I&rsquo;m studying what follows: how new technology is acquired, integrated into existing systems, and fielded.',
     },
     {
       title: 'Customer discovery and adoption',

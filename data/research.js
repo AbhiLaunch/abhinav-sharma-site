@@ -19,7 +19,7 @@ module.exports = [
     venue: 'AIAA SciTech Forum',
     year: 2023,
     href: 'https://doi.org/10.2514/6.2023-1364',
-    note: 'Drawn from the NASA SBIR Phase I on designing the aircraft and its flight controls together. MDO and DEP abbreviate multidisciplinary design optimization and distributed electric propulsion, respectively.',
+    note: 'Drawn from the NASA SBIR Phase I on coupling airframe and control-law design. MDO and DEP abbreviate multidisciplinary design optimization and distributed electric propulsion, respectively.',
   },
   {
     title: 'Helicopter Shipboard Landing Simulation Including Wind, Deck Motion and Dynamic Ground Effect',
