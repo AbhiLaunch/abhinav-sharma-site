@@ -7,7 +7,7 @@ function sectionHead({ kicker, title, dek }) {
 <div class="section-head">
   ${kicker ? `<p class="kicker">${kicker}</p>` : ''}
   <h2 class="section-title">${title}</h2>
-  ${dek ? `<p class="section-dek">${dek}</p>` : ''}
+${dek ? `  <p class="section-dek">${dek}</p>` : ''}
 </div>`;
 }
 
@@ -22,11 +22,11 @@ function projectCard(project) {
   <div class="project-card-body">
     <p class="project-card-context">${project.contextLine}</p>
     <h3>${project.title}</h3>
-    <p>${project.summary}</p>
+    ${project.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('\n    ')}
     ${links}
   </div>
   <figure class="project-card-media">
-    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="(min-width: 1200px) 566px, (min-width: 861px) 47vw, 100vw" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
+    <img src="/img/${project.image.base}-card.webp" srcset="/img/${project.image.base}-card-sm.webp 640w, /img/${project.image.base}-card.webp 1200w" sizes="${project.order === 1 ? '(min-width: 1200px) 490px, (min-width: 1001px) 42vw, 100vw' : '(min-width: 1200px) 360px, (min-width: 1001px) 32vw, 100vw'}" alt="${project.image.alt}" width="1200" height="675" loading="lazy">
     <figcaption>${project.caption}</figcaption>
   </figure>
 </article>`;

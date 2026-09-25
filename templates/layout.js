@@ -19,7 +19,7 @@ function footer() {
 <footer class="site-footer" id="contact">
   <div class="footer-inner">
     <div class="footer-contact">
-      <h2 class="section-title">Get in touch</h2>
+      <h2 class="section-title">${site.contactTitle}</h2>
       <p>${site.contactIntro}</p>
       <div class="footer-links">
         <a class="btn btn-primary" href="mailto:${site.email}">${site.email}</a>
@@ -41,7 +41,7 @@ function personJsonLd() {
     url: site.siteUrl,
     '@id': `${site.siteUrl}/#person`,
     image: `${site.siteUrl}/img/portrait.webp`,
-    jobTitle: 'MBA Candidate',
+    jobTitle: 'Defense-tech founder',
     alumniOf: [
       { '@type': 'CollegeOrUniversity', name: 'University of Michigan', url: 'https://umich.edu' },
       { '@type': 'CollegeOrUniversity', name: 'University of Iowa', url: 'https://uiowa.edu' },
@@ -73,7 +73,7 @@ function layout({
   path = '/',
   title,
   description = site.defaultDescription,
-  ogImage = '/og-image-v4.jpg',
+  ogImage = '/og-image-v5.jpg',
   bodyHtml,
   bodyClass = '',
   noindex = false,
