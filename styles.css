@@ -321,7 +321,8 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 560px) {
   .nav-inner { padding: 12px 20px; row-gap: 6px; }
-  .nav-links { gap: 20px; }
+  .nav-links { gap: 8px 16px; }
+  html { scroll-padding-top: 9rem; }
   .nav-links a { font-size: 0.9rem; padding: 4px 0; }
   .nav-links a.nav-cta { padding: 4px 12px; }
 }
@@ -469,16 +470,8 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 152px; }
 }
-/* Line 1 is the h1 and line 2 a paragraph; they share one look on purpose. */
-.hero .hero-line {
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.45;
-  max-width: 42rem;
-  margin: 0;
-  text-wrap: balance;
-}
-.hero .hero-line + .hero-line { margin-top: 0.7em; }
+.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; }
+.hero-intro { font-size: 1.125rem; line-height: 1.65; color: var(--on-band-soft); max-width: 42rem; margin-top: 24px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .hero .btn-secondary { border-color: var(--band-line); color: var(--on-band); }
 .hero .btn-secondary:hover { border-color: var(--band-accent); }
@@ -523,7 +516,7 @@ img { max-width: 100%; display: block; }
   gap: 40px;
   align-items: start;
 }
-.proof-headline { margin: 0; }
+.proof-headline { margin: 0; font-size: 1.45rem; font-weight: 700; line-height: 1.35; }
 .proof-value {
   display: block;
   font-size: clamp(1.9rem, 3vw, 2.6rem);
@@ -580,11 +573,20 @@ img { max-width: 100%; display: block; }
    ========================================================================== */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .project-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 1001px) {
+  .project-card:first-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    align-items: center;
+  }
+  .project-card:first-child .project-card-media { margin-top: 0; }
 }
 
 .project-card {
@@ -616,7 +618,7 @@ img { max-width: 100%; display: block; }
   background: transparent;
 }
 .project-card-body { padding: 20px 22px 24px; }
-.project-card-context {
+.project-card p.project-card-context {
   font-family: var(--mono);
   font-size: 0.78rem;
   color: var(--accent-text);
