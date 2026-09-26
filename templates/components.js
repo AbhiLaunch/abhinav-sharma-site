@@ -6,7 +6,7 @@ function sectionHead({ kicker, title, dek }) {
   return `
 <div class="section-head">
   ${kicker ? `<p class="kicker">${kicker}</p>` : ''}
-  <h2 class="section-title">${title}</h2>
+  <h2 class="section-title">${title.replace(/ (\S+)$/, "&nbsp;$1")}</h2>
 ${dek ? `  <p class="section-dek">${dek}</p>` : ''}
 </div>`;
 }
