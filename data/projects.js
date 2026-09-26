@@ -25,12 +25,12 @@ module.exports = [
     "paragraphs": [
       "The Army STTR explored Class 1–2 uncrewed aerial vehicles (UAVs) with wings that change shape in flight. We developed software to evaluate how wing shape affects airflow and structural loads, helping researchers identify promising designs.",
       "Discussions with Army personnel showed that the aircraft’s flight path—its trajectory—also needed to be considered. That insight shaped Phase II: optimizing wing design and flight trajectory together.",
-      "I led a six-person industry–academic team and developed a Python optimization framework delivered to Army Research Laboratory. The program advanced from Phase I to Phase II."
+      "I led proposal development end to end and led the six-person industry–academic team through the Army STTR program’s progression from Phase I to Phase II. I also developed a Python optimization framework delivered to Army Research Laboratory."
     ],
     "paragraphLabels": [
       "The problem",
       "What we learned",
-      "My contribution"
+      "What I led and delivered"
     ],
     "details": [
       "The initial work focused on aerodynamics and structures. Phase II added flight trajectory so researchers could evaluate wing design and flight trajectory together.",
