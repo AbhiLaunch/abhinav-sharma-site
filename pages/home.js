@@ -11,7 +11,7 @@ function hero() {
     <div class="hero-grid">
       <div class="hero-copy">
         <h1 class="hero-title">Defense-tech founder focused on unmanned and autonomous systems</h1>
-        <p class="hero-intro">I’m Abhinav Sharma, an aerospace engineer with a PhD from the University of Michigan and an MBA underway at Berkeley Haas. My background spans simulation, flight controls, and multidisciplinary design optimization for government and commercial customers. I’m bringing that experience to building in defense technology.</p>
+        <p class="hero-intro">I’m Abhinav Sharma, an aerospace engineer with a PhD from the University of Michigan, currently pursuing an MBA at Berkeley Haas. My background spans simulation, flight controls, and multidisciplinary design optimization for government and commercial customers. I’m bringing that experience to building in defense tech.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>
@@ -62,7 +62,7 @@ function currentDirection() {
   <div class="section-inner">
     ${sectionHead({ kicker: 'Current focus', title: 'Understanding the need is part of the engineering.' })}
     <p>I’m focused on unmanned and autonomous systems for defense and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
-    <p>My engineering experience taught me to work across disciplines. Customer engagement taught me that the boundaries of the problem can change. At Haas, I’m developing the business perspective to connect those decisions with how technology is funded, acquired, and put to use.</p>
+    <p>My engineering experience taught me to work across disciplines. Working with customers taught me to revisit the problem as I learned more about their needs. At Haas, I’m studying how technology is funded, acquired, and put to use.</p>
   </div>
 </section>`;
 }

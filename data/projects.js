@@ -24,7 +24,7 @@ module.exports = [
     ],
     "paragraphs": [
       "The Army STTR focused on Class 1–2 uncrewed aerial vehicles (UAVs) with wings that could change shape in flight. Designing these aircraft means accounting for how each change in wing shape affects airflow and the forces the structure must withstand. We developed software to help researchers evaluate these interacting effects and identify promising aircraft designs.",
-      "Our initial focus was aerodynamics and structures. Through continued discussions with Army personnel, we recognized that the aircraft’s flight path—its trajectory—also needed to be considered alongside the wing design. That insight shaped Phase II: optimizing the aircraft’s design and how it flies together.",
+      "Our initial focus was aerodynamics and structures. Through continued discussions with Army personnel, we recognized that the aircraft’s flight path—its trajectory—also needed to be considered alongside the wing design. That insight shaped Phase II: optimizing wing design and flight trajectory together.",
       "I led a six-person industry–academic team, aligning responsibilities and intellectual-property constraints with University of Michigan collaborators, and developed a Python framework for this combined optimization. The program progressed from an approximately $173K Phase I to an approximately $1.15M Phase II. My framework and the university team’s separate software were delivered to Army Research Laboratory."
     ]
   },
@@ -72,7 +72,7 @@ module.exports = [
   },
   {
     "order": 3,
-    "title": "Turning outreach into customer work",
+    "title": "Winning new engineering customers",
     "contextLine": "Continuum Dynamics · Advanced air mobility",
     "image": {
       "base": "aam-tiltwing",
@@ -81,7 +81,7 @@ module.exports = [
     "caption": "AI-generated illustration of a tiltwing concept, not a specific aircraft. The wing rotates between hovering and forward flight.",
     "links": [],
     "paragraphs": [
-      "Through networking and direct outreach, I originated two new customer engagements for aircraft design and performance analysis, generating approximately $100K in revenue. I also delivered engineering analyses for clients developing advanced aircraft configurations."
+      "Through networking and direct outreach, I brought in two new customers for aircraft design and performance analysis, generating approximately $100K in revenue. I also delivered engineering analyses for clients developing advanced aircraft configurations."
     ]
   }
 ];
