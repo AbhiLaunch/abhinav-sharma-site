@@ -586,7 +586,10 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1.35fr 1fr;
     align-items: center;
   }
-  .project-card:first-child .project-card-media { margin-top: 0; }
+  .project-card:first-child .project-card-media {
+    margin: 22px 22px 22px 0;
+    border-radius: 8px;
+  }
 }
 
 .project-card {

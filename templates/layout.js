@@ -90,8 +90,8 @@ function layout({
 <title>${fullTitle}</title>
 <meta name="description" content="${safeDescription}">${noindex ? '\n<meta name="robots" content="noindex">' : ''}
 ${noindex ? '' : `<link rel="canonical" href="${canonical}">`}
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=as1">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=as1">
 <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Abhinav Sharma">
-  <style>
-    .path { fill: none; stroke: #00274C; stroke-width: 2.4; stroke-linecap: round; }
-    .node { fill: #FDB515; }
-    @media (prefers-color-scheme: dark) {
-      .path { stroke: #EEF2F7; }
-      .node { fill: #FFCB05; }
-    }
-  </style>
-  <path class="path" d="M4.5 23 C 10 23, 12.5 10.5, 20.5 8.5 C 24 7.6, 26.5 8.2, 27.5 10" />
-  <circle class="node" cx="27.5" cy="10" r="2.6" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abhinav Sharma AS monogram"><style>.ink{fill:#00274c}@media(prefers-color-scheme:dark){.ink{fill:#f5f2ec}}</style><g class="ink"><path d="M3 51 17 13h6l14 38h-6l-4-11H13L9 51zm12-16h10l-5-15z"/><path fill="#FDB515" d="M58 15v6c-3-2-6-3-10-3-5 0-8 2-8 5 0 3 3 5 9 7 8 3 12 6 12 12 0 7-5 11-14 11-5 0-10-1-13-4v-6c4 3 8 5 13 5 5 0 8-2 8-6 0-3-3-5-9-7-8-3-12-6-12-12 0-7 6-11 14-11 4 0 7 1 10 3z"/></g></svg>
