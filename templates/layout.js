@@ -6,7 +6,7 @@ function header() {
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="nav-inner">
-    <a class="nav-brand" href="/">${site.name}</a>
+    <a class="nav-brand" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="nav-monogram" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M3 51 17 13h6l14 38h-6l-4-11H13L9 51zm12-16h10l-5-15z"/><path fill="#FDB515" d="M58 15v6c-3-2-6-3-10-3-5 0-8 2-8 5 0 3 3 5 9 7 8 3 12 6 12 12 0 7-5 11-14 11-5 0-10-1-13-4v-6c4 3 8 5 13 5 5 0 8-2 8-6 0-3-3-5-9-7-8-3-12-6-12-12 0-7 6-11 14-11 4 0 7 1 10 3z"/></g></svg><span>${site.name}</span></a>
     <nav class="nav-links" id="primary-nav" aria-label="Primary">
       ${site.nav.map((item) => `<a href="${item.href}"${item.cta ? ' class="nav-cta"' : ''}>${item.label}</a>`).join('\n      ')}
     </nav>
@@ -95,7 +95,7 @@ ${noindex ? '' : `<link rel="canonical" href="${canonical}">`}
 <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css?v=20260926">
+<link rel="stylesheet" href="/styles.css?v=20260926b">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${site.name}">

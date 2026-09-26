@@ -10,10 +10,11 @@ function hero() {
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1 class="hero-title">Defense-tech founder focused on <span class="hero-title-focus">unmanned and autonomous systems</span></h1>
-        <p class="hero-intro">I’m Abhinav Sharma, an aerospace engineer with a PhD from the University of Michigan, currently pursuing an MBA at Berkeley Haas. My background spans simulation, flight controls, and multidisciplinary design optimization for government and commercial customers. I’m bringing that experience to building in defense tech.</p>
+        <h1 class="hero-title">Engineering what’s next.<span class="hero-title-focus">For defense and beyond.</span></h1>
+        <p class="hero-intro">I’m Abhinav Sharma, a founder focused on unmanned and autonomous systems and dual-use innovation. My experience spans aircraft design, government R&D, engineering software, and commercial customer development.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-primary" href="#projects">Explore my work${EXTERNAL_ARROW}</a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
         </div>
       </div>
       <figure class="hero-portrait">
@@ -61,7 +62,7 @@ function currentDirection() {
 <section class="section section-alt background-copy" id="direction">
   <div class="section-inner">
     ${sectionHead({ kicker: 'Current focus', title: 'Understanding the need is part of the engineering.' })}
-    <p>I’m focused on unmanned and autonomous systems for defense and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
+    <p>I’m focused on unmanned and autonomous systems for defense and commercial use, and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
     <p>My engineering experience taught me to work across disciplines. Customer conversations showed me when to revisit the problem itself. At Haas, I’m studying how technology is funded, acquired, and put to use.</p>
   </div>
 </section>`;

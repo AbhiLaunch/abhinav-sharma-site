@@ -451,9 +451,9 @@ img { max-width: 100%; display: block; }
    wide screens. */
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, auto) 320px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   justify-content: start;
-  gap: 56px;
+  gap: 40px;
   align-items: center;
 }
 .hero-portrait { margin: 0; }
@@ -470,7 +470,7 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 152px; }
 }
-.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; color: var(--on-band); }
+.hero-title { font-size: clamp(2.25rem, 4.7vw, 4rem); letter-spacing: -0.04em; max-width: 20ch; text-wrap: balance; color: var(--on-band); }
 .hero-intro { font-size: 1.125rem; line-height: 1.65; color: var(--on-band-soft); max-width: 42rem; margin-top: 24px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .hero .btn-secondary { border-color: var(--band-line); color: var(--on-band); }
@@ -806,3 +806,6 @@ figcaption {
 .project-details[open] summary { margin-bottom: 4px; }
 .project-evidence { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
 .project-evidence-label { display: block; font-size: .8rem; color: var(--ink-faint); margin-bottom: 8px; }
+
+.nav-brand { display: inline-flex; align-items: center; gap: 10px; }
+.nav-monogram { width: 32px; height: 32px; flex: none; }
