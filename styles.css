@@ -404,15 +404,16 @@ img { max-width: 100%; display: block; }
    ========================================================================== */
 .hero {
   --hero-sky: #00274c;
+  --horizon-rise: 60px;
   position: relative;
   padding: 80px 24px 148px;
   overflow: hidden;
   color: var(--on-band);
   background:
     linear-gradient(90deg, var(--hero-sky) 4%, transparent 100%),
-    radial-gradient(ellipse 85% 10% at 88% 96%, #d5b17b3d, transparent 95%),
-    radial-gradient(ellipse 90% 20% at 88% 108%, #7691a336, transparent 90%),
-    linear-gradient(180deg, var(--hero-sky) 0%, var(--hero-sky) 70%, #112b3e 86%, #303e4a 96%, #243848 100%);
+    radial-gradient(ellipse 85% 10% at 88% calc(96% - var(--horizon-rise)), #d5b17b3d, transparent 95%),
+    radial-gradient(ellipse 90% 20% at 88% calc(108% - var(--horizon-rise)), #7691a336, transparent 90%),
+    linear-gradient(180deg, var(--hero-sky) 0%, var(--hero-sky) calc(70% - var(--horizon-rise)), #112b3e calc(86% - var(--horizon-rise)), #303e4a calc(96% - var(--horizon-rise)), #243848 calc(100% - var(--horizon-rise)), var(--hero-sky) 100%);
 }
 :root[data-theme='dark'] .hero { --hero-sky: #071827; }
 @media (prefers-color-scheme: dark) {
@@ -446,6 +447,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--hero-portrait-shadow);
 }
 @media (max-width: 860px) {
+  .hero { --horizon-rise: 30px; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { display: none; }
 }
