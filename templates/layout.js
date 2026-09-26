@@ -95,7 +95,7 @@ ${noindex ? '' : `<link rel="canonical" href="${canonical}">`}
 <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css?v=20260926c">
+<link rel="stylesheet" href="/styles.css?v=20260926d">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${site.name}">

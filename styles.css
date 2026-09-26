@@ -403,42 +403,20 @@ img { max-width: 100%; display: block; }
    Hero
    ========================================================================== */
 .hero {
+  --hero-sky: #00274c;
   position: relative;
   padding: 80px 24px 148px;
   overflow: hidden;
-  background:
-    radial-gradient(circle 380px at 94% 4%, var(--hero-disc-1) 0 calc(100% - 1px), transparent 100%),
-    radial-gradient(circle 300px at 66% 118%, var(--hero-disc-2) 0 calc(100% - 1px), transparent 100%),
-    linear-gradient(180deg, #00274c 0%, #001f3d 100%);
   color: var(--on-band);
-}
-:root[data-theme='dark'] .hero {
   background:
-    radial-gradient(circle 380px at 94% 4%, var(--hero-disc-1) 0 calc(100% - 1px), transparent 100%),
-    radial-gradient(circle 300px at 66% 118%, var(--hero-disc-2) 0 calc(100% - 1px), transparent 100%),
-    linear-gradient(180deg, #0a1626 0%, #08121f 100%);
+    linear-gradient(90deg, var(--hero-sky) 4%, transparent 100%),
+    radial-gradient(ellipse 85% 10% at 88% 96%, #d5b17b3d, transparent 95%),
+    radial-gradient(ellipse 90% 20% at 88% 108%, #7691a336, transparent 90%),
+    linear-gradient(180deg, var(--hero-sky) 0%, var(--hero-sky) 70%, #112b3e 86%, #303e4a 96%, #243848 100%);
 }
+:root[data-theme='dark'] .hero { --hero-sky: #071827; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .hero {
-    background:
-      radial-gradient(circle 380px at 94% 4%, var(--hero-disc-1) 0 calc(100% - 1px), transparent 100%),
-      radial-gradient(circle 300px at 66% 118%, var(--hero-disc-2) 0 calc(100% - 1px), transparent 100%),
-      linear-gradient(180deg, #0a1626 0%, #08121f 100%);
-  }
-}
-/* A shallow curve, filled with the next section's color, carries the gold rule
-   along its top edge instead of a hard straight line. */
-.hero::after {
-  content: '';
-  position: absolute;
-  left: -16%;
-  right: -16%;
-  bottom: -1px;
-  height: 64px;
-  background: var(--paper-alt);
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  box-shadow: 0 calc(-1 * var(--band-rule-w)) 0 var(--band-rule);
-  pointer-events: none;
+  :root:not([data-theme='light']) .hero { --hero-sky: #071827; }
 }
 .hero-inner {
   position: relative;
