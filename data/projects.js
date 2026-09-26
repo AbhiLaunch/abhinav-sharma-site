@@ -25,7 +25,7 @@ module.exports = [
     "paragraphs": [
       "The Army STTR explored Class 1–2 uncrewed aerial vehicles (UAVs) with wings that change shape in flight. We developed software to evaluate how wing shape affects airflow and structural loads, helping researchers identify promising designs.",
       "Discussions with Army personnel showed that the aircraft’s flight path—its trajectory—also needed to be considered. That insight shaped Phase II: optimizing wing design and flight trajectory together.",
-      "I led proposal development end to end and led the six-person industry–academic team through the Army STTR program’s progression from Phase I to Phase II. I also developed a Python optimization framework delivered to Army Research Laboratory."
+      "I led proposal development end to end and directed the six-person industry–academic team through the Army STTR program’s progression from Phase I to Phase II. I also developed a Python optimization framework delivered to Army Research Laboratory."
     ],
     "paragraphLabels": [
       "The problem",
@@ -33,8 +33,7 @@ module.exports = [
       "What I led and delivered"
     ],
     "details": [
-      "The initial work focused on aerodynamics and structures. Phase II added flight trajectory so researchers could evaluate wing design and flight trajectory together.",
-      "I coordinated responsibilities and worked within intellectual-property constraints with University of Michigan collaborators. My framework and the university team’s separate software were delivered to Army Research Laboratory.",
+      "I coordinated responsibilities and worked within intellectual-property constraints with University of Michigan collaborators. The university team also delivered separate software to Army Research Laboratory.",
       "The program progressed from an approximately $173K Phase I to an approximately $1.15M Phase II."
     ],
     "contribution": "Program leadership · Optimization software"
