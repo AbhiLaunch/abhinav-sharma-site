@@ -72,7 +72,7 @@ function layout({
   path = '/',
   title,
   description = site.defaultDescription,
-  ogImage = '/og-image-v5.jpg',
+  ogImage = '/og-image-v6.jpg',
   bodyHtml,
   bodyClass = '',
   noindex = false,

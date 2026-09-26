@@ -5,8 +5,8 @@ module.exports = {
   "scholarUrl": "https://scholar.google.com/citations?user=qXDfIR0AAAAJ&hl=en",
   "siteUrl": "https://abhinav-sharma.com",
   "defaultTitle": "Abhinav Sharma | Defense-Tech Founder & Aerospace Engineer",
-  "defaultDescription": "Defense-tech founder focused on autonomous systems. Aerospace PhD and Berkeley Haas MBA candidate with experience leading government R&D and delivering engineering software.",
-  "ogImageAlt": "Abhinav Sharma. Defense-tech founder. Autonomous systems · Aerospace PhD · Berkeley Haas MBA.",
+  "defaultDescription": "Defense-tech founder focused on unmanned and autonomous systems. Aerospace PhD and Berkeley Haas MBA candidate with experience leading government R&D and delivering engineering software.",
+  "ogImageAlt": "Abhinav Sharma. Defense-tech founder. Unmanned and autonomous systems. Aerospace PhD · Berkeley Haas MBA.",
   "credibilityItems": [
     "Aerospace PhD, University of Michigan",
     "Helicopters, fixed-wing aircraft, UAVs, and advanced air mobility",

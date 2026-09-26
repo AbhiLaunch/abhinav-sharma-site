@@ -18,7 +18,7 @@ const pages = [
 function writePage(page) {
   const outPath = path.join(ROOT, page.outFile);
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, page.render());
+  fs.writeFileSync(outPath, page.render().replace(/\r\n/g, '\n').replace(/[ \t]+$/gm, ''));
   console.log(`  ✓ ${page.outFile}`);
 }
 

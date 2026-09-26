@@ -576,8 +576,20 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1199px) {
   .project-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 861px) and (max-width: 1199px) {
+  .project-card:not(:first-child) {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+  .project-card:not(:first-child) .project-card-media {
+    margin: 22px 22px 22px 0;
+    padding: 14px 14px 0;
+    border-radius: 8px;
+  }
 }
 @media (min-width: 1001px) {
   .project-card:first-child {
@@ -588,6 +600,7 @@ img { max-width: 100%; display: block; }
   }
   .project-card:first-child .project-card-media {
     margin: 22px 22px 22px 0;
+    padding: 14px 14px 0;
     border-radius: 8px;
   }
 }
@@ -604,7 +617,7 @@ img { max-width: 100%; display: block; }
 .project-card-media {
   margin-top: auto;
   background: var(--paper-alt);
-  padding: 14px 14px 0;
+  padding: 22px 22px 0;
 }
 .project-card-media img {
   width: 100%;
@@ -616,17 +629,16 @@ img { max-width: 100%; display: block; }
 }
 .project-card-media figcaption {
   margin: 0;
-  padding: 10px 4px 14px;
+  padding: 10px 0 22px;
   border-top: 0;
   background: transparent;
 }
 .project-card-body { padding: 20px 22px 24px; }
 .project-card p.project-card-context {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--accent-text);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-faint);
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 .project-card h3 {

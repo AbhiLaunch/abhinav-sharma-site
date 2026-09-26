@@ -61,7 +61,7 @@ function currentDirection() {
 <section class="section section-alt background-copy" id="direction">
   <div class="section-inner">
     ${sectionHead({ kicker: 'Current focus', title: 'Understanding the need is part of the engineering.' })}
-    <p>I’m focused on autonomous systems for defense and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
+    <p>I’m focused on unmanned and autonomous systems for defense and the practical questions that shape their adoption: what users need, how a system fits into existing workflows, and who makes the decision to acquire it.</p>
     <p>My engineering experience taught me to work across disciplines. Customer engagement taught me that the boundaries of the problem can change. At Haas, I’m developing the business perspective to connect those decisions with how technology is funded, acquired, and put to use.</p>
   </div>
 </section>`;
