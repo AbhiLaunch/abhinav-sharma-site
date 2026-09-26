@@ -470,7 +470,7 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 152px; }
 }
-.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; color: var(--band-accent); }
+.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; color: var(--on-band); }
 .hero-intro { font-size: 1.125rem; line-height: 1.65; color: var(--on-band-soft); max-width: 42rem; margin-top: 24px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .hero .btn-secondary { border-color: var(--band-line); color: var(--on-band); }
@@ -793,29 +793,7 @@ figcaption {
 }
 .footer-meta a { color: var(--on-band-faint); }
 
-/* Subtle engineering cues, using the established Michigan/Haas palette. */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size: 64px 64px;
-  pointer-events: none;
-}
 .hero-title-focus { display: block; color: var(--band-accent); }
-.hero-portrait { position: relative; padding: 8px; }
-.hero-portrait::before, .hero-portrait::after {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  border-color: var(--band-accent);
-  border-style: solid;
-  opacity: .8;
-  pointer-events: none;
-}
-.hero-portrait::before { top: 0; left: 0; border-width: 1px 0 0 1px; }
-.hero-portrait::after { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
 .project-card { border-radius: 6px; }
 .footer-contact { max-width: 720px; margin: 0 auto; text-align: center; }
 .footer-contact p { margin: 0 auto 26px; }
