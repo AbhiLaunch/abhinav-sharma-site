@@ -470,7 +470,7 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-portrait { order: -1; width: 152px; }
 }
-.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; }
+.hero-title { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -0.035em; max-width: 22ch; text-wrap: balance; color: var(--band-accent); }
 .hero-intro { font-size: 1.125rem; line-height: 1.65; color: var(--on-band-soft); max-width: 42rem; margin-top: 24px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .hero .btn-secondary { border-color: var(--band-line); color: var(--on-band); }
