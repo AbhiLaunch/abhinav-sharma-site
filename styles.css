@@ -734,7 +734,7 @@ figcaption {
    Background
    ========================================================================== */
 .background-copy .section-head { margin-bottom: var(--space-3); }
-.background-copy p {
+.background-copy .section-inner > p {
   color: var(--ink-soft);
   font-size: 1.05rem;
   max-width: 68ch;
