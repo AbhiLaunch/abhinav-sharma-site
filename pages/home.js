@@ -10,7 +10,7 @@ function hero() {
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1 class="hero-title">Defense-tech founder focused on unmanned and autonomous systems</h1>
+        <h1 class="hero-title">Defense-tech founder focused on <span class="hero-title-focus">unmanned and autonomous systems</span></h1>
         <p class="hero-intro">I’m Abhinav Sharma, an aerospace engineer with a PhD from the University of Michigan, currently pursuing an MBA at Berkeley Haas. My background spans simulation, flight controls, and multidisciplinary design optimization for government and commercial customers. I’m bringing that experience to building in defense tech.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
