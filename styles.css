@@ -820,3 +820,11 @@ figcaption {
 .footer-contact { max-width: 720px; margin: 0 auto; text-align: center; }
 .footer-contact p { margin: 0 auto 26px; }
 .footer-contact .footer-links { justify-content: center; }
+.project-card p.project-contribution { font-size: .875rem; line-height: 1.5; color: var(--ink-faint); margin: 8px 0 20px; }
+.project-paragraph-label { display: block; font-size: .875rem; color: var(--ink); margin-bottom: 3px; }
+.project-details { border-top: 1px solid var(--line); margin-top: 20px; }
+.project-details summary { cursor: pointer; padding: 14px 0; font-weight: 600; font-size: .95rem; color: var(--ink); }
+.project-details summary::marker { color: var(--ink-faint); }
+.project-details[open] summary { margin-bottom: 4px; }
+.project-evidence { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.project-evidence-label { display: block; font-size: .8rem; color: var(--ink-faint); margin-bottom: 8px; }

@@ -23,10 +23,21 @@ module.exports = [
       }
     ],
     "paragraphs": [
-      "The Army STTR focused on Class 1–2 uncrewed aerial vehicles (UAVs) with wings that could change shape in flight. Designing these aircraft means accounting for how each change in wing shape affects airflow and the forces the structure must withstand. We developed software to help researchers evaluate these interacting effects and identify promising aircraft designs.",
-      "Our initial focus was aerodynamics and structures. Through continued discussions with Army personnel, we recognized that the aircraft’s flight path—its trajectory—also needed to be considered alongside the wing design. That insight shaped Phase II: optimizing wing design and flight trajectory together.",
-      "I led a six-person industry–academic team, aligning responsibilities and intellectual-property constraints with University of Michigan collaborators, and developed a Python framework for this combined optimization. The program progressed from an approximately $173K Phase I to an approximately $1.15M Phase II. My framework and the university team’s separate software were delivered to Army Research Laboratory."
-    ]
+      "The Army STTR explored Class 1–2 uncrewed aerial vehicles (UAVs) with wings that change shape in flight. We developed software to evaluate how wing shape affects airflow and structural loads, helping researchers identify promising designs.",
+      "Discussions with Army personnel showed that the aircraft’s flight path—its trajectory—also needed to be considered. That insight shaped Phase II: optimizing wing design and flight trajectory together.",
+      "I led a six-person industry–academic team and developed a Python optimization framework delivered to Army Research Laboratory. The program advanced from Phase I to Phase II."
+    ],
+    "paragraphLabels": [
+      "The problem",
+      "What we learned",
+      "My contribution"
+    ],
+    "details": [
+      "The initial work focused on aerodynamics and structures. Phase II added flight trajectory so researchers could evaluate wing design and flight trajectory together.",
+      "I coordinated responsibilities and worked within intellectual-property constraints with University of Michigan collaborators. My framework and the university team’s separate software were delivered to Army Research Laboratory.",
+      "The program progressed from an approximately $173K Phase I to an approximately $1.15M Phase II."
+    ],
+    "contribution": "Program leadership · Optimization software"
   },
   {
     "order": 4,
@@ -45,7 +56,8 @@ module.exports = [
     ],
     "paragraphs": [
       "I developed a simulation of helicopter approach and landing on a moving ship deck, bringing together airwake, deck motion, flight dynamics, controls, landing gear, and ground effect. I applied it to UH-60A shipboard operations and published the research with Ashwani Padthe and Peretz Friedmann."
-    ]
+    ],
+    "contribution": "Doctoral research · Simulation development"
   },
   {
     "order": 2,
@@ -68,7 +80,8 @@ module.exports = [
     ],
     "paragraphs": [
       "I led the technical proposal for an approximately $125K NASA SBIR award and carried out research on optimizing a distributed-electric-propulsion aircraft’s airframe and flight controls together. The work became a first-author AIAA SciTech paper with Jeffrey Keller and Joaquim Martins."
-    ]
+    ],
+    "contribution": "Technical proposal · Aircraft design research"
   },
   {
     "order": 3,
@@ -82,6 +95,7 @@ module.exports = [
     "links": [],
     "paragraphs": [
       "Through networking and direct outreach, I brought in two new customers for aircraft design and performance analysis, generating approximately $100K in revenue. I also delivered engineering analyses for clients developing advanced aircraft configurations."
-    ]
+    ],
+    "contribution": "Customer development · Engineering delivery"
   }
 ];

@@ -13,16 +13,18 @@ ${dek ? `  <p class="section-dek">${dek}</p>` : ''}
 
 function projectCard(project) {
   const links = project.links.length
-    ? `<p class="project-card-links">${project.links
+    ? `<div class="project-evidence"><span class="project-evidence-label">Supporting evidence</span><p class="project-card-links">${project.links
         .map((l) => `<a href="${l.href}" target="_blank" rel="noopener">${l.label}${EXTERNAL_ARROW}${NEW_TAB_NOTE}</a>`)
-        .join('')}</p>`
+        .join('')}</p></div>`
     : '';
   return `
 <article class="project-card">
   <div class="project-card-body">
     <p class="project-card-context">${project.contextLine}</p>
     <h3>${project.title}</h3>
-    ${project.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('\n    ')}
+    <p class="project-contribution">${project.contribution}</p>
+    ${project.paragraphs.map((paragraph, index) => `<p>${project.paragraphLabels ? `<strong class="project-paragraph-label">${project.paragraphLabels[index]}</strong>` : ''}${paragraph}</p>`).join('\n    ')}
+    ${project.details ? `<details class="project-details"><summary>Read the project details</summary><div>${project.details.map(paragraph => `<p>${paragraph}</p>`).join('')}</div></details>` : ''}
     ${links}
   </div>
   <figure class="project-card-media">
