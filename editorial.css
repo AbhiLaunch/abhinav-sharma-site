@@ -58,3 +58,18 @@ html{scroll-behavior:smooth}body{margin:0}#aero-editorial{max-width:1600px;margi
 }
 
 @media(max-width:650px){#aero-editorial h2 br{display:none}}
+
+
+/* Army case study: retain the complete illustration alongside the story. */
+#aero-editorial .work .project-title{display:block;max-width:850px}
+#aero-editorial .army-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;margin-bottom:28px}
+#aero-editorial .army-story>p{font-size:18px;line-height:1.7;color:var(--muted);max-width:60ch}
+#aero-editorial .army-story .ownership{display:flex;flex-direction:column;gap:14px;padding:24px 0 0}
+#aero-editorial .army-story .roles{line-height:1.7}
+#aero-editorial .army-layout .project-image{margin:0;min-width:0}
+#aero-editorial .army-layout .project-image img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain}
+@media(max-width:860px){
+  #aero-editorial .army-layout{grid-template-columns:1fr;gap:28px}
+  #aero-editorial .army-layout .project-image{width:100%;max-width:720px;justify-self:center}
+}
+@media(max-width:650px){#aero-editorial .army-story>p{font-size:17px}}
