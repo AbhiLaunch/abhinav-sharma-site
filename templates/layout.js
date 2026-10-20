@@ -96,7 +96,7 @@ ${noindex ? '' : `<link rel="canonical" href="${canonical}">`}
 <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="${editorial ? "/editorial.css?v=20261020a" : "/styles.css?v=20260926f"}">
+<link rel="stylesheet" href="${editorial ? "/editorial.css?v=20261020b" : "/styles.css?v=20260926f"}">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${site.name}">
@@ -117,7 +117,7 @@ ${noindex ? '' : `<script type="application/ld+json">${JSON.stringify(personJson
 </head>
 <body class="${bodyClass}">
 ${editorial ? `<a class="skip-link" href="#main">Skip to content</a>${bodyHtml}` : `${header()}<main id="main">${bodyHtml}</main>${footer()}`}
-<script src="${editorial ? "/editorial.js?v=20261020a" : "/main.js"}" defer></script>
+<script src="${editorial ? "/editorial.js?v=20261020b" : "/main.js"}" defer></script>
 </body>
 </html>
 `;

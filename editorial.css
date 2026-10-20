@@ -8,3 +8,53 @@
 @media(max-width:650px){#aero-editorial .commercial-layout,#aero-editorial .research-layout,#aero-editorial .doctoral .research-layout,#aero-editorial .contact-grid{grid-template-columns:1fr;gap:28px}#aero-editorial .commercial-section,#aero-editorial .research-feature,#aero-editorial .publications{padding:45px 6%}#aero-editorial .commercial-result{border-left:0;border-top:1px solid var(--line);padding:23px 0 0}#aero-editorial .display-title{font-size:44px}#aero-editorial .research-feature .display-title{font-size:39px}#aero-editorial .doctoral figure{order:2}#aero-editorial .publication-header{align-items:flex-start;flex-direction:column;gap:18px}#aero-editorial .pub{grid-template-columns:40px 1fr 18px;gap:10px}#aero-editorial .contact h2{font-size:46px}#aero-editorial .footer-bottom{flex-wrap:wrap}}
 
 html{scroll-behavior:smooth}body{margin:0}#aero-editorial{max-width:1600px;margin:auto}body{background:light-dark(#f5f3ed,#0c1c2b);color-scheme:light dark}.skip-link{position:absolute;left:12px;top:-80px;background:#ffcb05;color:#00274c;padding:12px;z-index:20}.skip-link:focus{top:12px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #d99b00;outline-offset:5px}#aero-editorial main{display:block}@media(min-width:651px) and (max-width:860px){#aero-editorial .hero-main{grid-template-columns:1fr}#aero-editorial .portrait{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Reading scale and responsive image proportions. */
+#aero-editorial .portrait{width:100%;max-width:360px;justify-self:end}
+#aero-editorial .portrait img{height:auto;aspect-ratio:4/5}
+#aero-editorial .project-image img{height:auto;max-height:400px}
+#aero-editorial .research-layout img{height:auto;aspect-ratio:16/10;max-height:340px}
+#aero-editorial .hero{padding-top:32px}
+#aero-editorial .hero-main{grid-template-columns:1.4fr 1fr}
+#aero-editorial .intro{font-size:18px;max-width:460px}
+#aero-editorial .about p,#aero-editorial .project-title p,#aero-editorial .ownership p,
+#aero-editorial .story p,#aero-editorial .commercial-layout p,#aero-editorial .research-feature p,
+#aero-editorial .detail-copy,#aero-editorial .contact p{font-size:18px;line-height:1.7;max-width:65ch}
+#aero-editorial .about p:first-child{font-size:20px}
+#aero-editorial .proof p{font-size:19px}
+#aero-editorial .navlinks,#aero-editorial .evidence,#aero-editorial .publication-header a{font-size:15px}
+#aero-editorial .navlinks{flex-wrap:wrap;gap:12px 22px}
+#aero-editorial .navlinks a,#aero-editorial .evidence a,#aero-editorial .publication-header a{display:inline-flex;align-items:center;min-height:32px}
+#aero-editorial .credentials,#aero-editorial .ownership .roles,#aero-editorial .research-feature .roles,
+#aero-editorial .commercial-result .result-label,#aero-editorial .pub p{font-size:14px}
+#aero-editorial .project-image figcaption,#aero-editorial .research-layout figcaption,
+#aero-editorial .portrait figcaption,#aero-editorial .proof small,#aero-editorial .footer-bottom,
+#aero-editorial .section-label,#aero-editorial .eyebrow,#aero-editorial .discipline span,#aero-editorial .pub .year{font-size:13px}
+#aero-editorial .section-label{line-height:1.6}
+#aero-editorial summary,#aero-editorial .stages button,#aero-editorial .action{font-size:16px}
+#aero-editorial summary,#aero-editorial .stages button{cursor:pointer}
+#aero-editorial .ownership{padding-top:0;padding-bottom:28px}
+#aero-editorial .project-image{margin-bottom:28px}
+#aero-editorial h2{text-wrap:balance}
+@media(max-width:860px){
+  #aero-editorial .hero-main,#aero-editorial .about,#aero-editorial .proof-inner,
+  #aero-editorial .project-title,#aero-editorial .ownership,#aero-editorial .decision,
+  #aero-editorial .commercial-layout,#aero-editorial .research-layout,
+  #aero-editorial .doctoral .research-layout,#aero-editorial .contact-grid{grid-template-columns:1fr;gap:24px}
+  #aero-editorial .portrait{display:none}
+  #aero-editorial .research-layout figure{order:2}
+  #aero-editorial .commercial-result{border-left:0;border-top:1px solid var(--line);padding:23px 0 0}
+  #aero-editorial .publication-header{align-items:flex-start;flex-direction:column;gap:18px}
+}
+@media(max-width:650px){
+  #aero-editorial h1{font-size:clamp(48px,14vw,66px)}
+  #aero-editorial .intro,#aero-editorial .about p,#aero-editorial .project-title p,
+  #aero-editorial .ownership p,#aero-editorial .story p,#aero-editorial .commercial-layout p,
+  #aero-editorial .research-feature p,#aero-editorial .detail-copy,#aero-editorial .contact p{font-size:17px}
+  #aero-editorial .about p:first-child{font-size:19px}
+  #aero-editorial .navlinks{gap:8px 18px}
+  #aero-editorial .project-image img{max-height:280px}
+}
+
+@media(max-width:650px){#aero-editorial h2 br{display:none}}
